@@ -1,0 +1,10 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Join inquiry QR placeholder">
+  <rect width="220" height="220" fill="#FFFDF8"/>
+  <rect x="20" y="20" width="56" height="56" fill="#1F2422"/>
+  <rect x="34" y="34" width="28" height="28" fill="#FFFDF8"/>
+  <rect x="144" y="20" width="56" height="56" fill="#1F2422"/>
+  <rect x="158" y="34" width="28" height="28" fill="#FFFDF8"/>
+  <rect x="20" y="144" width="56" height="56" fill="#1F2422"/>
+  <rect x="34" y="158" width="28" height="28" fill="#FFFDF8"/>
+  <path d="M92 28H114V50H92V28ZM122 28H144V50H122V28ZM92 84H114V106H92V84ZM122 84H166V106H122V84ZM178 84H200V106H178V84ZM92 118H136V140H92V118ZM148 118H170V140H148V118ZM92 152H114V174H92V152ZM124 152H146V174H124V152ZM158 152H200V174H158V152ZM124 184H200V200H124V184Z" fill="#D8A321"/>
+</svg>

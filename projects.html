@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="湖南大学设计艺术学院可触界面实验室项目页面。" />
+    <title>项目 | 可触界面实验室</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-progress" aria-hidden="true"></div>
+    <div class="tactile-cursor" aria-hidden="true"></div>
+    <header class="site-header" data-i18n-attr="aria-label:headerAria">
+      <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
+        <span class="brand-mark">TIL</span>
+        <span class="brand-copy">
+          <span data-i18n="brandCn">可触界面实验室</span>
+          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        </span>
+      </a>
+      <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./about.html" data-i18n="navAbout">关于</a>
+        <a href="./projects.html" data-i18n="navProjects">项目</a>
+        <a href="./publications.html" data-i18n="navPublications">出版</a>
+        <a href="./join.html" data-i18n="navJoin">加入我们</a>
+      </nav>
+      <div class="language-switch" role="group" data-i18n-attr="aria-label:languageAria">
+        <button type="button" class="lang-button active" data-lang="zh">中文</button>
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero reveal-item">
+        <div>
+          <p class="eyebrow" data-i18n="projectsPageKicker">Projects</p>
+          <h1 data-i18n="projectsPageTitle">代表项目与原型实验</h1>
+        </div>
+        <p data-i18n="projectsPageIntro">
+          这里展示实验室在公共服务、智能硬件、互动展陈与教学工作坊中的样例项目。
+        </p>
+      </section>
+
+      <section class="content-section section-tinted reveal-item">
+        <div class="project-grid project-grid-large">
+          <article class="project-card tilt-card">
+            <div class="project-image">
+              <img src="./assets/project-touch-map.svg" alt="触觉地图项目占位图" />
+            </div>
+            <div class="project-meta"><span data-i18n="project1Tag">公共服务</span><span>2026</span></div>
+            <h3 data-i18n="project1Title">可触城市导览界面</h3>
+            <p data-i18n="project1Body">面向视障与银龄人群的多感官城市信息导览原型。</p>
+            <a class="demo-link" href="./demo-touch-map.html" data-i18n="openDemo">打开演示</a>
+          </article>
+          <article class="project-card tilt-card">
+            <div class="project-image">
+              <img src="./assets/project-soft-panel.svg" alt="柔性控制面板项目占位图" />
+            </div>
+            <div class="project-meta"><span data-i18n="project2Tag">智能硬件</span><span>2025</span></div>
+            <h3 data-i18n="project2Title">柔性触控控制面板</h3>
+            <p data-i18n="project2Body">探索织物、压力传感与可穿戴设备中的自然控制方式。</p>
+            <a class="demo-link" href="./demo-soft-panel.html" data-i18n="openDemo">打开演示</a>
+          </article>
+          <article class="project-card tilt-card">
+            <div class="project-image">
+              <img src="./assets/project-exhibit.svg" alt="互动展陈项目占位图" />
+            </div>
+            <div class="project-meta"><span data-i18n="project3Tag">互动展陈</span><span>2025</span></div>
+            <h3 data-i18n="project3Title">湖湘文化触感档案</h3>
+            <p data-i18n="project3Body">将纹样、器物与地方叙事转译为可触摸、可互动的展览媒介。</p>
+            <a class="demo-link" href="./demo-exhibit.html" data-i18n="openDemo">打开演示</a>
+          </article>
+          <article class="project-card tilt-card">
+            <div class="project-image">
+              <img src="./assets/project-lab-night.svg" alt="实验室夜间工作坊占位图" />
+            </div>
+            <div class="project-meta"><span data-i18n="project4Tag">工作坊</span><span>2024</span></div>
+            <h3 data-i18n="project4Title">触感原型工作坊</h3>
+            <p data-i18n="project4Body">以 Arduino、织物传感、投影映射和快速用户测试搭建一周制原型冲刺。</p>
+            <a class="demo-link" href="./demo-soft-panel.html" data-i18n="openDemo">打开演示</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section reveal-item">
+        <div class="section-grid">
+          <div>
+            <h2 data-i18n="demoHubTitle">Demo 演示</h2>
+          </div>
+          <div class="demo-hub">
+            <a class="demo-tile" href="./demo-touch-map.html">
+              <span>01</span>
+              <strong data-i18n="demoTouchTitle">触觉导览演示</strong>
+              <p data-i18n="demoTouchIntro">点击地图节点，查看不同触觉提示与路径信息。</p>
+            </a>
+            <a class="demo-tile" href="./demo-soft-panel.html">
+              <span>02</span>
+              <strong data-i18n="demoPanelTitle">柔性面板演示</strong>
+              <p data-i18n="demoPanelIntro">拖动压力值，观察界面反馈和状态变化。</p>
+            </a>
+            <a class="demo-tile" href="./demo-exhibit.html">
+              <span>03</span>
+              <strong data-i18n="demoExhibitTitle">互动展陈演示</strong>
+              <p data-i18n="demoExhibitIntro">切换展陈主题，模拟文化档案的触感叙事。</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div>
+          <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
+          <p data-i18n="footerDesc">Tangible Interface Lab, School of Design and Art, Hunan University</p>
+        </div>
+        <div class="footer-links">
+          <a href="./about.html" data-i18n="navAbout">关于</a>
+          <a href="./projects.html" data-i18n="navProjects">项目</a>
+          <a href="./publications.html" data-i18n="navPublications">出版</a>
+          <a href="./join.html" data-i18n="navJoin">加入我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tangible Interface Lab</span>
+        <span data-i18n="footerNote">本站为主页样例，图片与二维码均为占位。</span>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tangible interface visual placeholder</title>
+  <desc id="desc">An abstract tactile interface with material grid, sensing nodes and touch paths.</desc>
+  <rect width="960" height="720" fill="#FFFDF8"/>
+  <path d="M0 120H960M0 240H960M0 360H960M0 480H960M0 600H960M120 0V720M240 0V720M360 0V720M480 0V720M600 0V720M720 0V720M840 0V720" stroke="#DCD8C8" stroke-width="1"/>
+  <rect x="118" y="126" width="724" height="468" rx="0" fill="#F4F1E7" stroke="#1F2422" stroke-width="2"/>
+  <path d="M184 480C254 370 328 530 412 410C502 282 590 338 652 236C714 134 790 180 824 112" stroke="#006A67" stroke-width="8" stroke-linecap="round"/>
+  <path d="M154 312C242 246 298 320 362 262C458 176 536 220 616 172" stroke="#C0462F" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="184" cy="480" r="30" fill="#006A67"/>
+  <circle cx="412" cy="410" r="42" fill="#FFFDF8" stroke="#006A67" stroke-width="8"/>
+  <circle cx="652" cy="236" r="34" fill="#D8A321"/>
+  <circle cx="824" cy="112" r="22" fill="#C0462F"/>
+  <circle cx="154" cy="312" r="18" fill="#1F2422"/>
+  <circle cx="362" cy="262" r="28" fill="#FFFDF8" stroke="#C0462F" stroke-width="6"/>
+  <rect x="246" y="104" width="122" height="122" fill="#DCEFEB" stroke="#006A67" stroke-width="2"/>
+  <rect x="612" y="414" width="152" height="104" fill="#F1D27B" stroke="#1F2422" stroke-width="2"/>
+  <path d="M636 452H740M636 484H704" stroke="#1F2422" stroke-width="7" stroke-linecap="round"/>
+  <g stroke="#1F2422" stroke-width="2">
+    <path d="M262 152H344M262 178H320"/>
+    <path d="M262 204H336"/>
+  </g>
+  <g fill="#1F2422">
+    <circle cx="258" cy="616" r="8"/>
+    <circle cx="304" cy="616" r="8"/>
+    <circle cx="350" cy="616" r="8"/>
+    <circle cx="396" cy="616" r="8"/>
+    <circle cx="442" cy="616" r="8"/>
+    <circle cx="488" cy="616" r="8"/>
+    <circle cx="534" cy="616" r="8"/>
+    <circle cx="580" cy="616" r="8"/>
+    <circle cx="626" cy="616" r="8"/>
+    <circle cx="672" cy="616" r="8"/>
+  </g>
+  <text x="120" y="666" fill="#1F2422" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">TOUCH / MATERIAL / INTERFACE</text>
+</svg>

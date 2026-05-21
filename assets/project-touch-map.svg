@@ -1,0 +1,13 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Touchable urban wayfinding placeholder</title>
+  <desc id="desc">A tactile city map with raised routes and points.</desc>
+  <rect width="640" height="480" fill="#FFFDF8"/>
+  <rect x="54" y="54" width="532" height="372" fill="#EEF3EE" stroke="#1F2422" stroke-width="2"/>
+  <path d="M96 142H532M96 238H532M96 334H532M174 90V394M300 90V394M426 90V394" stroke="#D8D5C8" stroke-width="3"/>
+  <path d="M104 352C178 270 246 318 300 230C360 132 436 172 532 112" stroke="#006A67" stroke-width="14" stroke-linecap="round"/>
+  <path d="M138 132C224 174 274 126 352 186C430 246 486 218 548 288" stroke="#C0462F" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="104" cy="352" r="20" fill="#1F2422"/>
+  <circle cx="300" cy="230" r="28" fill="#D8A321"/>
+  <circle cx="532" cy="112" r="24" fill="#006A67"/>
+  <circle cx="548" cy="288" r="18" fill="#C0462F"/>
+</svg>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="柔性触控控制面板 demo 演示页面。" />
+    <title>Demo | 柔性触控控制面板</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-progress" aria-hidden="true"></div>
+    <div class="tactile-cursor" aria-hidden="true"></div>
+    <header class="site-header" data-i18n-attr="aria-label:headerAria">
+      <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
+        <span class="brand-mark">TIL</span>
+        <span class="brand-copy">
+          <span data-i18n="brandCn">可触界面实验室</span>
+          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        </span>
+      </a>
+      <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./about.html" data-i18n="navAbout">关于</a>
+        <a href="./projects.html" data-i18n="navProjects">项目</a>
+        <a href="./publications.html" data-i18n="navPublications">出版</a>
+        <a href="./join.html" data-i18n="navJoin">加入我们</a>
+      </nav>
+      <div class="language-switch" role="group" data-i18n-attr="aria-label:languageAria">
+        <button type="button" class="lang-button active" data-lang="zh">中文</button>
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero reveal-item">
+        <div>
+          <p class="eyebrow" data-i18n="demoKicker">Interactive Demo</p>
+          <h1 data-i18n="demoPanelTitle">柔性面板演示</h1>
+        </div>
+        <p data-i18n="demoPanelIntro">拖动压力值，观察界面反馈和状态变化。</p>
+      </section>
+
+      <section class="content-section demo-stage reveal-item">
+        <div class="soft-demo" style="--pressure: 48%">
+          <div class="soft-pad">
+            <span data-i18n="softZone1">灯光</span>
+            <span data-i18n="softZone2">音量</span>
+            <span data-i18n="softZone3">反馈</span>
+          </div>
+          <label class="pressure-control">
+            <span data-i18n="pressureLabel">压力输入</span>
+            <input type="range" min="0" max="100" value="48" data-pressure-control />
+          </label>
+        </div>
+        <div class="demo-output">
+          <span data-i18n="demoOutputLabel">当前状态</span>
+          <h2 data-pressure-title data-i18n="pressureMediumTitle">稳定按压</h2>
+          <p data-pressure-body data-i18n="pressureMediumBody">面板识别为确认输入，触觉反馈为一次清晰脉冲。</p>
+          <a class="ghost-link" href="./projects.html" data-i18n="backProjects">返回项目页</a>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

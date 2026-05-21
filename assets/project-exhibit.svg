@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Interactive exhibition placeholder</title>
+  <desc id="desc">A gallery wall with tactile cultural archive panels.</desc>
+  <rect width="640" height="480" fill="#FFFDF8"/>
+  <rect x="70" y="70" width="500" height="340" fill="#1F2422"/>
+  <rect x="104" y="112" width="132" height="216" fill="#F7F6F1"/>
+  <rect x="254" y="112" width="132" height="216" fill="#DCEFEB"/>
+  <rect x="404" y="112" width="132" height="216" fill="#F1D27B"/>
+  <path d="M130 248C154 200 188 292 212 226" stroke="#C0462F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M282 174H358M282 214H334M282 254H350" stroke="#006A67" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="470" cy="220" r="46" fill="#FFFDF8" stroke="#1F2422" stroke-width="8"/>
+  <path d="M116 362H524" stroke="#FFFDF8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="170" cy="362" r="10" fill="#D8A321"/>
+  <circle cx="320" cy="362" r="10" fill="#006A67"/>
+  <circle cx="470" cy="362" r="10" fill="#C0462F"/>
+</svg>

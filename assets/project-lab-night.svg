@@ -1,0 +1,21 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tactile prototyping workshop placeholder</title>
+  <desc id="desc">A dark workshop scene with glowing projection, prototype boards and sensing wires.</desc>
+  <rect width="720" height="540" fill="#151A18"/>
+  <circle cx="548" cy="126" r="170" fill="#D8A321" opacity="0.22"/>
+  <circle cx="168" cy="150" r="124" fill="#006A67" opacity="0.26"/>
+  <rect x="64" y="82" width="258" height="158" fill="#FFFDF8"/>
+  <path d="M94 184C138 120 182 206 226 142C250 108 280 102 306 96" stroke="#C44730" stroke-width="8" stroke-linecap="round"/>
+  <path d="M94 118H180M94 146H144" stroke="#171B19" stroke-width="7" stroke-linecap="round"/>
+  <rect x="382" y="76" width="244" height="184" fill="#203530" stroke="#FFFDF8" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M414 214H594M414 184H520M414 154H570" stroke="#D8A321" stroke-width="8" stroke-linecap="round"/>
+  <path d="M0 326H720" stroke="#FFFDF8" stroke-opacity="0.18" stroke-width="2"/>
+  <rect x="66" y="326" width="588" height="128" fill="#242C29"/>
+  <rect x="114" y="352" width="126" height="72" fill="#DCEFEB" stroke="#FFFDF8" stroke-opacity="0.28"/>
+  <rect x="286" y="352" width="126" height="72" fill="#F1D27B" stroke="#FFFDF8" stroke-opacity="0.28"/>
+  <rect x="458" y="352" width="126" height="72" fill="#F4D9D3" stroke="#FFFDF8" stroke-opacity="0.28"/>
+  <path d="M240 388C272 326 320 450 350 388C382 326 428 450 458 388" stroke="#FFFDF8" stroke-opacity="0.72" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="177" cy="388" r="17" fill="#006A67"/>
+  <circle cx="349" cy="388" r="17" fill="#D8A321"/>
+  <circle cx="521" cy="388" r="17" fill="#C44730"/>
+</svg>

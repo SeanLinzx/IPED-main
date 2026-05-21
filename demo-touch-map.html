@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="可触城市导览界面 demo 演示页面。" />
+    <title>Demo | 可触城市导览界面</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-progress" aria-hidden="true"></div>
+    <div class="tactile-cursor" aria-hidden="true"></div>
+    <header class="site-header" data-i18n-attr="aria-label:headerAria">
+      <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
+        <span class="brand-mark">TIL</span>
+        <span class="brand-copy">
+          <span data-i18n="brandCn">可触界面实验室</span>
+          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        </span>
+      </a>
+      <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./about.html" data-i18n="navAbout">关于</a>
+        <a href="./projects.html" data-i18n="navProjects">项目</a>
+        <a href="./publications.html" data-i18n="navPublications">出版</a>
+        <a href="./join.html" data-i18n="navJoin">加入我们</a>
+      </nav>
+      <div class="language-switch" role="group" data-i18n-attr="aria-label:languageAria">
+        <button type="button" class="lang-button active" data-lang="zh">中文</button>
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero reveal-item">
+        <div>
+          <p class="eyebrow" data-i18n="demoKicker">Interactive Demo</p>
+          <h1 data-i18n="demoTouchTitle">触觉导览演示</h1>
+        </div>
+        <p data-i18n="demoTouchIntro">点击地图节点，查看不同触觉提示与路径信息。</p>
+      </section>
+
+      <section class="content-section demo-stage reveal-item">
+        <div class="demo-map-panel">
+          <img src="./assets/project-touch-map.svg" alt="触觉地图 demo 背景" />
+          <button class="demo-node active" style="--x: 18%; --y: 72%" data-title-key="touchNode1Title" data-body-key="touchNode1Body">A</button>
+          <button class="demo-node" style="--x: 47%; --y: 47%" data-title-key="touchNode2Title" data-body-key="touchNode2Body">B</button>
+          <button class="demo-node" style="--x: 82%; --y: 25%" data-title-key="touchNode3Title" data-body-key="touchNode3Body">C</button>
+        </div>
+        <div class="demo-output">
+          <span data-i18n="demoOutputLabel">当前节点</span>
+          <h2 data-demo-title data-i18n="touchNode1Title">入口触点</h2>
+          <p data-demo-body data-i18n="touchNode1Body">短震动提示用户已进入导览区域，凸起线条表示主路径开始。</p>
+          <a class="ghost-link" href="./projects.html" data-i18n="backProjects">返回项目页</a>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

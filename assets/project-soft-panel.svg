@@ -1,0 +1,14 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Soft touch control panel placeholder</title>
+  <desc id="desc">A textile-like soft control interface with pressure zones.</desc>
+  <rect width="640" height="480" fill="#FFFDF8"/>
+  <path d="M0 80H640M0 160H640M0 240H640M0 320H640M0 400H640M80 0V480M160 0V480M240 0V480M320 0V480M400 0V480M480 0V480M560 0V480" stroke="#E3DFD1" stroke-width="2"/>
+  <rect x="88" y="84" width="464" height="312" fill="#F7F6F1" stroke="#1F2422" stroke-width="2"/>
+  <rect x="128" y="124" width="96" height="232" fill="#DCEFEB" stroke="#006A67" stroke-width="2"/>
+  <rect x="272" y="124" width="96" height="232" fill="#F1D27B" stroke="#1F2422" stroke-width="2"/>
+  <rect x="416" y="124" width="96" height="232" fill="#F4D9D3" stroke="#C0462F" stroke-width="2"/>
+  <circle cx="176" cy="192" r="28" fill="#006A67"/>
+  <circle cx="320" cy="240" r="46" fill="#FFFDF8" stroke="#1F2422" stroke-width="8"/>
+  <circle cx="464" cy="288" r="30" fill="#C0462F"/>
+  <path d="M150 326H202M294 326H346M438 326H490" stroke="#1F2422" stroke-width="8" stroke-linecap="round"/>
+</svg>

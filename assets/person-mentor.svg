@@ -1,0 +1,10 @@
+<svg width="520" height="560" viewBox="0 0 520 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Faculty portrait placeholder">
+  <rect width="520" height="560" fill="#ECE8DA"/>
+  <rect x="42" y="42" width="436" height="476" fill="#FFFDF8" stroke="#171B19" stroke-width="3"/>
+  <circle cx="260" cy="190" r="86" fill="#D8A321"/>
+  <path d="M166 372C184 298 220 272 260 272C300 272 336 298 354 372V464H166V372Z" fill="#171B19"/>
+  <path d="M212 198C236 220 284 220 308 198" stroke="#171B19" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="230" cy="176" r="7" fill="#171B19"/>
+  <circle cx="290" cy="176" r="7" fill="#171B19"/>
+  <path d="M118 92H220M118 124H184" stroke="#006A67" stroke-width="10" stroke-linecap="round"/>
+</svg>

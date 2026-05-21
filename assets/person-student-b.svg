@@ -1,0 +1,10 @@
+<svg width="520" height="560" viewBox="0 0 520 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Master student portrait placeholder">
+  <rect width="520" height="560" fill="#F4D9D3"/>
+  <rect x="42" y="42" width="436" height="476" fill="#FFFDF8" stroke="#171B19" stroke-width="3"/>
+  <circle cx="260" cy="192" r="84" fill="#171B19"/>
+  <path d="M154 378C178 302 218 276 260 276C302 276 342 302 366 378V466H154V378Z" fill="#D8A321"/>
+  <path d="M218 204C242 222 278 222 302 204" stroke="#FFFDF8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="230" cy="176" r="7" fill="#FFFDF8"/>
+  <circle cx="290" cy="176" r="7" fill="#FFFDF8"/>
+  <path d="M108 114C142 84 184 84 218 114" stroke="#006A67" stroke-width="9" stroke-linecap="round"/>
+</svg>

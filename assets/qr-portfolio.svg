@@ -1,0 +1,10 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Portfolio QR placeholder">
+  <rect width="220" height="220" fill="#FFFDF8"/>
+  <rect x="20" y="20" width="56" height="56" fill="#1F2422"/>
+  <rect x="34" y="34" width="28" height="28" fill="#FFFDF8"/>
+  <rect x="144" y="20" width="56" height="56" fill="#1F2422"/>
+  <rect x="158" y="34" width="28" height="28" fill="#FFFDF8"/>
+  <rect x="20" y="144" width="56" height="56" fill="#1F2422"/>
+  <rect x="34" y="158" width="28" height="28" fill="#FFFDF8"/>
+  <path d="M94 24H116V46H94V24ZM122 58H144V80H122V58ZM88 88H132V110H88V88ZM154 88H176V110H154V88ZM88 122H110V144H88V122ZM120 122H142V144H120V122ZM164 122H198V144H164V122ZM88 164H132V198H88V164ZM154 164H176V186H154V164Z" fill="#C0462F"/>
+</svg>
