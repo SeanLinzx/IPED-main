@@ -23,6 +23,9 @@ const dictionary = {
     metricProjects: "项目原型",
     metricStudios: "教学与工作坊",
     metricSince: "主页样例",
+    homeIndexKicker: "Research Index",
+    homeIndexTitle: "研究主题",
+    homeIndexIntro: "主页只保留实验室简介与研究索引；成员、项目、出版和加入信息请进入对应页面查看。",
     aboutKicker: "About",
     aboutTitle: "关于实验室",
     aboutP1:
@@ -188,6 +191,10 @@ const dictionary = {
     metricProjects: "Prototypes",
     metricStudios: "Studios & Workshops",
     metricSince: "Site Sample",
+    homeIndexKicker: "Research Index",
+    homeIndexTitle: "Research Themes",
+    homeIndexIntro:
+      "The homepage keeps only the lab introduction and research index. People, projects, publications and joining information live on their dedicated pages.",
     aboutKicker: "About",
     aboutTitle: "About the Lab",
     aboutP1:
