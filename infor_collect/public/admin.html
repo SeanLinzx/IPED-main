@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>信息收集管理 | 可触界面实验室</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrap" id="loginView">
+      <form class="login" id="loginForm">
+        <p class="kicker">Admin</p>
+        <h1>查看提交</h1>
+        <p class="lede">管理员密码登录后可筛选、阅读和导出全部问卷。</p>
+        <div class="field" style="margin-top: 18px">
+          <label>密码</label>
+          <input type="password" name="password" required autocomplete="current-password" />
+        </div>
+        <div class="actions">
+          <button class="primary" type="submit">进入</button>
+          <span class="status" id="loginStatus"></span>
+        </div>
+        <p class="help"><a href="./">返回填写页</a></p>
+      </form>
+    </div>
+
+    <div class="wrap" id="adminView" hidden>
+      <header class="masthead">
+        <div>
+          <p class="kicker">Inbox</p>
+          <h1>提交记录</h1>
+          <p class="lede">按类型筛选，点一行查看完整字段和附件。状态可标为待处理、已审阅、已采用或退回。</p>
+        </div>
+        <div>
+          <a class="admin-link" href="./">填写页</a>
+          <button class="admin-link" type="button" id="exportBtn">导出 CSV</button>
+          <button class="admin-link" type="button" id="logoutBtn">退出</button>
+        </div>
+      </header>
+
+      <section class="sheet">
+        <div class="stats" id="stats"></div>
+        <div class="toolbar">
+          <select id="typeFilter">
+            <option value="">全部类型</option>
+          </select>
+          <select id="statusFilter">
+            <option value="">全部状态</option>
+            <option value="pending">待处理</option>
+            <option value="reviewed">已审阅</option>
+            <option value="published">已采用</option>
+            <option value="rejected">退回</option>
+          </select>
+          <input id="q" type="search" placeholder="搜索姓名、联系方式、正文" style="max-width: 280px" />
+        </div>
+        <div class="layout">
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>类型</th>
+                  <th>提交人</th>
+                  <th>公开</th>
+                  <th>状态</th>
+                  <th>时间</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+            <div class="empty" id="empty" hidden>还没有匹配的提交。</div>
+          </div>
+          <aside class="detail" id="detail">
+            <p class="lede">在左侧选择一条记录。</p>
+          </aside>
+        </div>
+      </section>
+    </div>
+    <script src="./admin.js"></script>
+  </body>
+</html>

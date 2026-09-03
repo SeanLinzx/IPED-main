@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="湖南大学设计艺术学院可触界面实验室主页样例，包含关于、项目、出版、加入我们等内容。"
+      content="湖南大学设计艺术学院可触界面实验室，包含关于、项目、出版、加入我们等内容。"
     />
     <title>湖南大学设计艺术学院 可触界面实验室</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260903p" />
   </head>
   <body>
     <div class="page-progress" aria-hidden="true"></div>
     <div class="tactile-cursor" aria-hidden="true"></div>
     <header class="site-header" data-i18n-attr="aria-label:headerAria">
       <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
-        <span class="brand-mark">TIL</span>
+        <span class="brand-mark"><img src="./assets/iped-logo-mark.png" alt="IPED" /></span>
         <span class="brand-copy">
           <span data-i18n="brandCn">可触界面实验室</span>
           <span data-i18n="brandEn">Tangible Interface Lab</span>
@@ -40,14 +40,16 @@
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="heroEyebrow">湖南大学设计艺术学院</p>
           <h1 data-i18n="heroTitle">可触界面实验室</h1>
-          <p class="hero-en" data-i18n="heroSubtitle">Tangible Interface Lab</p>
+          <p class="hero-en" data-i18n="heroSubtitle">Touchable Interface Lab</p>
           <p class="hero-intro" data-i18n="heroIntro">
-            面向智能产品、空间媒介与公共服务，研究“可触、可感、可协作”的新型人机界面。
+            致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。
           </p>
         </div>
 
-        <figure class="home-deco tilt-card" aria-label="可触界面实验室视觉占位">
-          <img src="./assets/lab-photo-hero.svg" alt="可触界面实验室工作台占位图" />
+        <figure class="home-deco tilt-card">
+          <a href="./project.html?id=vatti-oasis">
+            <img src="./assets/projects/vatti-oasis/cover.jpg" alt="华帝绿洲生活形态趋势创新研究" />
+          </a>
         </figure>
       </section>
 
@@ -55,48 +57,8 @@
         <div class="home-index-head">
           <p class="section-kicker" data-i18n="homeIndexKicker">Research Index</p>
           <h2 id="home-index-title" data-i18n="homeIndexTitle">研究主题</h2>
-          <p data-i18n="homeIndexIntro">
-            主页只保留实验室简介与研究索引；成员、项目、出版和加入信息请进入对应页面查看。
-          </p>
         </div>
-
-        <div class="home-topic-list">
-          <article class="home-topic">
-            <img src="./assets/project-touch-map.svg" alt="可触交互项目占位图" />
-            <div>
-              <h3 data-i18n="focus1Title">可触交互</h3>
-              <a href="./projects.html" data-i18n="project1Title">可触城市导览界面</a>
-              <a href="./demo-touch-map.html" data-i18n="demoTouchTitle">触觉导览演示</a>
-            </div>
-          </article>
-
-          <article class="home-topic">
-            <img src="./assets/project-soft-panel.svg" alt="智能材料项目占位图" />
-            <div>
-              <h3 data-i18n="focus2Title">智能材料</h3>
-              <a href="./projects.html" data-i18n="project2Title">柔性触控控制面板</a>
-              <a href="./demo-soft-panel.html" data-i18n="demoPanelTitle">柔性面板演示</a>
-            </div>
-          </article>
-
-          <article class="home-topic">
-            <img src="./assets/project-exhibit.svg" alt="空间媒介项目占位图" />
-            <div>
-              <h3 data-i18n="focus3Title">空间媒介</h3>
-              <a href="./projects.html" data-i18n="project3Title">湖湘文化触感档案</a>
-              <a href="./demo-exhibit.html" data-i18n="demoExhibitTitle">互动展陈演示</a>
-            </div>
-          </article>
-
-          <article class="home-topic">
-            <img src="./assets/project-lab-night.svg" alt="设计研究项目占位图" />
-            <div>
-              <h3 data-i18n="focus4Title">设计研究</h3>
-              <a href="./about.html" data-i18n="aboutMissionTitle">使命与愿景</a>
-              <a href="./publications.html" data-i18n="pubTitle">出版与成果</a>
-            </div>
-          </article>
-        </div>
+        <div data-home-index></div>
       </section>
     </main>
 
@@ -116,25 +78,26 @@
 
       <div class="qr-grid" data-i18n-attr="aria-label:qrAria">
         <figure>
-          <img src="./assets/qr-wechat.svg" alt="微信公众号二维码占位" />
+          <img src="./assets/qr-wechat.svg" alt="微信公众号二维码" />
           <figcaption data-i18n="qrWechat">微信公众号</figcaption>
         </figure>
         <figure>
-          <img src="./assets/qr-portfolio.svg" alt="作品集二维码占位" />
+          <img src="./assets/qr-portfolio.svg" alt="作品集二维码" />
           <figcaption data-i18n="qrPortfolio">作品集入口</figcaption>
         </figure>
         <figure>
-          <img src="./assets/qr-join.svg" alt="加入我们二维码占位" />
+          <img src="./assets/qr-join.svg" alt="加入我们二维码" />
           <figcaption data-i18n="qrJoin">加入咨询</figcaption>
         </figure>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026 Tangible Interface Lab</span>
-        <span data-i18n="footerNote">本站为主页样例，图片与二维码均为占位。</span>
+        <span data-i18n="footerNote"></span>
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./projects-data.js?v=20260903k"></script>
+    <script src="./script.js?v=20260903p"></script>
   </body>
 </html>

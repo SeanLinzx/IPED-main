@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>信息收集 | 可触界面实验室</title>
+    <link rel="stylesheet" href="./styles.css?v=20260903m" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="masthead">
+        <div>
+          <p class="kicker">IPED · Touchable Interface Lab</p>
+          <h1>实验室主页信息收集</h1>
+          <p class="lede">
+            先选择提交类型，表单会换成对应字段。每位成员、每个项目、每条成果请分开提交。图片请直接上传；视频、Demo 与外部资料可填写链接。
+          </p>
+        </div>
+        <a class="admin-link" href="./admin">管理查看</a>
+      </header>
+
+      <section class="sheet" id="app">
+        <div class="sheet-head">
+          <div>
+            <strong>1. 选择类型</strong>
+            <p id="typeHint">不同类型会展开不同栏目，公共信息（姓名、联系方式、公开权限）始终保留。</p>
+          </div>
+          <span class="brand-mark"><img src="./iped-logo.png" alt="IPED" /></span>
+        </div>
+        <div class="type-choices" id="typeGrid"></div>
+
+        <form class="form-body" id="form">
+          <div id="commonMount"></div>
+          <div id="typeMount"></div>
+          <div id="notesMount"></div>
+          <div class="actions">
+            <button class="primary" type="submit" id="submitBtn">提交这份资料</button>
+            <span class="status" id="formStatus"></span>
+          </div>
+        </form>
+
+        <div class="success" id="success">
+          <h2>已经收到</h2>
+          <p class="lede" id="successText">感谢提交。管理员可以在后台查看、筛选和导出。</p>
+          <p><button class="primary" type="button" id="againBtn">再交一份</button></p>
+        </div>
+      </section>
+    </div>
+    <script src="./form.js?v=20260903n"></script>
+  </body>
+</html>

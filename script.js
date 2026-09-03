@@ -3,7 +3,7 @@ const dictionary = {
     headerAria: "站点页眉",
     brandAria: "返回可触界面实验室首页",
     brandCn: "可触界面实验室",
-    brandEn: "Tangible Interface Lab",
+    brandEn: "Touchable Interface Lab",
     navAria: "主导航",
     navAbout: "关于",
     navProjects: "项目",
@@ -12,8 +12,8 @@ const dictionary = {
     languageAria: "语言切换",
     heroEyebrow: "湖南大学设计艺术学院",
     heroTitle: "可触界面实验室",
-    heroSubtitle: "Tangible Interface Lab",
-    heroIntro: "面向智能产品、空间媒介与公共服务，研究“可触、可感、可协作”的新型人机界面。",
+    heroSubtitle: "Touchable Interface Lab",
+    heroIntro: "致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。",
     heroProjectCta: "浏览项目",
     heroJoinCta: "合作与加入",
     heroCaptionLabel: "Prototype Desk",
@@ -22,30 +22,33 @@ const dictionary = {
     metricResearch: "研究方向",
     metricProjects: "项目原型",
     metricStudios: "教学与工作坊",
-    metricSince: "主页样例",
+    metricSince: "成立",
     homeIndexKicker: "Research Index",
     homeIndexTitle: "研究主题",
-    homeIndexIntro: "主页只保留实验室简介与研究索引；成员、项目、出版和加入信息请进入对应页面查看。",
+    homeIndexIntro: "",
     aboutKicker: "About",
     aboutTitle: "关于实验室",
     aboutP1:
       "可触界面实验室关注数字信息如何通过材料、形态、触觉反馈和空间行为被人感知与操作。我们将交互设计、工业设计、服务设计、智能硬件与计算媒介结合，探索下一代具身交互体验。",
     aboutP2:
       "实验室以“从屏幕到触感、从工具到场景、从原型到真实使用”为线索，服务于健康照护、文化体验、教育创新、公共空间与智能产品等方向。",
-    aboutPageKicker: "About the Lab",
-    aboutPageTitle: "从屏幕到触感的界面研究",
-    aboutPageIntro: "我们研究数字信息如何借由材料、形态、触觉反馈与空间行为，被更自然地感知、操作和协作。",
+    aboutPageKicker: "Touchable Interface Lab",
+    aboutPageTitle: "可触界面实验室",
+    aboutPageIntro: "致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。",
     aboutMissionTitle: "使命与愿景",
     aboutMissionBody1:
-      "可触界面实验室希望将交互设计、工业设计、智能硬件、材料实验和设计研究连接起来，形成面向真实场景的原型研究路径。",
-    aboutMissionBody2: "我们关注的不只是“把功能做出来”，也关注材料如何表达信息、触感如何帮助理解、空间如何成为界面。",
+      "可触界面实验室（Touchable Interface Lab）致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究领域。我们秉持平等、包容、多元的核心价值，以人文关怀为底色，坚信技术发展的终极意义在于服务人的真实需求。",
+    aboutMissionBody2: "我们始终以以人为中心为根本出发点，在推动技术创新的同时，不忘设计的人文本质。",
     aboutTracksTitle: "研究框架",
-    aboutTrack1Title: "具身交互",
-    aboutTrack1Body: "把身体动作、触摸反馈和实体控制纳入交互系统。",
-    aboutTrack2Title: "材料原型",
-    aboutTrack2Body: "通过织物、柔性材料、光、电、传感器构建设计实验。",
-    aboutTrack3Title: "社会场景",
-    aboutTrack3Body: "面向公共服务、文化展陈、健康照护和教育创新进行验证。",
+    aboutTrack1Title: "学术视野",
+    aboutTrack1Body:
+      "聚焦具身智能交互与用户体验评估，构建人智协同策略体系；引入不确定性理论与机器学习算法，量化系统、环境与人的不确定性。依托与 UAL、佐治亚理工、金匠等国际顶尖院校的深度合作，始终站在全球学术前沿。",
+    aboutTrack2Title: "研究方法",
+    aboutTrack2Body:
+      "打破学科壁垒，融合设计、机械、数学、计算机等多学科视角；运用人因智能与混合量化方法，结合精准质性研究，构建从用户研究、人因实验到数据建模、设计标准的完整闭环。",
+    aboutTrack3Title: "以人为中心",
+    aboutTrack3Body:
+      "以平等、包容、多元为价值底色。在推动技术创新的同时，让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
     aboutOpenTitle: "点开了解",
     aboutOpen1Title: "一次原型研究怎么开始？",
     aboutOpen1Body: "通常从真实场景观察开始，整理触点、材料机会和交互假设，再用低保真模型快速测试触觉、空间和信息反馈。",
@@ -61,8 +64,8 @@ const dictionary = {
     focus3Body: "面向展陈、城市服务与公共场景的交互系统设计。",
     focus4Title: "设计研究",
     focus4Body: "以用户研究、原型评估和论文写作沉淀方法。",
-    peopleTitle: "团队占位",
-    peopleIntro: "参考站点的成员网格结构，这里先放导师、博士生与硕士生的头像占位。后续可替换真实照片和研究方向。",
+    peopleTitle: "团队",
+    peopleIntro: "导师、研究生与合作研究者。",
     person1Name: "导师姓名",
     person1Role: "实验室负责人 / 交互设计",
     person2Name: "博士生 A",
@@ -73,22 +76,58 @@ const dictionary = {
     person4Role: "智能硬件与原型开发",
     projectsKicker: "Projects",
     projectsTitle: "代表项目",
-    projectsIntro: "以下为样例项目占位。后续可替换为导师课题、学生作品、竞赛成果、企业合作与展览项目。",
-    projectsPageKicker: "Projects",
-    projectsPageTitle: "代表项目与原型实验",
-    projectsPageIntro: "这里展示实验室在公共服务、智能硬件、互动展陈与教学工作坊中的样例项目。",
-    project1Tag: "公共服务",
-    project1Title: "可触城市导览界面",
-    project1Body: "面向视障与银龄人群的多感官城市信息导览原型。",
-    project2Tag: "智能硬件",
-    project2Title: "柔性触控控制面板",
-    project2Body: "探索织物、压力传感与可穿戴设备中的自然控制方式。",
-    project3Tag: "互动展陈",
-    project3Title: "湖湘文化触感档案",
-    project3Body: "将纹样、器物与地方叙事转译为可触摸、可互动的展览媒介。",
-    project4Tag: "工作坊",
-    project4Title: "触感原型工作坊",
-    project4Body: "以 Arduino、织物传感、投影映射和快速用户测试搭建一周制原型冲刺。",
+    projectsIntro: "",
+    projectsPageKicker: "Research",
+    projectsPageTitle: "研究项目",
+    projectsPageIntro: "",
+    researchCatIndustry: "校企合作",
+    researchCatGrant: "科研课题",
+    researchCatStudio: "教学与工作坊",
+    researchCatExhibit: "展览",
+    researchCatContest: "竞赛",
+    researchCatOther: "其他研究项目",
+    rOpGestureTitle: "Color OS手机端常用手势交互规范研究",
+    rOpGestureBody: "建立手势定义、阈值与评价模型，并写入系统基础设定",
+    rOpMotionTitle: "手势交互动效人因数据研究",
+    rOpMotionBody: "用实验拟合差异化触发阈值，让手势从千人一面转向千人千面",
+    rOpAiTitle: "AI产品用户洞察研究",
+    rOpAiBody: "围绕超级助手、影像与知识服务，为系统级AI体验提供依据",
+    rOpUsabilityTitle: "产品易用性感知项目",
+    rOpUsabilityBody: "构建智能产品智能感评价体系与大模型自动评估流程",
+    rOpAutoUxTitle: "自动化用户体验研究工具",
+    rOpAutoUxBody: "用多模态大模型完成界面理解、角色模拟与自动测评",
+    rVivoHfTitle: "构建人因研究全景框架",
+    rVivoHfBody: "整合智能手机软硬件人因研究，形成全景图与可视化平台",
+    rVattiHwTitle: "华帝硬件UX体验创新",
+    rVattiHwBody: "探索未来厨房的厨电硬件交互概念与人机技术路线",
+    rVattiBasketTitle: "华帝洗碗机碗篮体验设计",
+    rVattiBasketBody: "按中式餐具习惯重构碗篮结构，方案已进入量产",
+    rVattiOasisTitle: "华帝绿洲生活形态趋势创新研究",
+    rVattiOasisBody: "洞察年轻人厨房生活，提出四类未来厨电场景",
+    rNssfcTitle: "具身智能下产品触觉舒适性评价与设计研究",
+    rNssfcBody: "构建触觉舒适性理论体系与实体界面设计策略",
+    rMoeIchTitle: "面向触觉体验的跨文化非遗共创方法研究",
+    rMoeIchBody: "以长沙窑为对象，开发可传递经验性知识的触觉共创装置",
+    rYueluTitle: "面向智能终端场景的人机交互技术创新和产业应用",
+    rYueluBody: "贯通智能通讯、出行与健康的人因指标、建模与验证闭环",
+    rPlatformTitle: "面向智能人机交互的工业设计数据平台与设计工具系统研究",
+    rPlatformBody: "提出无缝多通道体验框架，并落地卡牌工具与场景规范",
+    rEngineTitle: "Design Engine 设计引擎",
+    rEngineBody: "国际工业设计智库资源与跨时区协同育人平台",
+    rSmecTitle: "SMEC",
+    rSmecBody: "将无缝多模态体验理论转化为卡片式参与式设计工具",
+    project1Tag: "科研课题",
+    project1Title: "具身智能下产品触觉舒适性评价与设计研究",
+    project1Body: "构建触觉舒适性理论体系与实体界面设计策略。",
+    project2Tag: "校企合作",
+    project2Title: "Color OS手机端常用手势交互规范研究",
+    project2Body: "建立手势定义、阈值与评价模型，并写入系统基础设定。",
+    project3Tag: "校企合作",
+    project3Title: "华帝绿洲生活形态趋势创新研究",
+    project3Body: "洞察年轻人厨房生活，提出四类未来厨电场景。",
+    project4Tag: "教学与工作坊",
+    project4Title: "Design Engine 设计引擎",
+    project4Body: "国际工业设计智库资源与跨时区协同育人平台。",
     openDemo: "打开演示",
     demoHubTitle: "Demo 演示",
     demoKicker: "Interactive Demo",
@@ -129,16 +168,16 @@ const dictionary = {
     pubTitle: "出版与成果",
     pubPageKicker: "Publication",
     pubPageTitle: "出版、专利与展示成果",
-    pubPageIntro: "这里可归档论文、专利、软著、展览、奖项与工具包，后续支持按年份和类型筛选。",
+    pubPageIntro: "论文、专利、软著、展览与奖项。",
     pub1Title: "Tangible Interfaces for Inclusive Public Services",
-    pub1Body: "论文/会议占位：可替换为正式题名、作者、期刊或会议、DOI 链接。",
+    pub1Body: "面向公共服务的可触界面研究。",
     pub2Title: "触觉反馈在智能产品体验中的设计方法",
-    pub2Body: "中文论文占位：适合放课程论文、核心期刊、设计学年会或展览图录。",
+    pub2Body: "智能产品中的触觉反馈设计方法。",
     pub3Title: "Material Prototyping Toolkit",
-    pub3Body: "工具包/专利/软件著作权占位：记录原型、方法、代码仓库与媒体报道。",
-    pubOpen1Body: "可点开区域：这里可以补充摘要、作者贡献、关联项目、BibTeX、PDF、DOI 和媒体链接。",
-    pubOpen2Body: "可点开区域：这里适合放研究问题、方法框架、图表摘要和相关课程/项目链接。",
-    pubOpen3Body: "可点开区域：这里可以展示工具包模块、开源仓库、使用说明和下载入口。",
+    pub3Body: "材料原型方法与工具包。",
+    pubOpen1Body: "",
+    pubOpen2Body: "",
+    pubOpen3Body: "",
     joinKicker: "Join Us",
     joinTitle: "加入我们",
     joinPageKicker: "Join Us",
@@ -146,7 +185,7 @@ const dictionary = {
     joinPageIntro: "欢迎研究生、访问学生、合作机构与企业团队联系实验室，开展课程、课题、展览和原型验证。",
     joinBody:
       "欢迎对交互设计、智能硬件、材料实验、用户研究、前端开发与设计理论感兴趣的同学联系。也欢迎企业、博物馆、医院、公共机构与我们开展联合课题和原型验证。",
-    joinPanelTitle: "联系占位",
+    joinPanelTitle: "联系",
     joinPanelBody: "湖南大学设计艺术学院 · 可触界面实验室",
     joinNeedsTitle: "我们期待",
     joinNeed1Title: "会做原型的人",
@@ -159,17 +198,17 @@ const dictionary = {
     joinOpen2Body: "建议准备一页研究兴趣说明，包含关注人群、方法经验、阅读过的相关论文或案例。",
     joinOpen3Body: "合作方可提供场景背景、用户群体、现有流程、约束条件和希望验证的问题。",
     footerLab: "湖南大学设计艺术学院 可触界面实验室",
-    footerDesc: "Tangible Interface Lab, School of Design and Art, Hunan University",
-    qrAria: "二维码占位",
+    footerDesc: "Touchable Interface Lab, School of Design and Art, Hunan University",
+    qrAria: "二维码",
     qrWechat: "微信公众号",
     qrPortfolio: "作品集入口",
     qrJoin: "加入咨询",
-    footerNote: "本站为主页样例，图片与二维码均为占位。"
+    footerNote: ""
   },
   en: {
     headerAria: "Site header",
-    brandAria: "Back to Tangible Interface Lab home",
-    brandCn: "Tangible Interface Lab",
+    brandAria: "Back to Touchable Interface Lab home",
+    brandCn: "Touchable Interface Lab",
     brandEn: "School of Design and Art, HNU",
     navAria: "Main navigation",
     navAbout: "About",
@@ -178,10 +217,10 @@ const dictionary = {
     navJoin: "Join Us",
     languageAria: "Language switcher",
     heroEyebrow: "School of Design and Art, Hunan University",
-    heroTitle: "Tangible Interface Lab",
+    heroTitle: "Touchable Interface Lab",
     heroSubtitle: "可触界面实验室",
     heroIntro:
-      "We explore touchable, perceivable and collaborative interfaces for smart products, spatial media and public services.",
+      "We explore haptic, multisensory and multimodal human–computer interaction, intelligent product interfaces, and user-experience design.",
     heroProjectCta: "View Projects",
     heroJoinCta: "Collaborate",
     heroCaptionLabel: "Prototype Desk",
@@ -190,33 +229,35 @@ const dictionary = {
     metricResearch: "Research Tracks",
     metricProjects: "Prototypes",
     metricStudios: "Studios & Workshops",
-    metricSince: "Site Sample",
+    metricSince: "Established",
     homeIndexKicker: "Research Index",
     homeIndexTitle: "Research Themes",
-    homeIndexIntro:
-      "The homepage keeps only the lab introduction and research index. People, projects, publications and joining information live on their dedicated pages.",
+    homeIndexIntro: "",
     aboutKicker: "About",
     aboutTitle: "About the Lab",
     aboutP1:
       "The Tangible Interface Lab studies how digital information can be perceived and operated through materials, forms, haptic feedback and spatial behavior. We connect interaction design, industrial design, service design, smart hardware and computational media.",
     aboutP2:
       "Our work moves from screens to touch, from tools to scenarios, and from prototypes to real use across healthcare, culture, education, public space and smart products.",
-    aboutPageKicker: "About the Lab",
-    aboutPageTitle: "Interface research from screen to touch",
+    aboutPageKicker: "Touchable Interface Lab",
+    aboutPageTitle: "Touchable Interface Lab",
     aboutPageIntro:
-      "We study how digital information can be perceived, operated and shared through materials, forms, haptic feedback and spatial behavior.",
+      "We explore haptic, multisensory and multimodal human–computer interaction, intelligent product interfaces, and user-experience design.",
     aboutMissionTitle: "Mission and Vision",
     aboutMissionBody1:
-      "The lab connects interaction design, industrial design, smart hardware, material experiments and design research into prototype-driven work for real scenarios.",
+      "Touchable Interface Lab explores the intersection of haptic, multisensory and multimodal human–computer interaction, intelligent product interfaces, and user-experience design. We hold equality, inclusion and diversity as core values, grounded in humanistic care, and believe the ultimate purpose of technology is to serve people’s real needs.",
     aboutMissionBody2:
-      "We care not only about making functions work, but also about how materials express information, how touch supports understanding, and how space becomes an interface.",
+      "We remain human-centered: advancing technical innovation without losing the humanistic nature of design.",
     aboutTracksTitle: "Research Framework",
-    aboutTrack1Title: "Embodied Interaction",
-    aboutTrack1Body: "Bringing body movement, touch feedback and physical controls into interaction systems.",
-    aboutTrack2Title: "Material Prototyping",
-    aboutTrack2Body: "Building design experiments with textiles, soft materials, light, electronics and sensors.",
-    aboutTrack3Title: "Social Scenarios",
-    aboutTrack3Body: "Testing ideas in public service, cultural exhibition, healthcare and education contexts.",
+    aboutTrack1Title: "Research Vision",
+    aboutTrack1Body:
+      "We focus on embodied intelligent interaction and user-experience evaluation, building strategies for human–AI collaboration. Uncertainty theory and machine learning help us quantify uncertainty in systems, environments and people. Partnerships with UAL, Georgia Tech, Goldsmiths and other leading institutions keep the work at the international frontier.",
+    aboutTrack2Title: "Research Methods",
+    aboutTrack2Body:
+      "We work across design, mechanical engineering, mathematics and computing. Combining human-factors intelligence, mixed quantitative methods and precise qualitative research, we close the loop from user research and human-factors experiments to data modeling and design standards.",
+    aboutTrack3Title: "Human-Centered",
+    aboutTrack3Body:
+      "Equality, inclusion and diversity sit at the core. As we push technical innovation, every interaction should feel more natural and inclusive, and every technology should serve human wellbeing.",
     aboutOpenTitle: "Open to Explore",
     aboutOpen1Title: "How does a prototype study begin?",
     aboutOpen1Body:
@@ -236,8 +277,7 @@ const dictionary = {
     focus4Title: "Design Research",
     focus4Body: "User studies, prototype evaluation and research writing as reusable methods.",
     peopleTitle: "People",
-    peopleIntro:
-      "Following the reference site's people grid, these are temporary placeholders for faculty, PhD students and master's students. Replace them with real portraits and research interests later.",
+    peopleIntro: "Faculty, graduate students and collaborating researchers.",
     person1Name: "Faculty Name",
     person1Role: "Lab Director / Interaction Design",
     person2Name: "PhD Student A",
@@ -248,25 +288,58 @@ const dictionary = {
     person4Role: "Smart Hardware and Prototyping",
     projectsKicker: "Projects",
     projectsTitle: "Featured Projects",
-    projectsIntro:
-      "These sample entries can later be replaced with faculty research, student works, competition outcomes, industry collaborations and exhibition projects.",
-    projectsPageKicker: "Projects",
-    projectsPageTitle: "Featured Projects and Prototypes",
-    projectsPageIntro:
-      "A sample archive of public service, smart hardware, interactive exhibition and teaching workshop projects.",
-    project1Tag: "Public Service",
-    project1Title: "Touchable Urban Wayfinding",
-    project1Body: "A multisensory city information prototype for visually impaired and older users.",
-    project2Tag: "Smart Hardware",
-    project2Title: "Soft Touch Control Panel",
-    project2Body: "Natural controls for textile interfaces, pressure sensing and wearable devices.",
-    project3Tag: "Interactive Exhibition",
-    project3Title: "Huxiang Tactile Archive",
-    project3Body: "Transforming local patterns, artifacts and stories into touchable exhibition media.",
-    project4Tag: "Workshop",
-    project4Title: "Tactile Prototyping Workshop",
-    project4Body:
-      "A one-week prototype sprint using Arduino, textile sensing, projection mapping and rapid user tests.",
+    projectsIntro: "",
+    projectsPageKicker: "Research",
+    projectsPageTitle: "Research Projects",
+    projectsPageIntro: "",
+    researchCatIndustry: "Industry Collaboration",
+    researchCatGrant: "Funded Research",
+    researchCatStudio: "Teaching & Workshops",
+    researchCatExhibit: "Exhibitions",
+    researchCatContest: "Competitions",
+    researchCatOther: "Other Research",
+    rOpGestureTitle: "ColorOS Common Gesture Guidelines",
+    rOpGestureBody: "gesture definitions, thresholds and evaluation models written into system settings",
+    rOpMotionTitle: "Gesture Motion Human Factors Study",
+    rOpMotionBody: "personalized trigger thresholds fitted from experiment data",
+    rOpAiTitle: "AI Product User Insight",
+    rOpAiBody: "user evidence for system-level AI around assistant, imaging and knowledge services",
+    rOpUsabilityTitle: "Product Usability Perception",
+    rOpUsabilityBody: "an intelligence-perception evaluation system and LLM-based auto-assessment",
+    rOpAutoUxTitle: "Automated UX Research Tool",
+    rOpAutoUxBody: "multimodal LLMs for GUI understanding, persona simulation and automated evaluation",
+    rVivoHfTitle: "Smartphone Human Factors Panorama",
+    rVivoHfBody: "a panorama and visualization platform integrating hardware and software HF research",
+    rVattiHwTitle: "Vatti Hardware UX Innovation",
+    rVattiHwBody: "future kitchen appliance interaction concepts and a human-machine roadmap",
+    rVattiBasketTitle: "Vatti Dishwasher Basket Design",
+    rVattiBasketBody: "basket structures for Chinese tableware, already in mass production",
+    rVattiOasisTitle: "Vatti Oasis Lifestyle Innovation",
+    rVattiOasisBody: "four future kitchen scenes from young users' cooking lives",
+    rNssfcTitle: "Tactile Comfort for Embodied AI Products",
+    rNssfcBody: "a theory of tactile comfort and tangible interface design strategies",
+    rMoeIchTitle: "Cross-cultural ICH Co-creation through Touch",
+    rMoeIchBody: "tactile devices that transmit tacit knowledge of Changsha kiln",
+    rYueluTitle: "HCI Innovation for Intelligent Terminals",
+    rYueluBody: "a closed loop of metrics, modeling and validation across comms, mobility and health",
+    rPlatformTitle: "Industrial Design Data Platform and Design Tools",
+    rPlatformBody: "a seamless multimodal experience framework, card tools and scene guidelines",
+    rEngineTitle: "Design Engine",
+    rEngineBody: "an international industrial design think tank and cross-timezone teaching platform",
+    rSmecTitle: "SMEC",
+    rSmecBody: "turning Seamless Multimodal Experience theory into participatory design cards",
+    project1Tag: "Funded Research",
+    project1Title: "Tactile Comfort for Embodied AI Products",
+    project1Body: "A theory of tactile comfort and tangible interface design strategies.",
+    project2Tag: "Industry Collaboration",
+    project2Title: "ColorOS Common Gesture Guidelines",
+    project2Body: "Gesture definitions, thresholds and evaluation models written into system settings.",
+    project3Tag: "Industry Collaboration",
+    project3Title: "Vatti Oasis Lifestyle Innovation",
+    project3Body: "Four future kitchen scenes from young users' cooking lives.",
+    project4Tag: "Teaching & Workshops",
+    project4Title: "Design Engine",
+    project4Body: "An international industrial design think tank and cross-timezone teaching platform.",
     openDemo: "Open Demo",
     demoHubTitle: "Demo Lab",
     demoKicker: "Interactive Demo",
@@ -307,20 +380,16 @@ const dictionary = {
     pubTitle: "Publications & Outputs",
     pubPageKicker: "Publication",
     pubPageTitle: "Publications, Patents and Exhibitions",
-    pubPageIntro:
-      "A place to archive papers, patents, software copyrights, exhibitions, awards and toolkits, with future filtering by year and type.",
+    pubPageIntro: "Papers, patents, software copyrights, exhibitions and awards.",
     pub1Title: "Tangible Interfaces for Inclusive Public Services",
-    pub1Body: "Paper placeholder: replace with title, authors, venue and DOI link.",
+    pub1Body: "Research on tangible interfaces for public services.",
     pub2Title: "Design Methods for Haptic Feedback in Smart Product Experiences",
-    pub2Body: "Chinese publication placeholder for journals, conferences or exhibition catalogues.",
+    pub2Body: "Design methods for haptic feedback in smart products.",
     pub3Title: "Material Prototyping Toolkit",
-    pub3Body: "Toolkit, patent or software output placeholder for prototypes, methods and repositories.",
-    pubOpen1Body:
-      "Expandable area: add abstract, author contributions, related projects, BibTeX, PDF, DOI and media links here.",
-    pubOpen2Body:
-      "Expandable area: add research questions, method framework, figure summary and related studio or project links here.",
-    pubOpen3Body:
-      "Expandable area: show toolkit modules, open-source repositories, instructions and download entry points here.",
+    pub3Body: "A method toolkit for material prototyping.",
+    pubOpen1Body: "",
+    pubOpen2Body: "",
+    pubOpen3Body: "",
     joinKicker: "Join Us",
     joinTitle: "Join Us",
     joinPageKicker: "Join Us",
@@ -329,7 +398,7 @@ const dictionary = {
       "Graduate students, visiting students, institutions and industry teams are welcome to contact us for studios, research, exhibitions and prototype validation.",
     joinBody:
       "Students interested in interaction design, smart hardware, material experiments, user research, front-end development and design theory are welcome to get in touch. We also welcome collaborations with companies, museums, hospitals and public institutions.",
-    joinPanelTitle: "Contact Placeholder",
+    joinPanelTitle: "Contact",
     joinPanelBody: "Tangible Interface Lab · School of Design and Art, HNU",
     joinNeedsTitle: "We Are Looking For",
     joinNeed1Title: "Prototype Makers",
@@ -344,19 +413,19 @@ const dictionary = {
       "Prepare a one-page research interest note with target users, method experience and related papers or cases you have read.",
     joinOpen3Body:
       "Partners can share scenario background, user groups, current workflows, constraints and questions to validate.",
-    footerLab: "Tangible Interface Lab, School of Design and Art, HNU",
+    footerLab: "Touchable Interface Lab, School of Design and Art, HNU",
     footerDesc: "湖南大学设计艺术学院 可触界面实验室",
-    qrAria: "QR code placeholders",
+    qrAria: "QR codes",
     qrWechat: "WeChat",
     qrPortfolio: "Portfolio",
     qrJoin: "Join Inquiry",
-    footerNote: "Sample site. Images and QR codes are placeholders."
+    footerNote: ""
   }
 };
 
 const buttons = document.querySelectorAll(".lang-button");
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
-const projectPages = new Set(["demo-touch-map.html", "demo-soft-panel.html", "demo-exhibit.html"]);
+const projectPages = new Set(["demo-touch-map.html", "demo-soft-panel.html", "demo-exhibit.html", "project.html"]);
 let activeLanguage = localStorage.getItem("til-language") || "zh";
 
 function applyLanguage(lang) {
@@ -389,6 +458,15 @@ function applyLanguage(lang) {
   localStorage.setItem("til-language", lang);
   syncActiveDemoText();
   syncPressureText();
+  if (typeof renderHomeIndex === "function") {
+    renderHomeIndex();
+  }
+  if (typeof renderResearchList === "function") {
+    renderResearchList();
+  }
+  if (typeof renderProjectDetail === "function") {
+    renderProjectDetail();
+  }
 }
 
 buttons.forEach((button) => {
@@ -514,3 +592,110 @@ if (window.matchMedia("(pointer: fine)").matches) {
     });
   });
 }
+
+function projectHref(id) {
+  return `./project.html?id=${encodeURIComponent(id)}`;
+}
+
+function renderHomeIndex() {
+  const root = document.querySelector("[data-home-index]");
+  if (!root || typeof HOME_THEMES === "undefined") {
+    return;
+  }
+
+  const lang = activeLanguage;
+  root.innerHTML = HOME_THEMES.map((theme) => {
+    const copy = theme[lang];
+    const items = theme.projects
+      .map((id) => {
+        const project = getProject(id);
+        if (!project) {
+          return "";
+        }
+        const text = project[lang];
+        return `<a href="${projectHref(id)}"><strong>${text.title}</strong><span>${text.body}</span></a>`;
+      })
+      .join("");
+
+    return `<article class="home-theme">
+      <a class="home-theme-visual" href="${projectHref(theme.projects[0])}">
+        <img src="${theme.cover}" alt="${copy.title}" />
+      </a>
+      <div>
+        <h3>${copy.title}</h3>
+        <p class="home-theme-intro">${copy.intro}</p>
+        <div class="home-theme-list">${items}</div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function renderResearchList() {
+  const root = document.querySelector("[data-research-list]");
+  if (!root || typeof PROJECTS === "undefined") {
+    return;
+  }
+
+  const lang = activeLanguage;
+  root.innerHTML = RESEARCH_CATEGORIES.map((cat) => {
+    const items = PROJECTS.filter((project) => project.category === cat.id);
+    if (!items.length) {
+      return "";
+    }
+
+    return `<div class="research-group">
+      <h2>${cat[lang]}</h2>
+      <div class="research-list">
+        ${items
+          .map((project) => {
+            const text = project[lang];
+            return `<a href="${projectHref(project.id)}">
+              <img src="${project.thumb}" alt="" />
+              <span class="research-copy"><strong>${text.title}</strong><span>${text.body}</span></span>
+            </a>`;
+          })
+          .join("")}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderProjectDetail() {
+  const root = document.querySelector("[data-project-detail]");
+  if (!root || typeof getProject === "undefined") {
+    return;
+  }
+
+  const lang = activeLanguage;
+  const id = new URLSearchParams(window.location.search).get("id");
+  const project = getProject(id);
+  if (!project) {
+    root.innerHTML = `<p>${lang === "zh" ? "未找到该项目。" : "Project not found."}</p>`;
+    return;
+  }
+
+  const text = project[lang];
+  const category = RESEARCH_CATEGORIES.find((item) => item.id === project.category);
+  const gallery = project.gallery
+    .map((src) => `<img src="${src}" alt="${text.title}" />`)
+    .join("");
+  const video = project.video
+    ? `<video class="project-video" controls preload="metadata" poster="${project.cover}" src="${project.video}"></video>`
+    : "";
+
+  root.innerHTML = `
+    <p class="eyebrow">${category ? category[lang] : ""}</p>
+    <h1>${text.title}</h1>
+    <p class="project-lead">${text.body}</p>
+    <img class="project-cover" src="${project.cover}" alt="${text.title}" />
+    <p class="project-detail-body">${text.detail}</p>
+    ${video}
+    ${gallery ? `<div class="project-gallery">${gallery}</div>` : ""}
+    <p class="project-back"><a href="./projects.html">${lang === "zh" ? "返回研究项目" : "Back to research"}</a></p>
+  `;
+  document.title = `${text.title} | ${lang === "zh" ? "可触界面实验室" : "Touchable Interface Lab"}`;
+}
+
+renderHomeIndex();
+renderResearchList();
+renderProjectDetail();
