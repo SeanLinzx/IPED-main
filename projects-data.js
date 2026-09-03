@@ -373,7 +373,7 @@ const HOME_THEMES = [
   },
   {
     id: "scene",
-    cover: "./assets/projects/vatti-oasis/cover.jpg",
+    cover: "./assets/projects/vatti-hw/cover.jpg",
     projects: ["vatti-oasis", "vatti-hw", "vatti-basket", "platform", "engine"],
     zh: { title: "生活与场景", intro: "厨电生活形态、硬件创新、数据平台与国际协同。" },
     en: { title: "Life and Scenes", intro: "Kitchen life, hardware innovation, data platforms and teaching." },
