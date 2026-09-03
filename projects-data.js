@@ -2,6 +2,8 @@ const PROJECTS = [
   {
     id: "gesture",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/gesture/cover.jpg",
     thumb: "./assets/projects/gesture/thumb.jpg",
     gallery: [],
@@ -22,6 +24,8 @@ const PROJECTS = [
   {
     id: "motion",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/motion/cover.jpg",
     thumb: "./assets/projects/motion/thumb.jpg",
     gallery: [],
@@ -42,6 +46,8 @@ const PROJECTS = [
   {
     id: "ai-insight",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/ai-insight/cover.jpg",
     thumb: "./assets/projects/ai-insight/thumb.jpg",
     gallery: [
@@ -66,6 +72,8 @@ const PROJECTS = [
   {
     id: "usability",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/usability/cover.jpg",
     thumb: "./assets/projects/usability/thumb.jpg",
     gallery: [],
@@ -86,6 +94,8 @@ const PROJECTS = [
   {
     id: "auto-ux",
     category: "industry",
+    year: "2025",
+    yearStart: 2025,
     cover: "./assets/projects/auto-ux/cover.jpg",
     thumb: "./assets/projects/auto-ux/thumb.jpg",
     gallery: [],
@@ -106,6 +116,8 @@ const PROJECTS = [
   {
     id: "vivo-hf",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/vivo-hf/cover.jpg",
     thumb: "./assets/projects/vivo-hf/thumb.jpg",
     gallery: [
@@ -130,6 +142,8 @@ const PROJECTS = [
   {
     id: "vatti-hw",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/vatti-hw/cover.jpg",
     thumb: "./assets/projects/vatti-hw/thumb.jpg",
     gallery: [
@@ -155,6 +169,8 @@ const PROJECTS = [
   {
     id: "vatti-basket",
     category: "industry",
+    year: "2024–2025",
+    yearStart: 2024,
     cover: "./assets/projects/vatti-basket/cover.jpg",
     thumb: "./assets/projects/vatti-basket/thumb.jpg",
     gallery: [],
@@ -175,6 +191,8 @@ const PROJECTS = [
   {
     id: "vatti-oasis",
     category: "industry",
+    year: "2025",
+    yearStart: 2025,
     cover: "./assets/projects/vatti-oasis/cover.jpg",
     thumb: "./assets/projects/vatti-oasis/thumb.jpg",
     gallery: [
@@ -200,6 +218,8 @@ const PROJECTS = [
   {
     id: "nssfc",
     category: "grant",
+    year: "2024–2026",
+    yearStart: 2024,
     cover: "./assets/projects/nssfc/cover.jpg",
     thumb: "./assets/projects/nssfc/thumb.jpg",
     gallery: [],
@@ -220,6 +240,8 @@ const PROJECTS = [
   {
     id: "moe-ich",
     category: "grant",
+    year: "2023–2025",
+    yearStart: 2023,
     cover: "./assets/projects/moe-ich/cover.jpg",
     thumb: "./assets/projects/moe-ich/thumb.jpg",
     gallery: [],
@@ -240,6 +262,8 @@ const PROJECTS = [
   {
     id: "yuelu",
     category: "grant",
+    year: "2025",
+    yearStart: 2025,
     cover: "./assets/projects/yuelu/cover.jpg",
     thumb: "./assets/projects/yuelu/thumb.jpg",
     gallery: [],
@@ -260,6 +284,8 @@ const PROJECTS = [
   {
     id: "platform",
     category: "grant",
+    year: "2023–2025",
+    yearStart: 2023,
     cover: "./assets/projects/platform/cover.jpg",
     thumb: "./assets/projects/platform/thumb.jpg",
     gallery: [],
@@ -280,6 +306,8 @@ const PROJECTS = [
   {
     id: "engine",
     category: "studio",
+    year: "2023–2025",
+    yearStart: 2023,
     cover: "./assets/projects/engine/cover.jpg",
     thumb: "./assets/projects/engine/thumb.jpg",
     gallery: [],
@@ -300,6 +328,8 @@ const PROJECTS = [
   {
     id: "smec",
     category: "other",
+    year: "2023",
+    yearStart: 2023,
     cover: "./assets/projects/smec/cover.jpg",
     thumb: "./assets/projects/smec/thumb.jpg",
     gallery: [],

@@ -416,9 +416,16 @@ img {
 }
 
 .home-theme-list a {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 16px;
+  align-items: baseline;
   padding: 11px 0;
   color: inherit;
+}
+
+.home-theme-copy {
+  min-width: 0;
 }
 
 .home-theme-list strong {
@@ -427,18 +434,27 @@ img {
   font-weight: 650;
 }
 
-.home-theme-list span {
+.home-theme-copy span {
   color: var(--muted);
   font-size: 14px;
 }
 
-.home-theme-list span::before {
+.home-theme-copy span::before {
   color: var(--muted);
   content: "：";
 }
 
+.home-theme-list time {
+  color: #9a9a9a;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
 .home-theme-list a:hover strong,
-.home-theme-list a:hover span {
+.home-theme-list a:hover .home-theme-copy span,
+.home-theme-list a:hover time {
   color: var(--accent);
 }
 
@@ -506,12 +522,12 @@ img {
 .research-list a,
 .research-list p {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  grid-template-columns: 132px minmax(0, 1fr) auto;
   gap: 18px;
   align-items: center;
   margin: 0;
-  padding: 14px 0;
-  border-bottom: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   color: inherit;
   text-decoration: none;
 }
@@ -537,15 +553,24 @@ img {
   font-weight: 650;
 }
 
-.research-list span {
+.research-copy span {
   color: var(--muted);
   font-size: clamp(14px, 1.3vw, 16px);
 }
 
-.research-list span::before { content: "："; color: var(--muted); }
+.research-copy span::before { content: "："; color: var(--muted); }
+
+.research-year {
+  color: #9a9a9a;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
 
 .research-list a:hover strong,
-.research-list a:hover span { color: var(--accent); }
+.research-list a:hover .research-copy span,
+.research-list a:hover .research-year { color: var(--accent); }
 
 .page-hero {
   display: grid;
@@ -1736,6 +1761,12 @@ h3 {
 
   .research-list img {
     width: 96px;
+  }
+
+  .research-year {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: -4px;
   }
 
   .brand-copy span:last-child {

@@ -597,6 +597,14 @@ function projectHref(id) {
   return `./project.html?id=${encodeURIComponent(id)}`;
 }
 
+function projectYear(project) {
+  return project && project.year ? project.year : "";
+}
+
+function sortProjectsByYear(items) {
+  return [...items].sort((a, b) => (b.yearStart || 0) - (a.yearStart || 0));
+}
+
 function renderHomeIndex() {
   const root = document.querySelector("[data-home-index]");
   if (!root || typeof HOME_THEMES === "undefined") {
@@ -613,7 +621,10 @@ function renderHomeIndex() {
           return "";
         }
         const text = project[lang];
-        return `<a href="${projectHref(id)}"><strong>${text.title}</strong><span>${text.body}</span></a>`;
+        const year = projectYear(project);
+        return `<a href="${projectHref(id)}"><span class="home-theme-copy"><strong>${text.title}</strong><span>${text.body}</span></span>${
+          year ? `<time datetime="${project.yearStart || ""}">${year}</time>` : ""
+        }</a>`;
       })
       .join("");
 
@@ -638,7 +649,7 @@ function renderResearchList() {
 
   const lang = activeLanguage;
   root.innerHTML = RESEARCH_CATEGORIES.map((cat) => {
-    const items = PROJECTS.filter((project) => project.category === cat.id);
+    const items = sortProjectsByYear(PROJECTS.filter((project) => project.category === cat.id));
     if (!items.length) {
       return "";
     }
@@ -649,9 +660,11 @@ function renderResearchList() {
         ${items
           .map((project) => {
             const text = project[lang];
+            const year = projectYear(project);
             return `<a href="${projectHref(project.id)}">
               <img src="${project.thumb}" alt="" />
               <span class="research-copy"><strong>${text.title}</strong><span>${text.body}</span></span>
+              ${year ? `<time class="research-year" datetime="${project.yearStart || ""}">${year}</time>` : ""}
             </a>`;
           })
           .join("")}
@@ -676,15 +689,17 @@ function renderProjectDetail() {
 
   const text = project[lang];
   const category = RESEARCH_CATEGORIES.find((item) => item.id === project.category);
+  const year = projectYear(project);
   const gallery = project.gallery
     .map((src) => `<img src="${src}" alt="${text.title}" />`)
     .join("");
   const video = project.video
     ? `<video class="project-video" controls preload="metadata" poster="${project.cover}" src="${project.video}"></video>`
     : "";
+  const meta = [category ? category[lang] : "", year].filter(Boolean).join(" · ");
 
   root.innerHTML = `
-    <p class="eyebrow">${category ? category[lang] : ""}</p>
+    <p class="eyebrow">${meta}</p>
     <h1>${text.title}</h1>
     <p class="project-lead">${text.body}</p>
     <img class="project-cover" src="${project.cover}" alt="${text.title}" />
