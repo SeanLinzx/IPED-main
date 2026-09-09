@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="湖南大学设计艺术学院可触界面实验室加入我们页面。" />
     <title>加入我们 | 可触界面实验室</title>
-    <link rel="stylesheet" href="./styles.css?v=20260903p" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Space+Mono&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260910-join-compact" />
   </head>
-  <body>
+  <body class="editorial-page join-page">
     <div class="page-progress" aria-hidden="true"></div>
     <div class="tactile-cursor" aria-hidden="true"></div>
     <header class="site-header" data-i18n-attr="aria-label:headerAria">
       <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
-        <span class="brand-mark"><img src="./assets/iped-logo-mark.png" alt="IPED" /></span>
-        <span class="brand-copy">
-          <span data-i18n="brandCn">可触界面实验室</span>
-          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        <span class="brand-mark">
+          <img src="./assets/home/logo-iped.svg" alt="IPED" width="127" height="53" />
         </span>
       </a>
       <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./index.html" data-i18n="navHome">首页</a>
         <a href="./about.html" data-i18n="navAbout">关于</a>
         <a href="./projects.html" data-i18n="navProjects">项目</a>
         <a href="./publications.html" data-i18n="navPublications">出版</a>
@@ -30,72 +35,63 @@
       </div>
     </header>
 
-    <main>
-      <section class="page-hero join-hero reveal-item">
+    <main id="top" class="join-compact">
+      <section class="join-intro" id="join-connect" aria-labelledby="join-hero-title">
         <div>
-          <p class="eyebrow" data-i18n="joinPageKicker">Join Us</p>
-          <h1 data-i18n="joinPageTitle">一起把界面做得可触、可感、可协作</h1>
+          <p class="editorial-kicker">JOIN US / TOUCHLAB</p>
+          <h1 id="join-hero-title" data-zh="加入我们" data-en="Join us">加入我们</h1>
+          <p class="join-intro-text" data-zh="一起探索可触、可感的交互。欢迎不同学科背景的研究生、访问学生与合作伙伴，带着研究兴趣和真实问题来交流。" data-en="Explore tangible, sensory interaction with us. We welcome graduate students, visiting students and collaborators across disciplines to share their interests and real-world questions.">一起探索可触、可感的交互。欢迎不同学科背景的研究生、访问学生与合作伙伴，带着研究兴趣和真实问题来交流。</p>
+          <a class="join-email" href="mailto:wangwei1125@hnu.edu.cn"><span>wangwei1125@hnu.edu.cn</span><span aria-hidden="true">↗</span></a>
         </div>
-        <p data-i18n="joinPageIntro">
-          欢迎研究生、访问学生、合作机构与企业团队联系实验室，开展课程、课题、展览和原型验证。
-        </p>
+        <figure class="join-intro-art" aria-hidden="true">
+          <img src="./assets/projects-page/category-teaching.png" alt="" width="1120" height="1404" />
+          <figcaption>LEARN × MAKE × SHARE</figcaption>
+        </figure>
       </section>
-
-      <section class="content-section reveal-item">
-        <div class="join-layout">
-          <div>
-            <h2 data-i18n="joinTitle">加入我们</h2>
-            <p data-i18n="joinBody">
-              欢迎对交互设计、智能硬件、材料实验、用户研究、前端开发与设计理论感兴趣的同学联系。也欢迎企业、博物馆、医院、公共机构与我们开展联合课题和原型验证。
-            </p>
-          </div>
-          <div class="join-panel">
-            <p data-i18n="joinPanelTitle">联系</p>
-            <a href="mailto:til@hnu.edu.cn">til@hnu.edu.cn</a>
-            <span data-i18n="joinPanelBody">湖南大学设计艺术学院 · 可触界面实验室</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section reveal-item">
-        <h2 data-i18n="joinNeedsTitle">我们期待</h2>
-        <div class="join-needs">
-          <article class="join-need">
-            <span>01</span>
-            <h3 data-i18n="joinNeed1Title">会做原型的人</h3>
-            <p data-i18n="joinNeed1Body">熟悉 Arduino、前端、建模、材料工艺或影像制作均可。</p>
-          </article>
-          <article class="join-need">
-            <span>02</span>
-            <h3 data-i18n="joinNeed2Title">会做研究的人</h3>
-            <p data-i18n="joinNeed2Body">能够组织用户研究、可用性测试、访谈分析和论文写作。</p>
-          </article>
-          <article class="join-need">
-            <span>03</span>
-            <h3 data-i18n="joinNeed3Title">有真实场景的人</h3>
-            <p data-i18n="joinNeed3Body">欢迎带着公共服务、文化展陈、健康照护和教育创新议题来合作。</p>
-          </article>
-        </div>
-      </section>
+      <div class="join-details">
+        <section id="join-apply" aria-labelledby="join-apply-title">
+          <header class="join-compact-heading">
+            <p class="editorial-kicker">01 / APPLY</p>
+            <h2 id="join-apply-title" data-zh="申请材料" data-en="Application">申请材料</h2>
+            <p data-zh="申请加入实验室，请将以下材料发送至上方邮箱。" data-en="To apply, send the following materials to the email above.">申请加入实验室，请将以下材料发送至上方邮箱。</p>
+          </header>
+          <div class="application-grid"><article><span class="editorial-kicker">01</span><h3 data-zh="研究兴趣" data-en="Research interests">研究兴趣</h3><p data-zh="介绍你关注的问题、拟开展的研究方向，以及与实验室研究的关联。" data-en="Describe the questions you care about, your proposed research direction and its connection to the lab’s work.">介绍你关注的问题、拟开展的研究方向，以及与实验室研究的关联。</p></article><article><span class="editorial-kicker">02</span><h3 data-zh="个人简历与代表成果" data-en="CV and selected work">个人简历与代表成果</h3><p data-zh="提供教育与研究经历，以及能体现个人贡献的论文、项目、代码或获奖成果。" data-en="Share your education and research experience, together with papers, projects, code or awards that demonstrate your contribution.">提供教育与研究经历，以及能体现个人贡献的论文、项目、代码或获奖成果。</p></article><article><span class="editorial-kicker">03</span><h3 data-zh="研究计划" data-en="Research proposal">研究计划</h3><p data-zh="说明问题背景、初步研究思路与方法，以及希望探索的目标。" data-en="Outline the background, initial approach and methods, and the goals you would like to explore.">说明问题背景、初步研究思路与方法，以及希望探索的目标。</p></article><article><span class="editorial-kicker">04</span><h3 data-zh="设计作品集" data-en="Design portfolio">设计作品集</h3><p data-zh="设计背景的申请者可提供原创作品集，说明项目过程、本人职责和关键设计决策。" data-en="Applicants with a design background may include original work, explaining the process, their role and key design decisions.">设计背景的申请者可提供原创作品集，说明项目过程、本人职责和关键设计决策。</p></article></div><p class="admission-note" data-zh="具体招生资格、名额与时间以学校及学院当年正式通知为准。" data-en="Eligibility, places and deadlines are subject to the university’s and school’s official announcements for the relevant year.">具体招生资格、名额与时间以学校及学院当年正式通知为准。</p>
+        </section>
+        <section id="join-links" aria-labelledby="join-links-title">
+          <header class="join-compact-heading">
+            <p class="editorial-kicker">02 / RESOURCES</p>
+            <h2 id="join-links-title" data-zh="相关入口" data-en="Useful links">相关入口</h2>
+          </header>
+          <div class="join-resource-grid"><a href="https://gra.hnu.edu.cn/zsxx/bszs.htm" target="_blank" rel="noreferrer"><span><strong data-zh="博士招生" data-en="Doctoral admissions">博士招生</strong></span><span aria-hidden="true">↗</span></a><a href="https://gra.hnu.edu.cn/zsxx/sszs.htm" target="_blank" rel="noreferrer"><span><strong data-zh="硕士招生" data-en="Master’s admissions">硕士招生</strong></span><span aria-hidden="true">↗</span></a><a href="https://design.hnu.edu.cn" target="_blank" rel="noreferrer"><span><strong data-zh="学院通知" data-en="School announcements">学院通知</strong></span><span aria-hidden="true">↗</span></a><a href="https://design.hnu.edu.cn/info/1023/6246.htm" target="_blank" rel="noreferrer"><span><strong data-zh="导师与研究机会" data-en="Supervisor and opportunities">导师与研究机会</strong></span><span aria-hidden="true">↗</span></a><a href="./projects.html"><span><strong data-zh="研究与设计项目" data-en="Research and design projects">研究与设计项目</strong></span><span aria-hidden="true">↗</span></a><a href="./publications.html"><span><strong data-zh="论文与出版" data-en="Publications">论文与出版</strong></span><span aria-hidden="true">↗</span></a></div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
-          <p data-i18n="footerDesc">Tangible Interface Lab, School of Design and Art, Hunan University</p>
+    <footer class="home-footer">
+      <div class="home-footer-rule" aria-hidden="true"></div>
+      <div class="home-footer-content">
+        <div class="home-footer-identity">
+          <p>
+            <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
+            <span data-i18n="footerDesc">Touchable Interface Lab, School of Design and Art, Hunan University</span>
+          </p>
+          <div class="home-footer-qrs qr-grid" data-i18n-attr="aria-label:qrAria">
+            <figure><img src="./assets/qr-wechat.svg" alt="微信公众号二维码" width="97" height="97" /><figcaption data-i18n="qrWechat">微信公众号</figcaption></figure>
+            <a href="./projects.html" data-i18n-attr="aria-label:qrPortfolio"><figure><img src="./assets/qr-portfolio.svg" alt="作品集二维码" width="97" height="97" /><figcaption data-i18n="qrPortfolio">作品集入口</figcaption></figure></a>
+            <a href="./join.html" data-i18n-attr="aria-label:qrJoin"><figure><img src="./assets/qr-join.svg" alt="加入咨询二维码" width="97" height="97" /><figcaption data-i18n="qrJoin">加入咨询</figcaption></figure></a>
+          </div>
         </div>
-        <div class="footer-links">
+        <nav class="home-footer-nav footer-links" data-i18n-attr="aria-label:navAria">
+          <a href="./index.html" data-i18n="navHome">首页</a>
           <a href="./about.html" data-i18n="navAbout">关于</a>
           <a href="./projects.html" data-i18n="navProjects">项目</a>
           <a href="./publications.html" data-i18n="navPublications">出版</a>
           <a href="./join.html" data-i18n="navJoin">加入我们</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Tangible Interface Lab</span>
+        </nav>
+        <p class="home-footer-copyright">© 2026 湖南大学设计艺术学院可触界面实验室</p>
       </div>
     </footer>
-    <script src="./script.js?v=20260903p"></script>
+    <script src="./projects-data.js?v=20260910-members"></script>
+    <script src="./script.js?v=20260910-members"></script>
   </body>
 </html>

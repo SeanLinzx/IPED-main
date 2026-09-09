@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="湖南大学设计艺术学院可触界面实验室项目页面。" />
     <title>项目 | 可触界面实验室</title>
-    <link rel="stylesheet" href="./styles.css?v=20260903r" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Space+Mono&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260910-members" />
   </head>
-  <body>
+  <body class="projects">
     <div class="page-progress" aria-hidden="true"></div>
     <div class="tactile-cursor" aria-hidden="true"></div>
     <header class="site-header" data-i18n-attr="aria-label:headerAria">
       <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
-        <span class="brand-mark"><img src="./assets/iped-logo-mark.png" alt="IPED" /></span>
-        <span class="brand-copy">
-          <span data-i18n="brandCn">可触界面实验室</span>
-          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        <span class="brand-mark">
+          <img src="./assets/home/logo-iped.svg" alt="IPED" width="127" height="53" />
         </span>
       </a>
       <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./index.html" data-i18n="navHome">首页</a>
         <a href="./about.html" data-i18n="navAbout">关于</a>
         <a href="./projects.html" data-i18n="navProjects">项目</a>
         <a href="./publications.html" data-i18n="navPublications">出版</a>
@@ -30,39 +35,69 @@
       </div>
     </header>
 
-    <main>
-      <section class="page-hero reveal-item">
-        <div>
-          <p class="eyebrow" data-i18n="projectsPageKicker">Research</p>
-          <h1 data-i18n="projectsPageTitle">研究项目</h1>
+    <main id="top">
+      <section class="proj-hero" aria-labelledby="proj-hero-title">
+        <div class="proj-hero-visual" aria-hidden="true">
+          <img class="proj-hero-photo" src="./assets/projects-page/banner-projects.png" alt="" width="2243" height="701" />
+        </div>
+        <div class="proj-hero-copy">
+          <p class="proj-kicker" data-i18n="projectsPageKicker">PROJECTS</p>
+          <h1 id="proj-hero-title">
+            <span data-i18n="projTitle1">Research</span>
+            <span><span data-i18n="projTitle2">Into Real </span><span data-i18n="projTitleAccent">Impact.</span></span>
+          </h1>
+          <p class="proj-lead" data-i18n="projLead">把研究转化为可触可感的体验，面向更人本的未来。</p>
         </div>
       </section>
 
-      <section class="content-section reveal-item">
-        <div data-research-list></div>
+      <section class="proj-toolbar" aria-label="项目筛选">
+        <div class="proj-filters" data-proj-filters></div>
       </section>
 
+      <section class="proj-results" id="project-results" data-research-list></section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
-          <p data-i18n="footerDesc">Tangible Interface Lab, School of Design and Art, Hunan University</p>
+    <footer class="home-footer">
+      <div class="home-footer-rule" aria-hidden="true"></div>
+      <div class="home-footer-content">
+        <div class="home-footer-identity">
+          <p>
+            <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
+            <span data-i18n="footerDesc">Touchable Interface Lab, School of Design and Art, Hunan University</span>
+          </p>
+          <div class="home-footer-qrs qr-grid" data-i18n-attr="aria-label:qrAria">
+            <figure>
+              <img src="./assets/qr-wechat.svg" alt="微信公众号二维码" width="97" height="97" />
+              <figcaption data-i18n="qrWechat">微信公众号</figcaption>
+            </figure>
+            <a href="./projects.html" data-i18n-attr="aria-label:qrPortfolio">
+              <figure>
+                <img src="./assets/qr-portfolio.svg" alt="作品集二维码" width="97" height="97" />
+                <figcaption data-i18n="qrPortfolio">作品集入口</figcaption>
+              </figure>
+            </a>
+            <a href="./join.html" data-i18n-attr="aria-label:qrJoin">
+              <figure>
+                <img src="./assets/qr-join.svg" alt="加入咨询二维码" width="97" height="97" />
+                <figcaption data-i18n="qrJoin">加入咨询</figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
-        <div class="footer-links">
+
+        <nav class="home-footer-nav footer-links" data-i18n-attr="aria-label:navAria">
+          <a href="./index.html" data-i18n="navHome">首页</a>
           <a href="./about.html" data-i18n="navAbout">关于</a>
           <a href="./projects.html" data-i18n="navProjects">项目</a>
           <a href="./publications.html" data-i18n="navPublications">出版</a>
           <a href="./join.html" data-i18n="navJoin">加入我们</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Tangible Interface Lab</span>
-        <span data-i18n="footerNote"></span>
+        </nav>
+
+        <p class="home-footer-copyright">© 2026 湖南大学设计艺术学院可触界面实验室</p>
       </div>
     </footer>
-    <script src="./projects-data.js?v=20260903r"></script>
-    <script src="./script.js?v=20260903r"></script>
+
+    <script src="./projects-data.js?v=20260910-members"></script>
+    <script src="./script.js?v=20260910-members"></script>
   </body>
 </html>

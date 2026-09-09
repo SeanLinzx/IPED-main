@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="340" height="154" viewBox="0 0 340 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Metallic Interface">
+<ellipse cx="170" cy="77" rx="170" ry="77" fill="url(#paint0_linear_0_270)"/>
+<path d="M170 0.5C216.89 0.5 259.317 9.10915 290.002 23.0078C320.733 36.9272 339.5 56.0546 339.5 77C339.5 97.9454 320.733 117.073 290.002 130.992C259.317 144.891 216.89 153.5 170 153.5C123.11 153.5 80.6834 144.891 49.998 130.992C19.2669 117.073 0.5 97.9454 0.5 77C0.5 56.0546 19.2669 36.9272 49.998 23.0078C80.6834 9.10915 123.11 0.5 170 0.5Z" stroke="#D9E6FF" stroke-opacity="0.55"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_270" x1="0" y1="77" x2="340" y2="77" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BFC7D1"/>
+<stop offset="0.46" stop-color="#1F2630"/>
+<stop offset="0.54" stop-color="#EBE0CC"/>
+<stop offset="1" stop-color="#080A0E"/>
+</linearGradient>
+</defs>
+</svg>

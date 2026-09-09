@@ -352,28 +352,28 @@ const PROJECTS = [
 const HOME_THEMES = [
   {
     id: "tangible",
-    cover: "./assets/projects/nssfc/cover.jpg",
+    cover: "./assets/home/focus-01.png",
     projects: ["nssfc", "moe-ich", "smec"],
     zh: { title: "触觉交互研究", intro: "触觉舒适性、非遗共创与多模态参与式工具。" },
-    en: { title: "Tactile Interaction", intro: "Tactile comfort, ICH co-creation and multimodal tools." },
-  },
-  {
-    id: "aiux",
-    cover: "./assets/projects/auto-ux/cover.jpg",
-    projects: ["ai-insight", "auto-ux", "usability"],
-    zh: { title: "用户体验中的人工智能", intro: "系统级 AI 洞察、自动化测评与智能感评价。" },
-    en: { title: "AI in User Experience", intro: "System-level AI insight, automated evaluation and intelligence perception." },
+    en: { title: "Tactile Interaction Research", intro: "Tactile comfort, ICH co-creation and multimodal tools." },
   },
   {
     id: "humanfactors",
-    cover: "./assets/projects/vivo-hf/cover.jpg",
+    cover: "./assets/home/focus-02.png",
     projects: ["vivo-hf", "yuelu", "gesture", "motion"],
-    zh: { title: "人因工程研究", intro: "人因全景、手势规范、动效阈值与智能终端场景。" },
-    en: { title: "Human Factors Engineering", intro: "HF panorama, gesture guidelines, motion thresholds and intelligent terminals." },
+    zh: { title: "人机协同与智能设计", intro: "人因全景、手势规范、动效阈值与智能终端场景。" },
+    en: { title: "Human–AI Collaboration and Intelligent Design", intro: "HF panorama, gesture guidelines, motion thresholds and intelligent terminals." },
+  },
+  {
+    id: "aiux",
+    cover: "./assets/home/focus-03.png",
+    projects: ["ai-insight", "auto-ux", "usability"],
+    zh: { title: "用户体验与人工智能", intro: "系统级 AI 洞察、自动化测评与智能感评价。" },
+    en: { title: "User Experience and Artificial Intelligence", intro: "System-level AI insight, automated evaluation and intelligence perception." },
   },
   {
     id: "scene",
-    cover: "./assets/projects/vatti-hw/cover.jpg",
+    cover: "./assets/home/focus-04.png",
     projects: ["vatti-oasis", "vatti-hw", "vatti-basket", "platform", "engine"],
     zh: { title: "智能家电与生活场景研究", intro: "厨电体验、生活场景、数据平台与国际协同。" },
     en: { title: "Smart Appliances and Living Scenes", intro: "Kitchen experience, living scenes, data platforms and teaching." },
@@ -381,11 +381,794 @@ const HOME_THEMES = [
 ];
 
 const RESEARCH_CATEGORIES = [
-  { id: "industry", zh: "校企合作", en: "Industry Collaboration" },
-  { id: "grant", zh: "科研课题", en: "Funded Research" },
-  { id: "studio", zh: "教学与工作坊", en: "Teaching & Workshops" },
-  { id: "other", zh: "其他研究项目", en: "Other Research" },
+  {
+    id: "industry",
+    zh: "校企合作",
+    en: "Industry Collaboration",
+    descZh: "连接产业与学术，推动技术落地与创新应用。",
+    descEn: "Connecting industry and academia to land technology in real products.",
+    keys: ["INDUSTRY", "×", "ACADEMIA", "×", "REAL-WORLD IMPACT"],
+    art: "metal",
+  },
+  {
+    id: "grant",
+    zh: "科研课题",
+    en: "Research Projects",
+    descZh: "面向前沿问题，探索触觉与智能交互的新理论、新方法与新系统。",
+    descEn: "Exploring new theories, methods and systems for haptic and intelligent interaction.",
+    keys: ["IDEAS", "DRIVE", "CHANGE"],
+    art: "wave",
+  },
+  {
+    id: "studio",
+    zh: "教学与工作坊",
+    en: "Teaching & Workshops",
+    descZh: "通过课程、工作坊与实践项目，培养面向未来的跨学科人才。",
+    descEn: "Training interdisciplinary talent through courses, workshops and studio practice.",
+    keys: ["LEARN", "×", "MAKE", "×", "SHARE"],
+    art: "studio",
+  },
+  {
+    id: "other",
+    zh: "其他研究项目",
+    en: "Other Research Projects",
+    descZh: "面向更广泛的探索，记录实验性的想法与持续进行的研究实践。",
+    descEn: "A wider set of experiments and ongoing research practices.",
+    keys: ["SMALL", "IDEAS", "BIG", "POTENTIAL"],
+    art: "glass",
+  },
 ];
+
+const PUBLICATIONS = [
+  {
+    "id": "thermal-illusion-for-wearables-effects-o-2026",
+    "year": "2026",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.54941/ahfe1007450",
+    "cover": "",
+    "zh": {
+      "title": "Thermal illusion for wearables: Effects of vibrotactile parameters and placement on thermal masking and comfort.",
+      "body": "Zheng, J., Wang, W., Sun, G., & Zheng, R. (2026). Thermal illusion for wearables: Effects of vibrotactile parameters and placement on thermal masking and comfort. In Z. Li (Ed.), *Human factors and ergonomics in design* (AHFE Open Access, Vol. 210). AHFE International."
+    },
+    "en": {
+      "title": "Thermal illusion for wearables: Effects of vibrotactile parameters and placement on thermal masking and comfort.",
+      "body": "Zheng, J., Wang, W., Sun, G., & Zheng, R. (2026). Thermal illusion for wearables: Effects of vibrotactile parameters and placement on thermal masking and comfort. In Z. Li (Ed.), *Human factors and ergonomics in design* (AHFE Open Access, Vol. 210). AHFE International."
+    }
+  },
+  {
+    "id": "investigating-common-hands-free-modaliti-2026",
+    "year": "2026",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1007/s10055-026-01448-6",
+    "cover": "",
+    "zh": {
+      "title": "Investigating common hands-free modalities in supporting seamless cross-reality multitasking",
+      "body": "Song, F., Gao, X., Zeng, W., & Wang, W. (2026). Investigating common hands-free modalities in supporting seamless cross-reality multitasking. *Virtual Reality*."
+    },
+    "en": {
+      "title": "Investigating common hands-free modalities in supporting seamless cross-reality multitasking",
+      "body": "Song, F., Gao, X., Zeng, W., & Wang, W. (2026). Investigating common hands-free modalities in supporting seamless cross-reality multitasking. *Virtual Reality*."
+    }
+  },
+  {
+    "id": "preliminary-explorations-of-generative-a-2026",
+    "year": "2026",
+    "type": "论文",
+    "venue": "CHI EA ’26",
+    "authors": "Bryan-Kinns, N., Zhang, D., Li, H., He, M., Yuan, X., Zhao, X., Pavlov, I., Yang, Y., & Wang, S.",
+    "link": "https://doi.org/10.1145/3772363.3798663",
+    "cover": "",
+    "zh": {
+      "title": "生成式 AI 与花瑶挑花非遗具身刺绣的初步探索",
+      "body": "Bryan-Kinns et al. (2026). Extended Abstracts of CHI EA ’26. ACM."
+    },
+    "en": {
+      "title": "Preliminary explorations of generative AI and the embodied embroidery of Huayao intangible cultural heritage",
+      "body": "Bryan-Kinns et al. (2026). Extended Abstracts of CHI EA ’26. ACM."
+    }
+  },
+  {
+    "id": "designing-emotionally-resonant-thermal-i-2026",
+    "year": "2026",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/184/",
+    "cover": "",
+    "zh": {
+      "title": "Designing emotionally resonant thermal interactions for public speaking support.",
+      "body": "Sun, G., Wang, W., and Zheng, R. (2026) Designing emotionally resonant thermal interactions for public speaking support, in Simeone, L., Gray, C. M., Verhoeven, A., de Götzen, A., Bakırlıoğlu, Y., Zohar, H., Stead, M., and Buwert, P. (eds.), DRS2026: Edinburgh, 8–12 June, Edinburgh, United Kingdom. https://doi.org/10.21606/drs.2026.1011"
+    },
+    "en": {
+      "title": "Designing emotionally resonant thermal interactions for public speaking support.",
+      "body": "Sun, G., Wang, W., and Zheng, R. (2026) Designing emotionally resonant thermal interactions for public speaking support, in Simeone, L., Gray, C. M., Verhoeven, A., de Götzen, A., Bakırlıoğlu, Y., Zohar, H., Stead, M., and Buwert, P. (eds.), DRS2026: Edinburgh, 8–12 June, Edinburgh, United Kingdom. https://doi.org/10.21606/drs.2026.1011"
+    }
+  },
+  {
+    "id": "towards-praxis-genai-exploring-generativ-2026",
+    "year": "2026",
+    "type": "论文",
+    "venue": "ACM Creativity & Cognition",
+    "authors": "Bryan-Kinns, N., Zhang, D., Li, H., He, M., Yuan, X., Zhao, X., Pavlov, I., Yang, Y., & Wang, S.",
+    "link": "https://doi.org/10.1145/3803784.3807557",
+    "cover": "",
+    "zh": {
+      "title": "面向花瑶挑花工艺实践的生成式 AI 工具探索",
+      "body": "Bryan-Kinns et al. (2026). Proceedings of the 2026 Conference on Creativity and Cognition. ACM."
+    },
+    "en": {
+      "title": "Towards Praxis GenAI: Exploring generative AI tools for Huayao embroidery craft practice",
+      "body": "Bryan-Kinns et al. (2026). Proceedings of the 2026 Conference on Creativity and Cognition. ACM."
+    }
+  },
+  {
+    "id": "exploring-enhanced-strategies-for-emotio-2025",
+    "year": "2025",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1016/j.ijhcs.2025.103453",
+    "cover": "",
+    "zh": {
+      "title": "Exploring enhanced strategies for emotionally-perceptive music recommendations in mid-day sleep induction scenarios.",
+      "body": "Yang, S., Zhang, H., Zheng, R., Lin, Z., Shan, H., & Zhang, J. (2025). Exploring enhanced strategies for emotionally-perceptive music recommendations in mid-day sleep induction scenarios. *International Journal of Human-Computer Studies, 197*, 103453."
+    },
+    "en": {
+      "title": "Exploring enhanced strategies for emotionally-perceptive music recommendations in mid-day sleep induction scenarios.",
+      "body": "Yang, S., Zhang, H., Zheng, R., Lin, Z., Shan, H., & Zhang, J. (2025). Exploring enhanced strategies for emotionally-perceptive music recommendations in mid-day sleep induction scenarios. *International Journal of Human-Computer Studies, 197*, 103453."
+    }
+  },
+  {
+    "id": "a-review-of-user-experience-evaluation-f-2025",
+    "year": "2025",
+    "type": "论文",
+    "venue": "包装工程",
+    "authors": "Zhu, X., Wang, W., Yang, Y., & Du, L.",
+    "link": "https://doi.org/10.19554/j.cnki.1001-3563.2025.24.009",
+    "cover": "",
+    "zh": {
+      "title": "移动端生成式AI产品用户体验评估研究综述",
+      "body": "Zhu, X., Wang, W., Yang, Y., & Du, L. (2025). 包装工程, 46(24), 100–114."
+    },
+    "en": {
+      "title": "A review of user experience evaluation for mobile generative AI products",
+      "body": "Zhu, X., Wang, W., Yang, Y., & Du, L. (2025). 包装工程, 46(24), 100–114."
+    }
+  },
+  {
+    "id": "maintaining-balanced-conflict-proactive--2025",
+    "year": "2025",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1145/3706598.3713457",
+    "cover": "",
+    "zh": {
+      "title": "Maintaining \"balanced\" conflict: Proactive intervention strategies of AI voice agents in online collaboration of temporary design teams.",
+      "body": "Chen, X., Yuan, X., Zhang, H., Zheng, R., & Wei, W. (2025). Maintaining \"balanced\" conflict: Proactive intervention strategies of AI voice agents in online collaboration of temporary design teams. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)* (Article 907, pp. 1–19). Association for Computing Machinery."
+    },
+    "en": {
+      "title": "Maintaining \"balanced\" conflict: Proactive intervention strategies of AI voice agents in online collaboration of temporary design teams.",
+      "body": "Chen, X., Yuan, X., Zhang, H., Zheng, R., & Wei, W. (2025). Maintaining \"balanced\" conflict: Proactive intervention strategies of AI voice agents in online collaboration of temporary design teams. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)* (Article 907, pp. 1–19). Association for Computing Machinery."
+    }
+  },
+  {
+    "id": "investigating-diverse-trace-motion-patte-2025",
+    "year": "2025",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1016/j.ijhcs.2025.103716",
+    "cover": "",
+    "zh": {
+      "title": "Investigating diverse Trace motion patterns as informative cues in the far periphery",
+      "body": "Song, F., Gao, X., & Wang, W. (2025). Investigating diverse Trace motion patterns as informative cues in the far periphery. *International Journal of Human-Computer Studies, 208*, 103716."
+    },
+    "en": {
+      "title": "Investigating diverse Trace motion patterns as informative cues in the far periphery",
+      "body": "Song, F., Gao, X., & Wang, W. (2025). Investigating diverse Trace motion patterns as informative cues in the far periphery. *International Journal of Human-Computer Studies, 208*, 103716."
+    }
+  },
+  {
+    "id": "exploring-user-interactions-with-commerc-2025",
+    "year": "2025",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1007/s12193-025-00456-1",
+    "cover": "",
+    "zh": {
+      "title": "Exploring User Interactions with Commercial Machines via Real-world Application Logs in the Lab",
+      "body": "Song, F., Wang, W., Zhou, D., Bryan-Kinns, N., Zhang, J., Chen, Q., & Du, L. (2025). Exploring user interactions with commercial machines via real-world application logs in the lab. *Journal on Multimodal User Interfaces, 19*, 253–269."
+    },
+    "en": {
+      "title": "Exploring User Interactions with Commercial Machines via Real-world Application Logs in the Lab",
+      "body": "Song, F., Wang, W., Zhou, D., Bryan-Kinns, N., Zhang, J., Chen, Q., & Du, L. (2025). Exploring user interactions with commercial machines via real-world application logs in the lab. *Journal on Multimodal User Interfaces, 19*, 253–269."
+    }
+  },
+  {
+    "id": "smec-a-card-based-participatory-design-t-2024",
+    "year": "2024",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1080/14606925.2024.2420154",
+    "cover": "",
+    "zh": {
+      "title": "SMEC: A card-based participatory design tool for seamless multimodal experience innovation in connected and autonomous vehicles",
+      "body": "Song, F., & Wang, W. (2024). SMEC: A card-based participatory design tool for seamless multimodal experience innovation in connected and autonomous vehicles. *The Design Journal*."
+    },
+    "en": {
+      "title": "SMEC: A card-based participatory design tool for seamless multimodal experience innovation in connected and autonomous vehicles",
+      "body": "Song, F., & Wang, W. (2024). SMEC: A card-based participatory design tool for seamless multimodal experience innovation in connected and autonomous vehicles. *The Design Journal*."
+    }
+  },
+  {
+    "id": "waves-push-me-to-slumberland-reducing-pr-2024",
+    "year": "2024",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1145/3613904.3642736",
+    "cover": "",
+    "zh": {
+      "title": "\"Waves push me to slumberland\": Reducing pre-sleep stress through spatio-temporal tactile displaying of music.",
+      "body": "Zhang, H., Zheng, R., Yang, S., Wei, W., Shan, H., & Zhang, J. (2024). \"Waves push me to slumberland\": Reducing pre-sleep stress through spatio-temporal tactile displaying of music. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)* (Article 995, pp. 1–15). Association for Computing Machinery."
+    },
+    "en": {
+      "title": "\"Waves push me to slumberland\": Reducing pre-sleep stress through spatio-temporal tactile displaying of music.",
+      "body": "Zhang, H., Zheng, R., Yang, S., Wei, W., Shan, H., & Zhang, J. (2024). \"Waves push me to slumberland\": Reducing pre-sleep stress through spatio-temporal tactile displaying of music. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)* (Article 995, pp. 1–15). Association for Computing Machinery."
+    }
+  },
+  {
+    "id": "construction-and-practice-of-emotionally-2024",
+    "year": "2024",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://kns.cnki.net/kcms2/article/abstract?v=4Kwr3-EHKF5S5FxcmC3G2DJKRjfiaM-wT0TZZciIxXQsSx84msyms6QKAZcAiGf5nj_-Nj4wwuLIBOTLtBRtXVlwjfjKaH9fesd_FEAdqs2y77abbcDNNx9G2P8_h0kLucl1eJZij-9TXfVTbiT5sdmhI5CWvK3y_UxCpSTQf9w=&uniplatform=NZKPT",
+    "cover": "",
+    "zh": {
+      "title": "情感感知的助眠音乐推荐策略构建与实践．",
+      "body": "张卉,杨诗娆,郑瑞啸,梁欣婕,陈心惠,魏莞懿．情感感知的助眠音乐推荐策略构建与实践[J]．包装工程,2024,45(12):38-48"
+    },
+    "en": {
+      "title": "情感感知的助眠音乐推荐策略构建与实践．",
+      "body": "张卉,杨诗娆,郑瑞啸,梁欣婕,陈心惠,魏莞懿．情感感知的助眠音乐推荐策略构建与实践[J]．包装工程,2024,45(12):38-48"
+    }
+  },
+  {
+    "id": "evidence-based-uncertainty-quantificatio-2023",
+    "year": "2023",
+    "type": "论文",
+    "venue": "Applied Mathematical Modelling",
+    "authors": "Li, Z., Cao, L., Huo, M., et al.",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "基于证据理论的双金属复合材料弯曲性能不确定性量化",
+      "body": "Li, Z., Cao, L., Huo, M., et al. (2023). Applied Mathematical Modelling, 121, 59–74. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Evidence-based uncertainty quantification for bending properties of bimetal composites",
+      "body": "Li, Z., Cao, L., Huo, M., et al. (2023). Applied Mathematical Modelling, 121, 59–74. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "how-to-enhance-the-social-discourse-powe-2023",
+    "year": "2023",
+    "type": "论文",
+    "venue": "2022国际艺术与设计博士生论坛论文集 / 中国青年出版社",
+    "authors": "栾之珑",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "如何提升设计的社会话语权：初探将设计伦理与实践应用相结合的6C分析模型",
+      "body": "栾之珑. 收入《“向多样的世界提问”——2022国际艺术与设计博士生论坛论文集》, 中国青年出版社, 2023. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "How to enhance the social discourse power of design: A study on the 6C analysis model combining design ethics and practical actions",
+      "body": "栾之珑. 收入《“向多样的世界提问”——2022国际艺术与设计博士生论坛论文集》, 中国青年出版社, 2023. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "the-concept-history-and-development-of-s-2023",
+    "year": "2023",
+    "type": "报告",
+    "venue": "ACM ISS 2023 Workshop",
+    "authors": "Wang, W., & Song, F.",
+    "link": "https://iss2023.acm.org/details/iss-2023-workshop--framing-seamlessness/1/Keynote-The-concept-history-and-development-of-seamless-multimodal-interaction",
+    "cover": "",
+    "zh": {
+      "title": "无缝多模态交互的概念、历史与发展",
+      "body": "Wang, W., & Song, F. (2023). Keynote, ACM ISS 2023 Workshop: Framing Seamlessness."
+    },
+    "en": {
+      "title": "The concept, history and development of seamless multimodal interaction",
+      "body": "Wang, W., & Song, F. (2023). Keynote, ACM ISS 2023 Workshop: Framing Seamlessness."
+    }
+  },
+  {
+    "id": "evaluation-of-usability-and-user-experie-2023",
+    "year": "2023",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1007/978-3-031-35702-2_10",
+    "cover": "",
+    "zh": {
+      "title": "Evaluation of Usability and User Experience of Dishwasher Rack Design for Chinese Families",
+      "body": "Chen, D., Wang, W., Gao, X., Ding, Y., & Liang, W. (2023). Evaluation of usability and user experience of dishwasher rack design for Chinese families. In *HCI International 2023*. Springer."
+    },
+    "en": {
+      "title": "Evaluation of Usability and User Experience of Dishwasher Rack Design for Chinese Families",
+      "body": "Chen, D., Wang, W., Gao, X., Ding, Y., & Liang, W. (2023). Evaluation of usability and user experience of dishwasher rack design for Chinese families. In *HCI International 2023*. Springer."
+    }
+  },
+  {
+    "id": "same-the-design-space-for-seamless-autom-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1109/MITP.2022.3172943",
+    "cover": "",
+    "zh": {
+      "title": "SAME: The Design Space for Seamless Automotive Multimodal Experience",
+      "body": "Wang, W., Song, F., & Zhu, T. (2022). SAME: The design space for seamless automotive multimodal experience. *IT Professional, 24*(3), 35–42."
+    },
+    "en": {
+      "title": "SAME: The Design Space for Seamless Automotive Multimodal Experience",
+      "body": "Wang, W., Song, F., & Zhu, T. (2022). SAME: The design space for seamless automotive multimodal experience. *IT Professional, 24*(3), 35–42."
+    }
+  },
+  {
+    "id": "positioning-accuracy-reliability-analysi-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "Journal of Mechanical Design",
+    "authors": "Cao, L., Liu, J., Zhang, J., et al.",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "基于平行多面体证据理论模型的工业机器人定位精度可靠性分析",
+      "body": "Cao, L., Liu, J., Zhang, J., et al. (2022). Journal of Mechanical Design, 145(2), 023303. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Positioning accuracy reliability analysis of industrial robots based on parallelotope evidence theory model and space affine collocation",
+      "body": "Cao, L., Liu, J., Zhang, J., et al. (2022). Journal of Mechanical Design, 145(2), 023303. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "interaction-change-in-the-era-of-intelli-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://kns.cnki.net/kcms2/article/abstract?v=tBI8TAhqnxQeKgsWaEbdN9gLMjsVaessgz92fdQvImlST9VhX5s34G2OZ938A4D-Tpahspp8WBG9WSQk0XJ1z6dBoGvDAYwGew8myC8XAAB1J8Y-F4EYT-Px54wEwOVgmi9krTEp9knYWzBydGcofRP1QvGN4Bwa23nlQ1nsHFV98sQal70tkw==&uniplatform=NZKPT&language=CHS",
+    "cover": "",
+    "zh": {
+      "title": "智能产品时代的交互之变：面向实体可触交互的设计刍议",
+      "body": "王巍, & 杨逸景. (2022). 智能产品时代的交互之变:面向实体可触交互的设计刍议. 美术大观(006), 000."
+    },
+    "en": {
+      "title": "智能产品时代的交互之变：面向实体可触交互的设计刍议",
+      "body": "王巍, & 杨逸景. (2022). 智能产品时代的交互之变:面向实体可触交互的设计刍议. 美术大观(006), 000."
+    }
+  },
+  {
+    "id": "structural-stochastic-identification-con-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "Structural and Multidisciplinary Optimization",
+    "authors": "Cao, L., Liu, J., Hu, Y., et al.",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "考虑建模不确定性的结构随机识别：稀疏网格与相似系统分析",
+      "body": "Cao, L., Liu, J., Hu, Y., et al. (2022). Structural & Multidisciplinary Optimization, 65, 219. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Structural stochastic identification considering modeling uncertainty through sparse grid and similar system analysis",
+      "body": "Cao, L., Liu, J., Hu, Y., et al. (2022). Structural & Multidisciplinary Optimization, 65, 219. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "exploring-the-effect-of-visual-and-audit-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.21606/drs.2022.496",
+    "cover": "",
+    "zh": {
+      "title": "Exploring the effect of visual and auditory information in haptic experience",
+      "body": "Gao, X., Wang, W., Song, F., & Liu, F. (2022). Exploring the effect of visual and auditory information in haptic experience. In *DRS2022: Bilbao*. Design Research Society."
+    },
+    "en": {
+      "title": "Exploring the effect of visual and auditory information in haptic experience",
+      "body": "Gao, X., Wang, W., Song, F., & Liu, F. (2022). Exploring the effect of visual and auditory information in haptic experience. In *DRS2022: Bilbao*. Design Research Society."
+    }
+  },
+  {
+    "id": "optimal-sparse-polynomial-chaotic-expans-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "Computer Methods in Applied Mechanics and Engineering",
+    "authors": "Cao, L., Liu, J., Chen, W., et al.",
+    "link": "https://doi.org/10.1016/j.cma.2022.115368",
+    "cover": "",
+    "zh": {
+      "title": "面向任意概率分布的最优稀疏多项式混沌展开及其全局灵敏度分析",
+      "body": "Cao, L., Liu, J., Chen, W., et al. (2022). CMAME, 399, 115368. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Optimal sparse polynomial chaotic expansion for arbitrary probability distribution and its application on global sensitivity analysis",
+      "body": "Cao, L., Liu, J., Chen, W., et al. (2022). CMAME, 399, 115368. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "a-framework-for-designing-the-seamless-a-2022",
+    "year": "2022",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.21606/drs.2022.163",
+    "cover": "",
+    "zh": {
+      "title": "A framework for designing the seamless automotive multimodal experience in future connected and autonomous vehicles",
+      "body": "Song, F., Wang, W., Lin, H., & Tian, Y. (2022). A framework for designing the seamless automotive multimodal experience in future connected and autonomous vehicles. In *DRS2022: Bilbao*. Design Research Society."
+    },
+    "en": {
+      "title": "A framework for designing the seamless automotive multimodal experience in future connected and autonomous vehicles",
+      "body": "Song, F., Wang, W., Lin, H., & Tian, Y. (2022). A framework for designing the seamless automotive multimodal experience in future connected and autonomous vehicles. In *DRS2022: Bilbao*. Design Research Society."
+    }
+  },
+  {
+    "id": "hack3d-crowdsourcing-the-assessment-of-c-2021",
+    "year": "2021",
+    "type": "论文",
+    "venue": "Computer",
+    "authors": "Linares, M., Aswani, N., Mac, G., Jin, C., Chen, F., Gupta, N., & Karri, R.",
+    "link": "https://doi.org/10.1109/MC.2021.3074192",
+    "cover": "",
+    "zh": {
+      "title": "Hack3D：众包评估数字制造中的网络安全",
+      "body": "Linares, M. et al. (2021). Computer, 54(11), 58–67. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Hack3D: Crowdsourcing the assessment of cybersecurity in digital manufacturing",
+      "body": "Linares, M. et al. (2021). Computer, 54(11), 58–67. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "study-of-the-compressive-properties-of-a-2021",
+    "year": "2021",
+    "type": "论文",
+    "venue": "The Journal of Adhesion",
+    "authors": "Chen, F., Pinisetty, D., & Gupta, N.",
+    "link": "https://doi.org/10.1080/00218464.2021.1982706",
+    "cover": "",
+    "zh": {
+      "title": "不同应变率下胶接碳纤维层合板压缩性能研究",
+      "body": "Chen, F., Pinisetty, D., & Gupta, N. (2021). The Journal of Adhesion. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Study of the compressive properties of adhesively bonded carbon fiber laminates at different strain rates",
+      "body": "Chen, F., Pinisetty, D., & Gupta, N. (2021). The Journal of Adhesion. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "non-probabilistic-polygonal-convex-set-m-2021",
+    "year": "2021",
+    "type": "论文",
+    "venue": "Applied Mathematical Modelling",
+    "authors": "Cao, L., Liu, J., Xie, L., et al.",
+    "link": "https://doi.org/10.1016/j.apm.2020.07.025",
+    "cover": "",
+    "zh": {
+      "title": "用于结构不确定性量化的非概率多边形凸集模型",
+      "body": "Cao, L., Liu, J., Xie, L., et al. (2021). Applied Mathematical Modelling, 89, 504–518. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Non-probabilistic polygonal convex set model for structural uncertainty quantification",
+      "body": "Cao, L., Liu, J., Xie, L., et al. (2021). Applied Mathematical Modelling, 89, 504–518. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "evidence-based-structural-uncertainty-qu-2020",
+    "year": "2020",
+    "type": "论文",
+    "venue": "Journal of Mechanical Design",
+    "authors": "Cao, L., Liu, J., Jiang, C., et al.",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "基于降维分解与边际区间分析的结构不确定性量化",
+      "body": "Cao, L., Liu, J., Jiang, C., et al. (2020). Journal of Mechanical Design, 142(5), 051701. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Evidence-based structural uncertainty quantification by dimension reduction decomposition and marginal interval analysis",
+      "body": "Cao, L., Liu, J., Jiang, C., et al. (2020). Journal of Mechanical Design, 142(5), 051701. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "embedded-product-authentication-codes-in-2020",
+    "year": "2020",
+    "type": "论文",
+    "venue": "Additive Manufacturing",
+    "authors": "Chen, F., Zabalza, J., Murray, P., Marshall, S., Yu, J. H., & Gupta, N.",
+    "link": "https://doi.org/10.1016/j.addma.2020.101319",
+    "cover": "",
+    "zh": {
+      "title": "增材制造零件中的嵌入式产品认证码：成像与图像处理以提升可扫描性",
+      "body": "Chen, F. et al. (2020). Additive Manufacturing, 35, 101319. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Embedded product authentication codes in additive manufactured parts: Imaging and image processing for improved scan ability",
+      "body": "Chen, F. et al. (2020). Additive Manufacturing, 35, 101319. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "obfuscation-of-embedded-codes-in-additiv-2019",
+    "year": "2019",
+    "type": "论文",
+    "venue": "Advanced Engineering Materials",
+    "authors": "Chen, F., Yu, J. H., & Gupta, N.",
+    "link": "https://doi.org/10.1002/adem.201900146",
+    "cover": "",
+    "zh": {
+      "title": "增材制造零件中嵌入码的混淆方法：面向产品认证",
+      "body": "Chen, F., Yu, J. H., & Gupta, N. (2019). Advanced Engineering Materials, 21(8), 1900146. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Obfuscation of embedded codes in additive manufactured components for product authentication",
+      "body": "Chen, F., Yu, J. H., & Gupta, N. (2019). Advanced Engineering Materials, 21(8), 1900146. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "exploring-the-design-ethics-of-the-futur-2019",
+    "year": "2019",
+    "type": "论文",
+    "venue": "LeNS 2019",
+    "authors": "Luan, Z. L., & Lu, X. B.",
+    "link": "http://hdl.handle.net/11311/1123787",
+    "cover": "",
+    "zh": {
+      "title": "未来信息社会的设计伦理初探：以“社会性互联网产品”为例",
+      "body": "Luan, Z. L., & Lu, X. B. (2019). LeNS 2019. http://hdl.handle.net/11311/1123787"
+    },
+    "en": {
+      "title": "Exploring the design ethics of the future information society: A brief design ethics study of “DiDi” as a sociality internet product",
+      "body": "Luan, Z. L., & Lu, X. B. (2019). LeNS 2019. http://hdl.handle.net/11311/1123787"
+    }
+  },
+  {
+    "id": "the-value-generation-in-design-studies-v-2019",
+    "year": "2019",
+    "type": "论文",
+    "venue": "齐鲁艺苑",
+    "authors": "栾之珑, 鲁晓波",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "设计研究中的价值挖掘——虚拟现实文创产品的价值分析",
+      "body": "栾之珑, 鲁晓波. 齐鲁艺苑, 2019(4). 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "The value generation in design studies: Value analysis of virtual reality cultural creative products",
+      "body": "栾之珑, 鲁晓波. 齐鲁艺苑, 2019(4). 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "embedding-tracking-codes-in-additive-man-2018",
+    "year": "2018",
+    "type": "论文",
+    "venue": "Advanced Engineering Materials",
+    "authors": "Chen, F., Luo, Y., Tsoutsos, N. G., Maniatakos, M., Shahin, K., & Gupta, N.",
+    "link": "https://doi.org/10.1002/adem.201800495",
+    "cover": "",
+    "zh": {
+      "title": "在增材制造零件中嵌入追踪码以进行产品认证",
+      "body": "Chen, F. et al. (2018). Advanced Engineering Materials, 21(4), 1800495. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Embedding tracking codes in additive manufactured parts for product authentication",
+      "body": "Chen, F. et al. (2018). Advanced Engineering Materials, 21(4), 1800495. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "graphene-reinforced-aluminum-matrix-comp-2018",
+    "year": "2018",
+    "type": "论文",
+    "venue": "JOM",
+    "authors": "Chen, F., Gupta, N., Behera, R. K., & Rohatgi, P. K.",
+    "link": "https://doi.org/10.1007/s11837-018-2810-7",
+    "cover": "",
+    "zh": {
+      "title": "石墨烯增强铝基复合材料：制备方法与性能综述",
+      "body": "Chen, F. et al. (2018). JOM, 70(6), 837–845. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Graphene-reinforced aluminum matrix composites: A review of synthesis methods and properties",
+      "body": "Chen, F. et al. (2018). JOM, 70(6), 837–845. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "design-features-to-address-security-chal-2018",
+    "year": "2018",
+    "type": "专著 / 书籍",
+    "venue": "CRC Press",
+    "authors": "Gupta, N., Chen, F., & Shain, K.",
+    "link": "https://doi.org/10.1201/9781315104133",
+    "cover": "",
+    "zh": {
+      "title": "面向增材制造安全挑战的设计特征",
+      "body": "Gupta, N., Chen, F., & Shain, K. (2018). In Manufacturing Techniques for Materials. CRC Press. ISBN 9781315104133. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Design features to address security challenges in additive manufacturing",
+      "body": "Gupta, N., Chen, F., & Shain, K. (2018). In Manufacturing Techniques for Materials. CRC Press. ISBN 9781315104133. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "obfuscade-obfuscating-additive-manufactu-2017",
+    "year": "2017",
+    "type": "论文",
+    "venue": "ACM/IEEE DAC",
+    "authors": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M.",
+    "link": "https://doi.org/10.1145/3061639.3079847",
+    "cover": "",
+    "zh": {
+      "title": "ObfusCADe：混淆增材制造 CAD 模型以防伪",
+      "body": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M. (2017). DAC ’17. ACM. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "ObfusCADe: Obfuscating additive manufacturing CAD models against counterfeiting",
+      "body": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M. (2017). DAC ’17. ACM. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "from-designing-lifestyles-to-designing-l-2017",
+    "year": "2017",
+    "type": "论文",
+    "venue": "工业设计",
+    "authors": "栾之珑",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "从设计生活方式到设计生活意义——浅析信息社会体验设计的发展方式与设计潜力",
+      "body": "栾之珑. 工业设计, 2017(1). 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "From designing lifestyles to designing life meanings: Experience design in the informational society",
+      "body": "栾之珑. 工业设计, 2017(1). 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "nonlinear-narrative-unfolding-in-multipl-2017",
+    "year": "2017",
+    "type": "论文",
+    "venue": "装饰",
+    "authors": "栾之珑, 师丹青",
+    "link": "https://www.izhsh.com.cn/doc/3/3558.html",
+    "cover": "",
+    "zh": {
+      "title": "多维度下展开的非线性叙事——新媒体时代的体验性叙事设计",
+      "body": "栾之珑, 师丹青. 装饰, 2017(4). 来源：湖南大学设计艺术学院教师主页 / 《装饰》2017年第4期目录。"
+    },
+    "en": {
+      "title": "Nonlinear narrative unfolding in multiple dimensions: Experiential narrative design in the new media era",
+      "body": "栾之珑, 师丹青. 装饰, 2017(4). 来源：湖南大学设计艺术学院教师主页 / 《装饰》2017年第4期目录。"
+    }
+  },
+  {
+    "id": "security-features-embedded-in-computer-a-2017",
+    "year": "2017",
+    "type": "论文",
+    "venue": "Materials & Design",
+    "authors": "Chen, F., Mac, G., & Gupta, N.",
+    "link": "https://doi.org/10.1016/j.matdes.2017.04.078",
+    "cover": "",
+    "zh": {
+      "title": "嵌入 CAD 实体模型的增材制造安全特征",
+      "body": "Chen, F., Mac, G., & Gupta, N. (2017). Materials & Design, 128, 182–194. 来源：湖南大学设计艺术学院教师主页。"
+    },
+    "en": {
+      "title": "Security features embedded in computer aided design (CAD) solid models for additive manufacturing",
+      "body": "Chen, F., Mac, G., & Gupta, N. (2017). Materials & Design, 128, 182–194. 来源：湖南大学设计艺术学院教师主页。"
+    }
+  },
+  {
+    "id": "sheet-20260910-40",
+    "year": "2024",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.21606/drs.2024.1334",
+    "cover": "",
+    "zh": {
+      "title": "Toward mutual understanding: Constructing the designer-developer collaboration in designing gesture interaction",
+      "body": "Yang, Y., Wang, W., Zhang, J., Chen, Q., and Du, L. (2024) Toward mutual understanding: Constructing the\ndesigner-developer collaboration in designing gesture interaction, in Gray, C., Ciliotta Chehade, E., Hekkert,\nP., Forlano, L., Ciuccarelli, P., Lloyd, P. (eds.), DRS2024: Boston, 23–28 June, Boston, USA. https://doi.org/\n10.21606/drs.2024.1334"
+    },
+    "en": {
+      "title": "Toward mutual understanding: Constructing the designer-developer collaboration in designing gesture interaction",
+      "body": "Yang, Y., Wang, W., Zhang, J., Chen, Q., and Du, L. (2024) Toward mutual understanding: Constructing the\ndesigner-developer collaboration in designing gesture interaction, in Gray, C., Ciliotta Chehade, E., Hekkert,\nP., Forlano, L., Ciuccarelli, P., Lloyd, P. (eds.), DRS2024: Boston, 23–28 June, Boston, USA. https://doi.org/\n10.21606/drs.2024.1334"
+    }
+  },
+  {
+    "id": "sheet-20260910-41",
+    "year": "2026",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://doi.org/10.1177/29776481261427591",
+    "cover": "",
+    "zh": {
+      "title": "The Role of Designers in Human–AI Collaborative Design: Capturing the New Patterns in AI4UX Framework",
+      "body": "Wang, W., Yang, Y., & Luan, Z. (2026). The Role of Designers in Human–AI Collaborative Design: Capturing the New Patterns in AI4UX Framework. Design for Augmented Humanity, 1(1), 31-48. https://doi.org/10.1177/29776481261427591"
+    },
+    "en": {
+      "title": "The Role of Designers in Human–AI Collaborative Design: Capturing the New Patterns in AI4UX Framework",
+      "body": "Wang, W., Yang, Y., & Luan, Z. (2026). The Role of Designers in Human–AI Collaborative Design: Capturing the New Patterns in AI4UX Framework. Design for Augmented Humanity, 1(1), 31-48. https://doi.org/10.1177/29776481261427591"
+    }
+  },
+  {
+    "id": "sheet-20260910-42",
+    "year": "",
+    "type": "教材",
+    "venue": "",
+    "authors": "",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "智能产品交互设计（人民美术出版社）"
+    },
+    "en": {
+      "title": "智能产品交互设计（人民美术出版社）"
+    }
+  },
+  {
+    "id": "sheet-20260910-43",
+    "year": "",
+    "type": "其他",
+    "venue": "",
+    "authors": "",
+    "link": "",
+    "cover": "",
+    "zh": {
+      "title": "SemanticHaptics: Multimodal Attention Guidance for Remote Learning"
+    },
+    "en": {
+      "title": "SemanticHaptics: Multimodal Attention Guidance for Remote Learning"
+    }
+  },
+  {
+    "id": "sheet-20260910-44",
+    "year": "",
+    "type": "论文",
+    "venue": "",
+    "authors": "",
+    "link": "https://www.researchgate.net/publication/381336141_High-Frequency_Gripping_Area_for_One-Handed_Smartphone_Rear_Interactions",
+    "cover": "",
+    "zh": {
+      "title": "High-Frequency Gripping Area for One-Handed Smartphone Rear Interactions"
+    },
+    "en": {
+      "title": "High-Frequency Gripping Area for One-Handed Smartphone Rear Interactions"
+    }
+  }
+];
+
+const SITE_META = {
+  zh: {},
+  en: {},
+  assets: {},
+};
 
 function getProject(id) {
   return PROJECTS.find((item) => item.id === id);

@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+*.xlsx
+*.xlsx.bak-*
+*.sqlite
+*.sqlite3
+*.db
+*.pem
+*.key
+/ref/
+/整理/
+/对话输入整理-四轮.md
+/iped-site-locations.inc.conf

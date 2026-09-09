@@ -5,6 +5,7 @@ const dictionary = {
     brandCn: "可触界面实验室",
     brandEn: "Touchable Interface Lab",
     navAria: "主导航",
+    navHome: "首页",
     navAbout: "关于",
     navProjects: "项目",
     navPublications: "出版",
@@ -14,6 +15,23 @@ const dictionary = {
     heroTitle: "可触界面实验室",
     heroSubtitle: "Touchable Interface Lab",
     heroIntro: "致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。",
+    heroLine1: "Sensing Beyond",
+    heroLine2: "Designing for All",
+    heroExplore: "EXPLORE OUR RESEARCH",
+    focusKicker: "OUR FOCUS",
+    focusTitleZh: "可触界面实验室",
+    focusTitleEn: "Touchable Interface Lab",
+    focusIntro:
+      "可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
+    metricsLab: "TouchLab",
+    metricsUni: "Hunan University",
+    metricsQuote:
+      "我们致力于触觉多感官人机交互与智能用户体验的跨学科研究，坚持以人为中心，融合多学科前沿方法探索人智协同，让技术真正服务于人。",
+    metricsLabel: "研究成果",
+    metricIndustry: "校企项目",
+    metricPapers: "论文发表",
+    metricGrants: "横向课题",
+    metricMembers: "团队成员",
     heroProjectCta: "浏览项目",
     heroJoinCta: "合作与加入",
     heroCaptionLabel: "Prototype Desk",
@@ -38,7 +56,7 @@ const dictionary = {
     aboutMissionTitle: "使命与愿景",
     aboutMissionBody1:
       "可触界面实验室（Touchable Interface Lab）致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究领域。我们秉持平等、包容、多元的核心价值，以人文关怀为底色，坚信技术发展的终极意义在于服务人的真实需求。",
-    aboutMissionBody2: "我们始终以以人为中心为根本出发点，在推动技术创新的同时，不忘设计的人文本质。",
+    aboutMissionBody2: "我们始终以以人为中心为根本出发点，在推动技术创新的同时，不忘设计的人文本质——让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
     aboutTracksTitle: "研究框架",
     aboutTrack1Title: "学术视野",
     aboutTrack1Body:
@@ -77,9 +95,21 @@ const dictionary = {
     projectsKicker: "Projects",
     projectsTitle: "代表项目",
     projectsIntro: "",
-    projectsPageKicker: "Research",
+    projectsPageKicker: "PROJECTS",
     projectsPageTitle: "研究项目",
     projectsPageIntro: "",
+    projTitle1: "Research",
+    projTitle2: "Into Real ",
+    projTitleAccent: "Impact.",
+    projLead: "把研究转化为可触可感的体验，面向更人本的未来。",
+    projSide1: "EXPLORE HUMAN TECHNOLOGY POSSIBILITIES",
+    projSide2: "FROM TOUCH TO TOMORROW",
+    projAll: "All Projects",
+    projViewAs: "VIEW AS",
+    projViewGrid: "网格",
+    projViewList: "列表",
+    projViewProjects: "查看项目",
+    projEmpty: "这个分类暂时没有公开项目。",
     researchCatIndustry: "校企合作",
     researchCatGrant: "科研课题",
     researchCatStudio: "教学与工作坊",
@@ -167,8 +197,8 @@ const dictionary = {
     pubKicker: "Publication",
     pubTitle: "出版与成果",
     pubPageKicker: "Publication",
-    pubPageTitle: "出版、专利与展示成果",
-    pubPageIntro: "论文、专利、软著、展览与奖项。",
+    pubPageTitle: "出版与成果",
+    pubPageIntro: "论文、专著章节与学术报告。含收集表已填的实验室成果，以及王巍、栾之珑、曹立雄、陈菲老师在学院主页公开的代表发表。",
     pub1Title: "Tangible Interfaces for Inclusive Public Services",
     pub1Body: "面向公共服务的可触界面研究。",
     pub2Title: "触觉反馈在智能产品体验中的设计方法",
@@ -211,6 +241,7 @@ const dictionary = {
     brandCn: "Touchable Interface Lab",
     brandEn: "School of Design and Art, HNU",
     navAria: "Main navigation",
+    navHome: "Home",
     navAbout: "About",
     navProjects: "Projects",
     navPublications: "Publications",
@@ -221,6 +252,23 @@ const dictionary = {
     heroSubtitle: "可触界面实验室",
     heroIntro:
       "We explore haptic, multisensory and multimodal human–computer interaction, intelligent product interfaces, and user-experience design.",
+    heroLine1: "Sensing Beyond",
+    heroLine2: "Designing for All",
+    heroExplore: "EXPLORE OUR RESEARCH",
+    focusKicker: "OUR FOCUS",
+    focusTitleZh: "Touchable Interface Lab",
+    focusTitleEn: "可触界面实验室",
+    focusIntro:
+      "Touchable Interface Lab explores haptic, multisensory and multimodal human–computer interaction, connecting design, technology and people to create a more inclusive and human-centered intelligent future.",
+    metricsLab: "TouchLab",
+    metricsUni: "Hunan University",
+    metricsQuote:
+      "We pursue interdisciplinary research in haptic, multisensory human–computer interaction and intelligent user experience. Staying human-centered, we bring together frontier methods to explore human–AI collaboration so technology truly serves people.",
+    metricsLabel: "Research Outcomes",
+    metricIndustry: "Industry Projects",
+    metricPapers: "Publications",
+    metricGrants: "Sponsored Studies",
+    metricMembers: "Team Members",
     heroProjectCta: "View Projects",
     heroJoinCta: "Collaborate",
     heroCaptionLabel: "Prototype Desk",
@@ -247,7 +295,7 @@ const dictionary = {
     aboutMissionBody1:
       "Touchable Interface Lab explores the intersection of haptic, multisensory and multimodal human–computer interaction, intelligent product interfaces, and user-experience design. We hold equality, inclusion and diversity as core values, grounded in humanistic care, and believe the ultimate purpose of technology is to serve people’s real needs.",
     aboutMissionBody2:
-      "We remain human-centered: advancing technical innovation without losing the humanistic nature of design.",
+      "We remain human-centered: advancing technical innovation without losing the humanistic nature of design, making every interaction more natural and inclusive, and ensuring technology truly serves human well-being.",
     aboutTracksTitle: "Research Framework",
     aboutTrack1Title: "Research Vision",
     aboutTrack1Body:
@@ -289,9 +337,21 @@ const dictionary = {
     projectsKicker: "Projects",
     projectsTitle: "Featured Projects",
     projectsIntro: "",
-    projectsPageKicker: "Research",
+    projectsPageKicker: "PROJECTS",
     projectsPageTitle: "Research Projects",
     projectsPageIntro: "",
+    projTitle1: "Research",
+    projTitle2: "Into Real ",
+    projTitleAccent: "Impact.",
+    projLead: "Turning research into tangible experiences for a more human future.",
+    projSide1: "EXPLORE HUMAN TECHNOLOGY POSSIBILITIES",
+    projSide2: "FROM TOUCH TO TOMORROW",
+    projAll: "All Projects",
+    projViewAs: "VIEW AS",
+    projViewGrid: "Grid",
+    projViewList: "List",
+    projViewProjects: "View Projects",
+    projEmpty: "No public projects in this category yet.",
     researchCatIndustry: "Industry Collaboration",
     researchCatGrant: "Funded Research",
     researchCatStudio: "Teaching & Workshops",
@@ -379,8 +439,8 @@ const dictionary = {
     pubKicker: "Publication",
     pubTitle: "Publications & Outputs",
     pubPageKicker: "Publication",
-    pubPageTitle: "Publications, Patents and Exhibitions",
-    pubPageIntro: "Papers, patents, software copyrights, exhibitions and awards.",
+    pubPageTitle: "Publications & Outputs",
+    pubPageIntro: "Papers, book chapters and talks from the collection form, plus representative works by Wei Wang, Zhilong Luan, Lixiong Cao and Fei Chen listed on the School of Design faculty pages.",
     pub1Title: "Tangible Interfaces for Inclusive Public Services",
     pub1Body: "Research on tangible interfaces for public services.",
     pub2Title: "Design Methods for Haptic Feedback in Smart Product Experiences",
@@ -428,10 +488,33 @@ const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const projectPages = new Set(["demo-touch-map.html", "demo-soft-panel.html", "demo-exhibit.html", "project.html"]);
 let activeLanguage = localStorage.getItem("til-language") || "zh";
 
+function siteMetaOf(lang) {
+  if (typeof SITE_META === "undefined" || !SITE_META) return {};
+  return SITE_META[lang] || {};
+}
+
+function applySiteAssets() {
+  if (typeof SITE_META === "undefined" || !SITE_META || !SITE_META.assets) return;
+  const assets = SITE_META.assets;
+  document.querySelectorAll(".brand-mark img").forEach((img) => {
+    if (assets.logo) img.setAttribute("src", assets.logo);
+  });
+  const qrs = document.querySelectorAll(".qr-grid img");
+  if (qrs[0] && assets.wechatQr) qrs[0].setAttribute("src", assets.wechatQr);
+  if (qrs[1] && assets.portfolioQr) qrs[1].setAttribute("src", assets.portfolioQr);
+  if (qrs[2] && assets.joinQr) qrs[2].setAttribute("src", assets.joinQr);
+  const space = document.querySelector(".page-photo img");
+  if (space && assets.spacePhoto) space.setAttribute("src", assets.spacePhoto);
+}
+
 function applyLanguage(lang) {
   activeLanguage = lang;
-  const strings = dictionary[lang];
+  const strings = Object.assign({}, dictionary[lang], siteMetaOf(lang));
   document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  applySiteAssets();
+  document.querySelectorAll("[data-zh][data-en]").forEach((node) => {
+    node.textContent = node.dataset[lang] || node.dataset.zh;
+  });
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.dataset.i18n;
@@ -458,6 +541,9 @@ function applyLanguage(lang) {
   localStorage.setItem("til-language", lang);
   syncActiveDemoText();
   syncPressureText();
+  if (typeof renderHomeCarousel === "function") {
+    renderHomeCarousel();
+  }
   if (typeof renderHomeIndex === "function") {
     renderHomeIndex();
   }
@@ -466,6 +552,9 @@ function applyLanguage(lang) {
   }
   if (typeof renderProjectDetail === "function") {
     renderProjectDetail();
+  }
+  if (typeof renderPublications === "function") {
+    renderPublications();
   }
 }
 
@@ -480,6 +569,15 @@ document.querySelectorAll(".main-nav a, .footer-links a").forEach((link) => {
     link.setAttribute("aria-current", "page");
   }
 });
+
+const homeHeader = document.querySelector("body.home .site-header, body.projects .site-header");
+if (homeHeader) {
+  const syncHomeHeader = () => {
+    homeHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+  };
+  syncHomeHeader();
+  window.addEventListener("scroll", syncHomeHeader, { passive: true });
+}
 
 const progress = document.querySelector(".page-progress");
 const cursor = document.querySelector(".tactile-cursor");
@@ -605,6 +703,88 @@ function sortProjectsByYear(items) {
   return [...items].sort((a, b) => (b.yearStart || 0) - (a.yearStart || 0));
 }
 
+function isPublicVisible(item) {
+  const vis = String((item && item.visibility) || "public").trim().toLowerCase();
+  return vis !== "hidden" && vis !== "pending" && vis !== "hide" && vis !== "off";
+}
+
+function publicProjects() {
+  return (typeof PROJECTS === "undefined" ? [] : PROJECTS).filter(isPublicVisible);
+}
+
+function publicPublications() {
+  return (typeof PUBLICATIONS === "undefined" ? [] : PUBLICATIONS).filter(isPublicVisible);
+}
+
+const HOME_CAROUSEL_IDS = ["gesture", "ai-insight", "auto-ux", "vivo-hf", "vatti-hw", "vatti-oasis", "nssfc", "moe-ich"];
+
+function homeCarouselSlides() {
+  if (typeof getProject !== "function") return [];
+  const slides = HOME_CAROUSEL_IDS.map((id) => getProject(id)).filter((project) => project && project.cover && isPublicVisible(project));
+  if (slides.length) return slides;
+  const seen = new Set();
+  return publicProjects().filter((project) => {
+    if (!project.cover || seen.has(project.cover)) return false;
+    seen.add(project.cover);
+    return true;
+  });
+}
+
+function renderHomeCarousel() {
+  const root = document.querySelector("[data-home-carousel]");
+  if (!root) return;
+  const slides = homeCarouselSlides();
+  if (!slides.length) return;
+
+  const lang = activeLanguage;
+  const current = Number(root.dataset.index || 0) % slides.length;
+  root.innerHTML = `
+    <div class="home-carousel-track">
+      ${slides
+        .map((project, index) => {
+          const title = project[lang] && project[lang].title ? project[lang].title : "";
+          return `<div class="home-carousel-slide${index === current ? " is-on" : ""}">
+            <img src="${project.cover}" alt="${title}" />
+          </div>`;
+        })
+        .join("")}
+    </div>
+    <div class="home-carousel-dots" role="tablist" aria-label="${lang === "zh" ? "项目图片" : "Project images"}">
+      ${slides
+        .map(
+          (_, index) =>
+            `<button type="button" class="${index === current ? "is-on" : ""}" data-slide="${index}" aria-label="${
+              lang === "zh" ? `第 ${index + 1} 张` : `Slide ${index + 1}`
+            }"></button>`
+        )
+        .join("")}
+    </div>`;
+
+  const show = (index) => {
+    const next = (index + slides.length) % slides.length;
+    root.dataset.index = String(next);
+    root.querySelectorAll(".home-carousel-slide").forEach((slide, i) => slide.classList.toggle("is-on", i === next));
+    root.querySelectorAll(".home-carousel-dots button").forEach((dot, i) => dot.classList.toggle("is-on", i === next));
+  };
+
+  const play = () => {
+    clearInterval(root._carouselTimer);
+    root._carouselTimer = setInterval(() => show(Number(root.dataset.index || 0) + 1), 4200);
+  };
+  root.querySelectorAll("[data-slide]").forEach((dot) => {
+    dot.addEventListener("click", () => {
+      show(Number(dot.getAttribute("data-slide")));
+      play();
+    });
+  });
+  if (!root._carouselBound) {
+    root._carouselBound = true;
+    root.addEventListener("pointerenter", () => clearInterval(root._carouselTimer));
+    root.addEventListener("pointerleave", play);
+  }
+  play();
+}
+
 function renderHomeIndex() {
   const root = document.querySelector("[data-home-index]");
   if (!root || typeof HOME_THEMES === "undefined") {
@@ -612,33 +792,151 @@ function renderHomeIndex() {
   }
 
   const lang = activeLanguage;
-  root.innerHTML = HOME_THEMES.map((theme) => {
-    const copy = theme[lang];
-    const items = theme.projects
-      .map((id) => {
-        const project = getProject(id);
-        if (!project) {
-          return "";
-        }
-        const text = project[lang];
-        const year = projectYear(project);
-        return `<a href="${projectHref(id)}"><span class="home-theme-copy"><strong>${text.title}</strong><span>${text.body}</span></span>${
-          year ? `<time datetime="${project.yearStart || ""}">${year}</time>` : ""
-        }</a>`;
-      })
-      .join("");
-
-    return `<article class="home-theme">
-      <a class="home-theme-visual" href="${projectHref(theme.projects[0])}">
-        <img src="${theme.cover}" alt="${copy.title}" />
-      </a>
-      <div>
-        <h3>${copy.title}</h3>
-        <p class="home-theme-intro">${copy.intro}</p>
-        <div class="home-theme-list">${items}</div>
-      </div>
-    </article>`;
+  root.innerHTML = HOME_THEMES.map((theme, index) => {
+    const copy = theme[lang] || theme.zh;
+    const alternateCopy = lang === "zh" ? theme.en : theme.zh;
+    const num = String(index + 1).padStart(2, "0");
+    const catByTheme = { tangible: "grant", humanfactors: "industry", aiux: "industry", scene: "industry" };
+    const cat = catByTheme[theme.id] || "";
+    const href = cat ? `./projects.html?cat=${cat}` : "./projects.html";
+    return `<a class="focus-card" href="${href}">
+      <span class="focus-card-media">
+        <img src="${theme.cover}" alt="" width="780" height="414" />
+      </span>
+      <span class="focus-card-copy">
+        <span class="focus-card-num">${num}</span>
+        <img class="focus-card-rule" src="./assets/home/focus-rule.svg" alt="" width="35" height="1" />
+        <span class="focus-card-title">${copy.title}</span>
+        <span class="focus-card-subtitle">${alternateCopy.title}</span>
+        <span class="home-arrow focus-card-arrow" aria-hidden="true">→</span>
+      </span>
+    </a>`;
   }).join("");
+}
+
+function initialResearchFilter() {
+  const params = new URLSearchParams(window.location.search);
+  const cat = params.get("cat") || window.location.hash.replace("#", "");
+  if (typeof RESEARCH_CATEGORIES !== "undefined" && RESEARCH_CATEGORIES.some((item) => item.id === cat)) {
+    return cat;
+  }
+  return "all";
+}
+
+function researchPageState(root) {
+  return {
+    filter: root.dataset.filter || initialResearchFilter(),
+    view: root.dataset.view || "grid",
+  };
+}
+
+function setResearchFilter(id) {
+  const root = document.querySelector("[data-research-list]");
+  if (!root) return;
+  root.dataset.filter = id;
+  const url = new URL(window.location.href);
+  if (id === "all") {
+    url.searchParams.delete("cat");
+  } else {
+    url.searchParams.set("cat", id);
+  }
+  url.hash = "";
+  window.history.replaceState({}, "", url);
+  renderResearchList();
+}
+
+function categoryImage(id) {
+  const images = {
+    industry: "./assets/projects-page/category-industry.png",
+    grant: "./assets/projects-page/category-research.png",
+    studio: "./assets/projects-page/category-teaching.png",
+    other: "./assets/projects-page/category-other.png",
+  };
+  return images[id] || images.other;
+}
+
+function categoryCard(cat, index, lang, viewLabel) {
+  const desc = lang === "en" ? cat.descEn : cat.descZh;
+  const num = String((index % 2) + 1).padStart(2, "0");
+  const image = categoryImage(cat.id);
+  return `<a class="proj-card" href="./projects.html?cat=${cat.id}" data-filter="${cat.id}">
+    <span class="proj-card-copy">
+      <span class="proj-card-num">${num}</span>
+      <span class="proj-card-title">${cat.zh}</span>
+      <span class="proj-card-en">${cat.en}</span>
+      <span class="proj-card-rule"></span>
+      <span class="proj-card-desc">${desc}</span>
+      <span class="proj-card-cta">
+        <span class="proj-card-arrow">
+          <img src="./assets/projects-page/cta-circle.svg" alt="" width="48" height="48" />
+          <img src="./assets/projects-page/cta-arrow.svg" alt="" width="18" height="18" />
+        </span>
+        ${viewLabel}
+      </span>
+    </span>
+    <span class="proj-card-art proj-card-art-${cat.art}">
+      <img src="${image}" alt="" width="378" height="517" />
+    </span>
+  </a>`;
+}
+
+function projectCard(project, index, lang, viewLabel) {
+  const text = project[lang] || project.zh;
+  const other = project[lang === "zh" ? "en" : "zh"] || {};
+  const year = projectYear(project);
+  const num = String(index + 1).padStart(2, "0");
+  return `<a class="proj-card" href="${projectHref(project.id)}">
+    <span class="proj-card-copy">
+      <span class="proj-card-num">${num}</span>
+      <span class="proj-card-title">${text.title}</span>
+      <span class="proj-card-en">${year || other.title || ""}</span>
+      <span class="proj-card-rule"></span>
+      <span class="proj-card-desc">${text.body}</span>
+      <span class="proj-card-cta">
+        <span class="proj-card-arrow">
+          <img src="./assets/projects-page/cta-circle.svg" alt="" width="48" height="48" />
+          <img src="./assets/projects-page/cta-arrow.svg" alt="" width="18" height="18" />
+        </span>
+        ${viewLabel}
+      </span>
+    </span>
+    <span class="proj-card-art">
+      <img src="${project.cover || project.thumb}" alt="" width="312" height="358" />
+    </span>
+  </a>`;
+}
+
+function projectRow(project, lang) {
+  const text = project[lang] || project.zh;
+  const year = projectYear(project);
+  return `<a class="proj-row" href="${projectHref(project.id)}">
+    <img src="${project.thumb || project.cover}" alt="" width="132" height="82" />
+    <span class="proj-row-copy"><strong>${text.title}</strong><span>${text.body}</span></span>
+    ${year ? `<time datetime="${project.yearStart || ""}">${year}</time>` : ""}
+  </a>`;
+}
+
+function bindResearchPage() {
+  const page = document.querySelector("body.projects");
+  if (!page || page.dataset.bound === "1") return;
+  page.dataset.bound = "1";
+
+  page.addEventListener("click", (event) => {
+    const filter = event.target.closest("[data-filter]");
+    if (filter && page.contains(filter)) {
+      event.preventDefault();
+      setResearchFilter(filter.dataset.filter);
+      document.getElementById("project-results")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    const view = event.target.closest("[data-view]");
+    if (view) {
+      const root = document.querySelector("[data-research-list]");
+      if (!root) return;
+      root.dataset.view = view.dataset.view;
+      renderResearchList();
+    }
+  });
 }
 
 function renderResearchList() {
@@ -647,30 +945,54 @@ function renderResearchList() {
     return;
   }
 
+  bindResearchPage();
   const lang = activeLanguage;
-  root.innerHTML = RESEARCH_CATEGORIES.map((cat) => {
-    const items = sortProjectsByYear(PROJECTS.filter((project) => project.category === cat.id));
-    if (!items.length) {
-      return "";
-    }
+  const strings = dictionary[lang] || dictionary.zh;
+  if (!root.dataset.filter) root.dataset.filter = initialResearchFilter();
+  if (!root.dataset.view) root.dataset.view = "grid";
+  const { filter, view } = researchPageState(root);
+  const viewLabel = strings.projViewProjects || "View Projects";
 
-    return `<div class="research-group">
-      <h2>${cat[lang]}</h2>
-      <div class="research-list">
-        ${items
-          .map((project) => {
-            const text = project[lang];
-            const year = projectYear(project);
-            return `<a href="${projectHref(project.id)}">
-              <img src="${project.thumb}" alt="" />
-              <span class="research-copy"><strong>${text.title}</strong><span>${text.body}</span></span>
-              ${year ? `<time class="research-year" datetime="${project.yearStart || ""}">${year}</time>` : ""}
-            </a>`;
-          })
-          .join("")}
-      </div>
-    </div>`;
-  }).join("");
+  const filterRoot = document.querySelector("[data-proj-filters]");
+  if (filterRoot) {
+    const chips = [
+      { id: "all", label: strings.projAll || "All Projects" },
+      ...RESEARCH_CATEGORIES.map((cat) => ({ id: cat.id, label: cat[lang] || cat.zh })),
+    ];
+    filterRoot.innerHTML = chips
+      .map(
+        (chip) =>
+          `<button type="button" class="proj-chip${chip.id === filter ? " is-on" : ""}" data-filter="${chip.id}">${chip.label}</button>`
+      )
+      .join("");
+  }
+
+  document.querySelectorAll("[data-view]").forEach((button) => {
+    button.classList.toggle("is-on", button.dataset.view === view);
+  });
+
+  const items =
+    filter === "all"
+      ? sortProjectsByYear(publicProjects())
+      : sortProjectsByYear(publicProjects().filter((project) => project.category === filter));
+
+  if (view === "list") {
+    root.innerHTML = items.length
+      ? `<div class="proj-list">${items.map((project) => projectRow(project, lang)).join("")}</div>`
+      : `<p class="proj-empty">${strings.projEmpty}</p>`;
+    return;
+  }
+
+  if (filter === "all") {
+    root.innerHTML = `<div class="proj-grid">${RESEARCH_CATEGORIES.map((cat, index) =>
+      categoryCard(cat, index, lang, viewLabel)
+    ).join("")}</div>`;
+    return;
+  }
+
+  root.innerHTML = items.length
+    ? `<div class="proj-grid">${items.map((project, index) => projectCard(project, index, lang, viewLabel)).join("")}</div>`
+    : `<p class="proj-empty">${strings.projEmpty}</p>`;
 }
 
 function renderProjectDetail() {
@@ -682,7 +1004,7 @@ function renderProjectDetail() {
   const lang = activeLanguage;
   const id = new URLSearchParams(window.location.search).get("id");
   const project = getProject(id);
-  if (!project) {
+  if (!project || !isPublicVisible(project)) {
     root.innerHTML = `<p>${lang === "zh" ? "未找到该项目。" : "Project not found."}</p>`;
     return;
   }
@@ -697,20 +1019,96 @@ function renderProjectDetail() {
     ? `<video class="project-video" controls preload="metadata" poster="${project.cover}" src="${project.video}"></video>`
     : "";
   const meta = [category ? category[lang] : "", year].filter(Boolean).join(" · ");
+  const teamBits = [project.lead, project.advisors, project.members, project.partners].filter(Boolean);
+  const methods = project.methods ? `<p class="project-detail-body">${project.methods}</p>` : "";
+  const team = teamBits.length
+    ? `<p class="project-detail-body">${teamBits.join(" · ")}</p>`
+    : "";
+  const backLabel = lang === "zh" ? "返回研究项目" : "Back to research";
+  const backLink = `
+    <a class="project-back" href="./projects.html">
+      <svg viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      ${backLabel}
+    </a>`;
 
   root.innerHTML = `
+    ${backLink}
     <p class="eyebrow">${meta}</p>
     <h1>${text.title}</h1>
     <p class="project-lead">${text.body}</p>
     <img class="project-cover" src="${project.cover}" alt="${text.title}" />
     <p class="project-detail-body">${text.detail}</p>
+    ${methods}
+    ${team}
     ${video}
     ${gallery ? `<div class="project-gallery">${gallery}</div>` : ""}
-    <p class="project-back"><a href="./projects.html">${lang === "zh" ? "返回研究项目" : "Back to research"}</a></p>
+    ${backLink.replace('class="project-back"', 'class="project-back project-back-end"')}
   `;
   document.title = `${text.title} | ${lang === "zh" ? "可触界面实验室" : "Touchable Interface Lab"}`;
 }
 
+function escapePublicationText(value) {
+  return String(value || "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[char]);
+}
+
+function renderPublications() {
+  const root = document.querySelector("[data-publications-list]");
+  const pubs = publicPublications();
+  document.querySelectorAll("[data-publication-count]").forEach((counter) => {
+    counter.textContent = String(pubs.length).padStart(2, "0");
+  });
+  if (!root || !pubs.length) {
+    return;
+  }
+  const lang = activeLanguage;
+  const groups = pubs.reduce((result, pub) => {
+    const year = pub.year || "undated";
+    if (!result[year]) result[year] = [];
+    result[year].push(pub);
+    return result;
+  }, {});
+
+  const yearGroups = Object.entries(groups).sort(([yearA], [yearB]) => {
+    const a = Number.parseInt(yearA, 10) || 0;
+    const b = Number.parseInt(yearB, 10) || 0;
+    return b - a;
+  });
+
+  let sequence = 0;
+  root.innerHTML = yearGroups.map(([year, items]) => {
+    const rows = items.map((pub) => {
+      const copy = pub[lang] || pub.zh || {};
+      const number = String(++sequence).padStart(2, "0");
+      const link = /^https?:\/\//i.test(pub.link || "") ? pub.link : "";
+      const type = lang === "en" ? ({ "论文": "Paper", "教材": "Textbook", "其他": "Other", "书籍": "Book" }[pub.type] || pub.type) : pub.type;
+      const meta = [pub.authors, pub.venue].filter(Boolean).join(" · ");
+      const content = `<span class="publication-seq">${number}</span>
+        <span class="publication-copy">
+          <strong>${escapePublicationText(copy.title || (pub.zh && pub.zh.title))}</strong>
+          <span>${escapePublicationText(copy.body || meta)}</span>
+        </span>
+        <span class="publication-type">${escapePublicationText(type)}</span>
+        <span class="publication-arrow" aria-hidden="true">${link ? "↗" : "—"}</span>`;
+      return `<article class="publication-item">${link
+        ? `<a class="publication-row" href="${escapePublicationText(link)}" target="_blank" rel="noreferrer">${content}</a>`
+        : `<div class="publication-row">${content}</div>`}</article>`;
+    }).join("");
+    return `<section class="publication-year-group" aria-labelledby="publication-year-${year}">
+      <header class="publication-year">
+        <h3 id="publication-year-${year}">${year === "undated" ? (lang === "zh" ? "未注明年份" : "Undated") : year}</h3>
+        <span>${String(items.length).padStart(2, "0")} ITEMS</span>
+      </header>
+      <div class="publication-year-list">${rows}</div>
+    </section>`;
+  }).join("");
+}
+
+renderHomeCarousel();
 renderHomeIndex();
 renderResearchList();
 renderProjectDetail();
+renderPublications();

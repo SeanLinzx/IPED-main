@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="湖南大学设计艺术学院可触界面实验室出版与成果页面。" />
     <title>出版 | 可触界面实验室</title>
-    <link rel="stylesheet" href="./styles.css?v=20260903p" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Space+Mono&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260910-publication-right" />
   </head>
-  <body>
+  <body class="editorial-page publications-page">
     <div class="page-progress" aria-hidden="true"></div>
     <div class="tactile-cursor" aria-hidden="true"></div>
     <header class="site-header" data-i18n-attr="aria-label:headerAria">
       <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
-        <span class="brand-mark"><img src="./assets/iped-logo-mark.png" alt="IPED" /></span>
-        <span class="brand-copy">
-          <span data-i18n="brandCn">可触界面实验室</span>
-          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        <span class="brand-mark">
+          <img src="./assets/home/logo-iped.svg" alt="IPED" width="127" height="53" />
         </span>
       </a>
       <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./index.html" data-i18n="navHome">首页</a>
         <a href="./about.html" data-i18n="navAbout">关于</a>
         <a href="./projects.html" data-i18n="navProjects">项目</a>
         <a href="./publications.html" data-i18n="navPublications">出版</a>
@@ -30,76 +35,55 @@
       </div>
     </header>
 
-    <main>
-      <section class="page-hero reveal-item">
-        <div>
-          <p class="eyebrow" data-i18n="pubPageKicker">Publication</p>
-          <h1 data-i18n="pubPageTitle">出版、专利与展示成果</h1>
+    <main id="top">
+      <section class="editorial-hero publication-hero" aria-labelledby="publication-hero-title">
+        <div class="editorial-hero-copy reveal-item">
+          <p class="editorial-kicker">PUBLICATIONS / ARCHIVE</p>
+          <h1 id="publication-hero-title" data-i18n="pubPageTitle">出版与成果</h1>
+          <p class="editorial-lead" data-i18n="pubPageIntro">
+          论文、专著章节与学术报告。含收集表已填的实验室成果，以及王巍、栾之珑、曹立雄、陈菲老师在学院主页公开的代表发表。
+          </p>
         </div>
-        <p data-i18n="pubPageIntro">
-          论文、专利、软著、展览与奖项。
-        </p>
+        <div class="publication-hero-count reveal-item" aria-label="公开成果总数">
+          <strong data-publication-count>—</strong>
+          <span>RESEARCH<br />OUTPUTS</span>
+        </div>
       </section>
 
-      <section class="content-section reveal-item">
-        <div class="section-grid">
-          <div>
-            <h2 data-i18n="pubTitle">出版与成果</h2>
-          </div>
-          <div class="publication-list">
-            <details class="publication-item publication-detail" open>
-              <summary>
-                <span>2026</span>
-                <div>
-                  <h3 data-i18n="pub1Title">Tangible Interfaces for Inclusive Public Services</h3>
-                  <p data-i18n="pub1Body">面向公共服务的可触界面研究。</p>
-                </div>
-              </summary>
-              <p data-i18n="pubOpen1Body"></p>
-            </details>
-            <details class="publication-item publication-detail">
-              <summary>
-              <span>2025</span>
-              <div>
-                <h3 data-i18n="pub2Title">触觉反馈在智能产品体验中的设计方法</h3>
-                <p data-i18n="pub2Body">智能产品中的触觉反馈设计方法。</p>
-              </div>
-              </summary>
-              <p data-i18n="pubOpen2Body"></p>
-            </details>
-            <details class="publication-item publication-detail">
-              <summary>
-              <span>2025</span>
-              <div>
-                <h3 data-i18n="pub3Title">Material Prototyping Toolkit</h3>
-                <p data-i18n="pub3Body">材料原型方法与工具包。</p>
-              </div>
-              </summary>
-              <p data-i18n="pubOpen3Body"></p>
-            </details>
-          </div>
-        </div>
+      <section class="editorial-section publication-index reveal-item">
+        <header class="editorial-section-head">
+          <p class="editorial-kicker">01 / SELECTED OUTPUTS</p>
+          <h2 data-i18n="pubTitle">出版与成果</h2>
+        </header>
+        <div class="publication-list" data-publications-list></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
-          <p data-i18n="footerDesc">Tangible Interface Lab, School of Design and Art, Hunan University</p>
+    <footer class="home-footer">
+      <div class="home-footer-rule" aria-hidden="true"></div>
+      <div class="home-footer-content">
+        <div class="home-footer-identity">
+          <p>
+            <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
+            <span data-i18n="footerDesc">Touchable Interface Lab, School of Design and Art, Hunan University</span>
+          </p>
+          <div class="home-footer-qrs qr-grid" data-i18n-attr="aria-label:qrAria">
+            <figure><img src="./assets/qr-wechat.svg" alt="微信公众号二维码" width="97" height="97" /><figcaption data-i18n="qrWechat">微信公众号</figcaption></figure>
+            <a href="./projects.html" data-i18n-attr="aria-label:qrPortfolio"><figure><img src="./assets/qr-portfolio.svg" alt="作品集二维码" width="97" height="97" /><figcaption data-i18n="qrPortfolio">作品集入口</figcaption></figure></a>
+            <a href="./join.html" data-i18n-attr="aria-label:qrJoin"><figure><img src="./assets/qr-join.svg" alt="加入咨询二维码" width="97" height="97" /><figcaption data-i18n="qrJoin">加入咨询</figcaption></figure></a>
+          </div>
         </div>
-        <div class="footer-links">
+        <nav class="home-footer-nav footer-links" data-i18n-attr="aria-label:navAria">
+          <a href="./index.html" data-i18n="navHome">首页</a>
           <a href="./about.html" data-i18n="navAbout">关于</a>
           <a href="./projects.html" data-i18n="navProjects">项目</a>
           <a href="./publications.html" data-i18n="navPublications">出版</a>
           <a href="./join.html" data-i18n="navJoin">加入我们</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Tangible Interface Lab</span>
-        <span data-i18n="footerNote"></span>
+        </nav>
+        <p class="home-footer-copyright">© 2026 湖南大学设计艺术学院可触界面实验室</p>
       </div>
     </footer>
-    <script src="./script.js?v=20260903p"></script>
+    <script src="./projects-data.js?v=20260910-members"></script>
+    <script src="./script.js?v=20260910-members"></script>
   </body>
 </html>

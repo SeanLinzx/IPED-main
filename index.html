@@ -8,21 +8,26 @@
       content="湖南大学设计艺术学院可触界面实验室，包含关于、项目、出版、加入我们等内容。"
     />
     <title>湖南大学设计艺术学院 可触界面实验室</title>
-    <link rel="stylesheet" href="./styles.css?v=20260903r" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260910-members" />
   </head>
-  <body>
+  <body class="home">
     <div class="page-progress" aria-hidden="true"></div>
     <div class="tactile-cursor" aria-hidden="true"></div>
     <header class="site-header" data-i18n-attr="aria-label:headerAria">
       <a class="brand" href="./index.html" data-i18n-attr="aria-label:brandAria">
-        <span class="brand-mark"><img src="./assets/iped-logo-mark.png" alt="IPED" /></span>
-        <span class="brand-copy">
-          <span data-i18n="brandCn">可触界面实验室</span>
-          <span data-i18n="brandEn">Tangible Interface Lab</span>
+        <span class="brand-mark">
+          <img src="./assets/home/logo-iped.svg" alt="IPED" width="127" height="53" />
         </span>
       </a>
 
       <nav class="main-nav" data-i18n-attr="aria-label:navAria">
+        <a href="./index.html" data-i18n="navHome">首页</a>
         <a href="./about.html" data-i18n="navAbout">关于</a>
         <a href="./projects.html" data-i18n="navProjects">项目</a>
         <a href="./publications.html" data-i18n="navPublications">出版</a>
@@ -36,68 +41,122 @@
     </header>
 
     <main id="top">
-      <section class="hero home-hero reveal-item">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">湖南大学设计艺术学院</p>
-          <h1 data-i18n="heroTitle">可触界面实验室</h1>
-          <p class="hero-en" data-i18n="heroSubtitle">Touchable Interface Lab</p>
-          <p class="hero-intro" data-i18n="heroIntro">
-            致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。
-          </p>
+      <section class="home-hero-v2" aria-labelledby="home-hero-title">
+        <div class="home-hero-media">
+          <img
+            src="./assets/home/banner.png"
+            alt=""
+            width="1942"
+            height="809"
+          />
         </div>
-
-        <figure class="home-deco tilt-card">
-          <a href="./project.html?id=nssfc">
-            <img src="./assets/projects/nssfc/cover.jpg" alt="具身智能下产品触觉舒适性评价与设计研究" />
+        <p class="home-hero-label">TouchLab</p>
+        <div class="home-hero-copy">
+          <h1 id="home-hero-title">
+            <span data-i18n="heroLine1">Sensing Beyond</span>
+            <span data-i18n="heroLine2">Designing for All</span>
+          </h1>
+          <a class="home-cta" href="#our-focus">
+            <span class="home-arrow" aria-hidden="true">→</span>
+            <span data-i18n="heroExplore">EXPLORE OUR RESEARCH</span>
           </a>
-        </figure>
+        </div>
       </section>
 
-      <section class="home-index reveal-item" aria-labelledby="home-index-title">
-        <div class="home-index-head">
-          <p class="section-kicker" data-i18n="homeIndexKicker">Research Index</p>
-          <h2 id="home-index-title" data-i18n="homeIndexTitle">研究主题</h2>
+      <section class="home-focus" id="our-focus" aria-labelledby="home-focus-title">
+        <div class="home-focus-intro reveal-item">
+          <div class="home-focus-heading">
+            <p class="home-kicker" data-i18n="focusKicker">OUR FOCUS</p>
+            <h2 id="home-focus-title">
+              <span data-i18n="focusTitleZh">可触界面实验室</span>
+              <span data-i18n="focusTitleEn">Touchable Interface Lab</span>
+            </h2>
+          </div>
+          <p class="home-focus-lead" data-i18n="focusIntro">
+            可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。
+          </p>
         </div>
-        <div data-home-index></div>
+        <div class="home-focus-grid reveal-item" data-home-index></div>
+      </section>
+
+      <section class="home-metrics" aria-labelledby="home-metrics-title">
+        <div class="home-metrics-visual" aria-hidden="true">
+          <img src="./assets/home/planet.png" alt="" width="2243" height="701" />
+        </div>
+        <div class="home-metrics-quote">
+          <p class="home-kicker" id="home-metrics-title">
+            <span data-i18n="metricsLab">TouchLab</span>
+            <span data-i18n="metricsUni">Hunan University</span>
+          </p>
+          <p class="home-metrics-text" data-i18n="metricsQuote">
+            我们致力于触觉多感官人机交互与智能用户体验的跨学科研究，坚持以人为中心，融合多学科前沿方法探索人智协同，让技术真正服务于人。
+          </p>
+        </div>
+        <div class="home-metrics-nums">
+          <p class="home-kicker" data-i18n="metricsLabel">研究成果</p>
+          <div class="home-metrics-grid">
+            <div>
+              <strong>20+</strong>
+              <span data-i18n="metricIndustry">校企项目</span>
+            </div>
+            <div>
+              <strong>30+</strong>
+              <span data-i18n="metricPapers">论文发表</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span data-i18n="metricGrants">横向课题</span>
+            </div>
+            <div>
+              <strong>30+</strong>
+              <span data-i18n="metricMembers">团队成员</span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
-          <p data-i18n="footerDesc">Tangible Interface Lab, School of Design and Art, Hunan University</p>
+    <footer class="home-footer">
+      <div class="home-footer-rule" aria-hidden="true"></div>
+      <div class="home-footer-content">
+        <div class="home-footer-identity">
+          <p>
+            <strong data-i18n="footerLab">湖南大学设计艺术学院 可触界面实验室</strong>
+            <span data-i18n="footerDesc">Touchable Interface Lab, School of Design and Art, Hunan University</span>
+          </p>
+          <div class="home-footer-qrs qr-grid" data-i18n-attr="aria-label:qrAria">
+            <figure>
+              <img src="./assets/qr-wechat.svg" alt="微信公众号二维码" width="97" height="97" />
+              <figcaption data-i18n="qrWechat">微信公众号</figcaption>
+            </figure>
+            <a href="./projects.html" data-i18n-attr="aria-label:qrPortfolio">
+              <figure>
+                <img src="./assets/qr-portfolio.svg" alt="作品集二维码" width="97" height="97" />
+                <figcaption data-i18n="qrPortfolio">作品集入口</figcaption>
+              </figure>
+            </a>
+            <a href="./join.html" data-i18n-attr="aria-label:qrJoin">
+              <figure>
+                <img src="./assets/qr-join.svg" alt="加入咨询二维码" width="97" height="97" />
+                <figcaption data-i18n="qrJoin">加入咨询</figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
-        <div class="footer-links">
+
+        <nav class="home-footer-nav footer-links" data-i18n-attr="aria-label:navAria">
+          <a href="./index.html" data-i18n="navHome">首页</a>
           <a href="./about.html" data-i18n="navAbout">关于</a>
           <a href="./projects.html" data-i18n="navProjects">项目</a>
           <a href="./publications.html" data-i18n="navPublications">出版</a>
           <a href="./join.html" data-i18n="navJoin">加入我们</a>
-        </div>
-      </div>
+        </nav>
 
-      <div class="qr-grid" data-i18n-attr="aria-label:qrAria">
-        <figure>
-          <img src="./assets/qr-wechat.svg" alt="微信公众号二维码" />
-          <figcaption data-i18n="qrWechat">微信公众号</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/qr-portfolio.svg" alt="作品集二维码" />
-          <figcaption data-i18n="qrPortfolio">作品集入口</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/qr-join.svg" alt="加入我们二维码" />
-          <figcaption data-i18n="qrJoin">加入咨询</figcaption>
-        </figure>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© 2026 Tangible Interface Lab</span>
-        <span data-i18n="footerNote"></span>
+        <p class="home-footer-copyright">© 2026 湖南大学设计艺术学院可触界面实验室</p>
       </div>
     </footer>
 
-    <script src="./projects-data.js?v=20260903s"></script>
-    <script src="./script.js?v=20260903s"></script>
+    <script src="./projects-data.js?v=20260910-members"></script>
+    <script src="./script.js?v=20260910-members"></script>
   </body>
 </html>
