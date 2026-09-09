@@ -22,11 +22,11 @@ const dictionary = {
     focusTitleZh: "可触界面实验室",
     focusTitleEn: "Touchable Interface Lab",
     focusIntro:
-      "可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
+      "我们研究触觉、多感官与多模态交互，探索智能产品的界面与使用体验。",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
-      "我们致力于触觉多感官人机交互与智能用户体验的跨学科研究，坚持以人为中心，融合多学科前沿方法探索人智协同，让技术真正服务于人。",
+      "结合设计研究、人因实验与交互原型，探索人与智能技术的协作。",
     metricsLabel: "研究成果",
     metricIndustry: "校企项目",
     metricPapers: "论文发表",
@@ -56,7 +56,7 @@ const dictionary = {
     aboutMissionTitle: "使命与愿景",
     aboutMissionBody1:
       "可触界面实验室（Touchable Interface Lab）致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究领域。我们秉持平等、包容、多元的核心价值，以人文关怀为底色，坚信技术发展的终极意义在于服务人的真实需求。",
-    aboutMissionBody2: "我们始终以以人为中心为根本出发点，在推动技术创新的同时，不忘设计的人文本质——让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
+    aboutMissionBody2: "我们始终以人为中心，在推动技术创新的同时，不忘设计的人文本质——让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
     aboutTracksTitle: "研究框架",
     aboutTrack1Title: "学术视野",
     aboutTrack1Body:
@@ -72,8 +72,6 @@ const dictionary = {
     aboutOpen1Body: "通常从真实场景观察开始，整理触点、材料机会和交互假设，再用低保真模型快速测试触觉、空间和信息反馈。",
     aboutOpen2Title: "实验室需要哪些能力？",
     aboutOpen2Body: "设计研究、交互原型、硬件开发、材料实验、影像记录和论文写作都很重要，成员可以从其中一项专长进入。",
-    aboutOpen3Title: "作品如何进入网站？",
-    aboutOpen3Body: "先提交项目简介、封面图、过程图、成员贡献和公开权限，之后统一整理成项目卡片、详情页或演示页面。",
     focus1Title: "可触交互",
     focus1Body: "触觉反馈、实体控制、柔性界面与多模态交互原型。",
     focus2Title: "智能材料",
@@ -109,7 +107,7 @@ const dictionary = {
     projViewGrid: "网格",
     projViewList: "列表",
     projViewProjects: "查看项目",
-    projEmpty: "这个分类暂时没有公开项目。",
+    projEmpty: "该分类暂无项目。",
     researchCatIndustry: "校企合作",
     researchCatGrant: "科研课题",
     researchCatStudio: "教学与工作坊",
@@ -198,7 +196,7 @@ const dictionary = {
     pubTitle: "出版与成果",
     pubPageKicker: "Publication",
     pubPageTitle: "出版与成果",
-    pubPageIntro: "论文、专著章节与学术报告。含收集表已填的实验室成果，以及王巍、栾之珑、曹立雄、陈菲老师在学院主页公开的代表发表。",
+    pubPageIntro: "触觉交互、多感官体验与智能产品设计领域的论文与著作。",
     pub1Title: "Tangible Interfaces for Inclusive Public Services",
     pub1Body: "面向公共服务的可触界面研究。",
     pub2Title: "触觉反馈在智能产品体验中的设计方法",
@@ -259,11 +257,11 @@ const dictionary = {
     focusTitleZh: "Touchable Interface Lab",
     focusTitleEn: "可触界面实验室",
     focusIntro:
-      "Touchable Interface Lab explores haptic, multisensory and multimodal human–computer interaction, connecting design, technology and people to create a more inclusive and human-centered intelligent future.",
+      "We study haptic, multisensory and multimodal interaction, with a focus on intelligent product interfaces and user experience.",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
-      "We pursue interdisciplinary research in haptic, multisensory human–computer interaction and intelligent user experience. Staying human-centered, we bring together frontier methods to explore human–AI collaboration so technology truly serves people.",
+      "We combine design research, human-factors experiments and interactive prototypes to explore human–AI collaboration.",
     metricsLabel: "Research Outcomes",
     metricIndustry: "Industry Projects",
     metricPapers: "Publications",
@@ -313,9 +311,6 @@ const dictionary = {
     aboutOpen2Title: "What abilities fit the lab?",
     aboutOpen2Body:
       "Design research, interaction prototyping, hardware development, material experiments, documentation and research writing all matter. A member can enter through one strong skill.",
-    aboutOpen3Title: "How does work enter the website?",
-    aboutOpen3Body:
-      "Submit a project summary, cover image, process images, contribution notes and publication permissions. We then turn them into cards, detail pages or demo pages.",
     focus1Title: "Tangible Interaction",
     focus1Body: "Haptic feedback, physical controls, soft interfaces and multimodal prototypes.",
     focus2Title: "Smart Materials",
@@ -440,7 +435,7 @@ const dictionary = {
     pubTitle: "Publications & Outputs",
     pubPageKicker: "Publication",
     pubPageTitle: "Publications & Outputs",
-    pubPageIntro: "Papers, book chapters and talks from the collection form, plus representative works by Wei Wang, Zhilong Luan, Lixiong Cao and Fei Chen listed on the School of Design faculty pages.",
+    pubPageIntro: "Research publications on haptic interaction, multisensory experience and intelligent product design.",
     pub1Title: "Tangible Interfaces for Inclusive Public Services",
     pub1Body: "Research on tangible interfaces for public services.",
     pub2Title: "Design Methods for Haptic Feedback in Smart Product Experiences",
