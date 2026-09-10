@@ -3131,7 +3131,7 @@ body.projects .lang-button.active {
 .proj-card-art > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .proj-card-keys {
@@ -3217,7 +3217,7 @@ body.projects .lang-button.active {
 .proj-row img {
   width: 132px;
   height: 82px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .proj-row-copy {
@@ -3725,14 +3725,14 @@ body.editorial-page .iped-account-header {
 .proj-card-art > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   transition: transform 500ms cubic-bezier(.22, .61, .36, 1), filter 250ms ease;
 }
 
 .proj-card:hover .proj-card-art > img {
   filter: brightness(1.08);
-  transform: scale(1.025);
+  transform: none;
 }
 
 .proj-list {
