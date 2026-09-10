@@ -4668,13 +4668,13 @@ a.publication-row:hover .publication-arrow {
 .people-group > header > span { color:#999; font:12px var(--home-num); white-space:nowrap; }
 .faculty-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; }
 .faculty-card { display:flex; flex-direction:column; min-width:0; padding:12px 0 24px; }
-.faculty-card h4 { margin:16px 0 12px; font:400 clamp(26px,2.2vw,38px) var(--home-display); color:#fff; }
+.faculty-card h4 { margin:14px 0 10px; font:400 clamp(23px,1.9vw,32px) var(--home-display); color:#fff; }
 .faculty-role { margin:0 0 24px; color:#aaa; font-size:13px; }
 .faculty-bio { color:#b0b0b0; font-size:15px; line-height:1.9; margin:0 0 24px; }
 .faculty-card a { color:#eee; margin-top:auto; font-size:13px; text-underline-offset:6px; }
 .member-grid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:40px 28px; }
 .member-card { margin:0; min-width:0; }
-.member-portrait { aspect-ratio:1; background:#111; overflow:hidden; }
+.member-portrait { width:85%; max-width:160px; aspect-ratio:1; background:#111; overflow:hidden; }
 .member-portrait img { display:block; width:100%; height:100%; object-fit:contain; }
 .empty-portrait { display:block; width:100%; height:100%; border:1px solid #242424; }
 .member-card figcaption { margin-top:16px; color:#aaa; font-size:13px; line-height:1.75; overflow-wrap:anywhere; }
@@ -4706,13 +4706,22 @@ a.publication-row:hover .publication-arrow {
   .join-apply-intro { font-size:16px; }
 }
 .publication-year h3[id$="undated"] { font-size:24px; line-height:1.4; overflow-wrap:anywhere; }
-.member-card .member-name { display:block; margin-bottom:8px; color:#f1f1f1; font-size:18px; font-weight:500; line-height:1.5; }
+.member-card .member-name { display:block; margin-bottom:6px; color:#f1f1f1; font-size:16px; font-weight:500; line-height:1.5; }
 .member-card .member-direction { display:block; }
 .member-card .member-destination { display:block; margin-top:12px; padding-top:10px; border-top:1px solid #303030; color:#c4c4c4; font-size:12px; line-height:1.8; }
 
 .member-card .member-degree { display: block; margin: 0 0 10px; font-size: 12px; line-height: 1.6; color: #aaa; }
 .member-card .member-profile-link { display: inline-block; margin-top: 12px; font-size: 12px; color: #ccc; text-decoration: underline; text-underline-offset: 4px; }
 .member-card .member-profile-link:focus-visible { outline: 2px solid #eee; outline-offset: 4px; }
+
+.about-mission { padding-top:72px; padding-bottom:72px; }
+.about-mission .editorial-section-head { margin-bottom:44px; }
+.about-mission .editorial-section-head h2 { font-size:clamp(32px,3.2vw,56px); }
+.about-mission .editorial-copy p { font-size:clamp(16px,1.3vw,23px); margin-bottom:24px; line-height:1.8; }
+@media (max-width:640px) {
+  .about-mission { padding-top:48px; padding-bottom:48px; }
+  .about-mission .editorial-section-head { margin-bottom:30px; }
+}
 
 /* Compact join page: keep all application essentials in two reading columns. */
 .join-compact { padding: 0 var(--editorial-gutter) 56px; }
