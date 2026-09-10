@@ -22,11 +22,11 @@ const dictionary = {
     focusTitleZh: "可触界面实验室",
     focusTitleEn: "Touchable Interface Lab",
     focusIntro:
-      "我们研究触觉、多感官与多模态交互，探索智能产品的界面与使用体验。",
+      "可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
-      "结合设计研究、人因实验与交互原型，探索人与智能技术的协作。",
+      "我们致力于触觉多感官人机交互与智能用户体验的跨学科研究，坚持以人为中心，融合多学科前沿方法探索人智协同，让技术真正服务于人。",
     metricsLabel: "研究成果",
     metricIndustry: "校企项目",
     metricPapers: "论文发表",
@@ -56,14 +56,14 @@ const dictionary = {
     aboutMissionTitle: "使命与愿景",
     aboutMissionBody1:
       "可触界面实验室（Touchable Interface Lab）致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究领域。我们秉持平等、包容、多元的核心价值，以人文关怀为底色，坚信技术发展的终极意义在于服务人的真实需求。",
-    aboutMissionBody2: "我们始终以人为中心，在推动技术创新的同时，不忘设计的人文本质——让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
+    aboutMissionBody2: "我们始终以人为中心为根本出发点，在推动技术创新的同时，不忘设计的人文本质——让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
     aboutTracksTitle: "研究框架",
     aboutTrack1Title: "学术视野",
     aboutTrack1Body:
-      "聚焦具身智能交互与用户体验评估，构建人智协同策略体系；引入不确定性理论与机器学习算法，量化系统、环境与人的不确定性。依托与 UAL、佐治亚理工、金匠等国际顶尖院校的深度合作，始终站在全球学术前沿。",
+      "在学术视野上，我们聚焦具身智能交互与用户体验评估，构建人智协同策略体系；引入不确定性理论与机器学习算法，量化系统、环境与人的不确定性。依托与 UAL、佐治亚理工、金匠等国际顶尖院校的深度合作，我们始终站在全球学术前沿。",
     aboutTrack2Title: "研究方法",
     aboutTrack2Body:
-      "打破学科壁垒，融合设计、机械、数学、计算机等多学科视角；运用人因智能与混合量化方法，结合精准质性研究，构建从用户研究、人因实验到数据建模、设计标准的完整闭环。",
+      "在研究方法上，我们打破学科壁垒，融合设计、机械、数学、计算机等多学科视角；运用人因智能与混合量化方法，结合精准质性研究，构建从用户研究、人因实验到数据建模、设计标准的完整闭环。",
     aboutTrack3Title: "以人为中心",
     aboutTrack3Body:
       "以平等、包容、多元为价值底色。在推动技术创新的同时，让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
@@ -257,11 +257,11 @@ const dictionary = {
     focusTitleZh: "Touchable Interface Lab",
     focusTitleEn: "可触界面实验室",
     focusIntro:
-      "We study haptic, multisensory and multimodal interaction, with a focus on intelligent product interfaces and user experience.",
+      "Touchable Interface Lab explores haptic, multisensory and multimodal human–computer interaction, connecting design, technology and people to create a more inclusive and human-centered intelligent future.",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
-      "We combine design research, human-factors experiments and interactive prototypes to explore human–AI collaboration.",
+      "We pursue interdisciplinary research in haptic, multisensory human–computer interaction and intelligent user experience. Staying human-centered, we bring together frontier methods to explore human–AI collaboration so technology truly serves people.",
     metricsLabel: "Research Outcomes",
     metricIndustry: "Industry Projects",
     metricPapers: "Publications",

@@ -39,7 +39,7 @@ assert.ok(join.includes('class="join-compact"'));
 assert.equal((join.match(/class="join-resource-grid"/g) || []).length, 1);
 for (const file of ['index.html', 'about.html', 'projects.html', 'project.html', 'publications.html', 'join.html', 'demo-exhibit.html', 'demo-soft-panel.html', 'demo-touch-map.html']) {
   const page = fs.readFileSync(file, 'utf8');
-  assert.ok(page.includes('script.js?v=20260910-copy'), file + ': stale script version');
+  assert.ok(page.includes('script.js?v=20260910-full-copy'), file + ': stale script version');
   assert.ok(!/account-widget|mountIpedAccount/.test(page));
   assert.ok(!/收集表|已填的实验室成果|collection form|作品如何进入网站/.test(page), file + ': internal editorial copy');
 }
