@@ -4762,6 +4762,35 @@ a.publication-row:hover .publication-arrow {
 }
 
 .home-arrow { flex-shrink:0; }
+body .site-header .brand-mark { width:200px; height:56px; border-radius:0; }
+body .site-header .brand { width:auto; min-width:0; }
+body .site-header .brand-mark img { width:100%; height:100%; }
+body .site-header .brand-copy { display:none; }
+.research-topic { border-top:1px solid #444; }
+.research-topic:last-child { border-bottom:1px solid #444; }
+.research-topic summary { list-style:none; display:grid; grid-template-columns:42px minmax(0,1fr) 120px 24px; gap:24px; align-items:center; padding:30px 0; cursor:pointer; }
+.research-topic summary::-webkit-details-marker { display:none; }
+.research-topic summary strong { font-size:clamp(18px,1.7vw,25px); font-weight:400; line-height:1.5; }
+.research-topic-number,.research-topic-year { color:#aaa; font-family:var(--home-num); font-size:14px; }
+.research-topic-toggle { width:18px; height:18px; position:relative; }
+.research-topic-toggle::before,.research-topic-toggle::after { content:''; position:absolute; background:#fff; left:1px; top:8px; width:16px; height:1px; }
+.research-topic-toggle::after { transform:rotate(90deg); }
+.research-topic[open] .research-topic-toggle::after { transform:rotate(0); }
+.research-topic summary:focus-visible { outline:2px solid #fff; outline-offset:5px; }
+.research-topic-content { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:40px; padding:0 0 36px 66px; }
+.research-topic-content img { width:100%; max-height:360px; object-fit:contain; }
+.research-topic-content p { margin:0 0 24px; color:#bbb; line-height:1.9; }
+.research-topic-content a { text-decoration:underline; text-underline-offset:6px; }
+@media(max-width:640px) {
+  body .site-header .brand-mark { width:165px; height:46px; }
+  body .site-header .language-switch { grid-column:3; }
+  body .site-header .main-nav { scrollbar-width:none; gap:22px; }
+  body .site-header .main-nav::-webkit-scrollbar { display:none; }
+  .research-topic summary { grid-template-columns:24px minmax(0,1fr) 18px; gap:12px; padding:24px 0; }
+  .research-topic-year { grid-column:2; grid-row:2; }
+  .research-topic-toggle { grid-column:3; grid-row:1; }
+  .research-topic-content { grid-template-columns:1fr; gap:20px; padding:0 0 28px; }
+}
 .industry-partner img { filter:brightness(0) invert(1); }
 .publication-link-label { display:block; margin-top:12px; color:#ddd; font-size:13px; }
 .home-arrow svg { display:block; width:42%; height:42%; overflow:visible; }

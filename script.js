@@ -917,14 +917,14 @@ function bindResearchPage() {
   page.dataset.bound = "1";
 
   page.addEventListener("click", (event) => {
-    const filter = event.target.closest("[data-filter]");
+    const filter = event.target.closest("button[data-filter], a[data-filter]");
     if (filter && page.contains(filter)) {
       event.preventDefault();
       setResearchFilter(filter.dataset.filter);
       document.getElementById("project-results")?.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
-    const view = event.target.closest("[data-view]");
+    const view = event.target.closest("button[data-view]");
     if (view) {
       const root = document.querySelector("[data-research-list]");
       if (!root) return;
@@ -989,9 +989,13 @@ function renderResearchList() {
 
   const research = items.filter(p => p.category === "grant");
   const industry = items.filter(p => p.category === "industry");
-  const researchMarkup = view === "list"
-    ? '<div class="proj-list">' + research.map(p => projectRow(p, lang)).join('') + '</div>'
-    : '<div class="proj-grid">' + research.map((p, i) => projectCard(p, i, lang, viewLabel)).join('') + '</div>';
+  const researchMarkup = '<div class="research-accordion">' + research.map((p, i) => {
+    const copy = p[lang] || p.zh;
+    return `<details class="research-topic">
+      <summary><span class="research-topic-number">${String(i + 1).padStart(2, "0")}</span><strong>${escapePublicationText(copy.title)}</strong><span class="research-topic-year">${escapePublicationText(projectYear(p))}</span><span class="research-topic-toggle" aria-hidden="true"></span></summary>
+      <div class="research-topic-content"><img src="${escapePublicationText(p.cover || p.thumb)}" alt="${escapePublicationText(copy.title)}" loading="lazy" /><div><p>${escapePublicationText(copy.detail || copy.body)}</p><a href="${projectHref(p.id)}">${lang === "zh" ? "查看完整课题" : "View full project"} ↗</a></div></div>
+    </details>`;
+  }).join('') + '</div>';
   root.innerHTML = (filter !== "industry" ? '<section class="project-category-section"><h2>' + (lang === "zh" ? "科研课题" : "Research Projects") + '</h2>' + researchMarkup + '</section>' : '') +
     (filter !== "grant" ? '<section class="project-category-section"><h2>' + (lang === "zh" ? "校企合作" : "Industry Collaboration") + '</h2>' + industryTimeline(industry, lang) + '</section>' : '');
 

@@ -59,7 +59,10 @@ assert.ok(join.includes('class="join-compact"'));
 assert.equal((join.match(/class="join-resource-grid"/g) || []).length, 1);
 for (const file of ['index.html', 'about.html', 'projects.html', 'project.html', 'publications.html', 'join.html', 'demo-exhibit.html', 'demo-soft-panel.html', 'demo-touch-map.html']) {
   const page = fs.readFileSync(file, 'utf8');
-  assert.ok(page.includes('script.js?v=20260911-refine'), file + ': stale script version');
+  assert.ok(page.includes('script.js?v=20260911-touchlab'), file + ': stale script version');
+  assert.ok(page.includes('assets/home/logo-touchlab.svg'), file + ': stale logo');
+  assert.ok(page.includes('<script src="./access.js?v=20260911-gate"></script>'), file + ': missing access gate');
+  assert.ok(page.indexOf('access.js') < page.indexOf('<body'), file + ': gate must load before content');
   assert.ok(!/account-widget|mountIpedAccount/.test(page));
   assert.ok(!/qr-wechat\.svg|qr-portfolio\.svg|qr-join\.svg/.test(page), file + ': QR block remains');
   const nav = page.match(/<nav class="main-nav"[\s\S]*?<\/nav>/)[0];
