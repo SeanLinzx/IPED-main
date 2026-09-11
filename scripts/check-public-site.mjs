@@ -22,8 +22,19 @@ assert.ok(html.includes('data-zh="毕业生" data-en="Graduates"'));
 assert.ok(html.includes('现任：西南交通大学设计艺术学院 · 助理教授'));
 assert.ok(html.includes('深圳 · 阶跃星辰 · 用户研究员'));
 assert.ok(html.includes('上海 · 华为 · 用户体验研究'));
-assert.equal((html.match(/class="empty-portrait"/g) || []).length, 35);
-assert.equal((html.match(/src="\.\/assets\/people\//g) || []).length, 14);
+assert.equal((html.match(/class="empty-portrait"/g) || []).length, 27);
+assert.equal((html.match(/src="\.\/assets\/people\//g) || []).length, 22);
+const addedPortraits = {
+  '李文萱': 'li-wenxuan', '汤开杨': 'tang-kaiyang', '李嘉祥': 'li-jiaxiang',
+  '王漪璇': 'wang-yixuan', '陈泓桥': 'chen-hongqiao', '梁清华': 'liang-qinghua',
+  '王吉辉': 'wang-jihui', '左卡': 'zuo-ka',
+};
+for (const [name, filename] of Object.entries(addedPortraits)) {
+  const card = [...html.matchAll(/<figure class="member-card"[\s\S]*?<\/figure>/g)]
+    .map(m => m[0]).find(card => card.includes('aria-label="' + name + '"'));
+  assert.ok(card?.includes(filename + '-simple-20260911.png'), name + ': portrait mismatch');
+  assert.ok(!card.includes('empty-portrait'), name + ': placeholder remains');
+}
 for (const match of html.matchAll(/src="(\.\/assets\/people\/[^"]+)"/g)) {
   assert.ok(fs.existsSync(match[1]), 'Missing portrait: ' + match[1]);
 }
@@ -72,4 +83,4 @@ for (const file of ['index.html', 'about.html', 'projects.html', 'project.html',
   assert.ok(!/收集表|已填的实验室成果|collection form|作品如何进入网站/.test(page), file + ': internal editorial copy');
 }
 assert.ok(!/收集表|collection form|作品如何进入网站|How does work enter the website/.test(script));
-console.log('PASS: 4 faculty, 49 students, 14 portraits, 35 empty slots, 44 publications, contact and public navigation.');
+console.log('PASS: 4 faculty, 49 students, 22 portraits, 27 empty slots, 44 publications, contact and public navigation.');
