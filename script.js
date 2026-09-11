@@ -22,7 +22,7 @@ const dictionary = {
     focusTitleZh: "可触界面实验室",
     focusTitleEn: "Touchable Interface Lab",
     focusIntro:
-      "可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
+      "湖南大学可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
@@ -60,7 +60,7 @@ const dictionary = {
     aboutTracksTitle: "研究框架",
     aboutTrack1Title: "学术视野",
     aboutTrack1Body:
-      "在学术视野上，我们聚焦具身智能交互与用户体验评估，构建人智协同策略体系；引入不确定性理论与机器学习算法，量化系统、环境与人的不确定性。依托与 UAL、佐治亚理工、金匠等国际顶尖院校的深度合作，我们始终站在全球学术前沿。",
+      "在学术视野上，我们聚焦具身智能交互与用户体验评估，构建人智协同策略体系；引入不确定性理论与机器学习算法，量化系统、环境与人的不确定性。依托与 伦敦艺术大学、佐治亚理工学院、伦敦大学金史密斯学院、新加坡国立大学等国际院校的深度合作，我们始终站在全球学术前沿。",
     aboutTrack2Title: "研究方法",
     aboutTrack2Body:
       "在研究方法上，我们打破学科壁垒，融合设计、机械、数学、计算机等多学科视角；运用人因智能与混合量化方法，结合精准质性研究，构建从用户研究、人因实验到数据建模、设计标准的完整闭环。",
@@ -257,7 +257,7 @@ const dictionary = {
     focusTitleZh: "Touchable Interface Lab",
     focusTitleEn: "可触界面实验室",
     focusIntro:
-      "Touchable Interface Lab explores haptic, multisensory and multimodal human–computer interaction, connecting design, technology and people to create a more inclusive and human-centered intelligent future.",
+      "Touchable Interface Lab at Hunan University explores haptic, multisensory and multimodal human–computer interaction, connecting design, technology and people to create a more inclusive and human-centered intelligent future.",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
@@ -297,7 +297,7 @@ const dictionary = {
     aboutTracksTitle: "Research Framework",
     aboutTrack1Title: "Research Vision",
     aboutTrack1Body:
-      "We focus on embodied intelligent interaction and user-experience evaluation, building strategies for human–AI collaboration. Uncertainty theory and machine learning help us quantify uncertainty in systems, environments and people. Partnerships with UAL, Georgia Tech, Goldsmiths and other leading institutions keep the work at the international frontier.",
+      "We focus on embodied intelligent interaction and user-experience evaluation, building strategies for human–AI collaboration. Uncertainty theory and machine learning help us quantify uncertainty in systems, environments and people. Partnerships with University of the Arts London, Georgia Institute of Technology, Goldsmiths, University of London, National University of Singapore and other institutions keep the work at the international frontier.",
     aboutTrack2Title: "Research Methods",
     aboutTrack2Body:
       "We work across design, mechanical engineering, mathematics and computing. Combining human-factors intelligence, mixed quantitative methods and precise qualitative research, we close the loop from user research and human-factors experiments to data modeling and design standards.",
@@ -803,7 +803,7 @@ function renderHomeIndex() {
         <img class="focus-card-rule" src="./assets/home/focus-rule.svg" alt="" width="35" height="1" />
         <span class="focus-card-title">${copy.title}</span>
         <span class="focus-card-subtitle">${alternateCopy.title}</span>
-        <span class="home-arrow focus-card-arrow" aria-hidden="true">→</span>
+        <span class="home-arrow focus-card-arrow" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 16h18m-7-7 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </span>
     </a>`;
   }).join("");
@@ -934,6 +934,22 @@ function bindResearchPage() {
   });
 }
 
+function industryTimeline(items, lang) {
+  const brands = {
+    oppo: { name: "OPPO", logo: "./assets/partners/oppo.svg" },
+    vivo: { name: "vivo", logo: "./assets/partners/vivo.svg" },
+    vatti: { name: lang === "zh" ? "华帝" : "Vatti", logo: "./assets/partners/vatti-global.png" },
+  };
+  const groups = {};
+  items.forEach(p => { const year = projectYear(p) || (lang === "zh" ? "未注明年份" : "Undated"); (groups[year] ||= []).push(p); });
+  return '<div class="industry-timeline">' + Object.entries(groups).sort(([a], [b]) => (parseInt(b) || 0) - (parseInt(a) || 0)).map(([year, projects]) =>
+    '<section class="industry-year"><h3>' + escapePublicationText(year) + '</h3><div>' + projects.map(p => {
+      const brand = brands[p.partner];
+      return '<a class="industry-row" href="' + projectHref(p.id) + '"><strong>' + escapePublicationText((p[lang] || p.zh).title) +
+        '</strong><span class="industry-partner"><img src="' + brand.logo + '" alt="" width="100" height="40" /><span>' + brand.name + '</span></span></a>';
+    }).join('') + '</div></section>').join('') + '</div>';
+}
+
 function renderResearchList() {
   const root = document.querySelector("[data-research-list]");
   if (!root || typeof PROJECTS === "undefined") {
@@ -971,23 +987,14 @@ function renderResearchList() {
       ? sortProjectsByYear(publicProjects())
       : sortProjectsByYear(publicProjects().filter((project) => project.category === filter));
 
-  if (view === "list") {
-    root.innerHTML = items.length
-      ? `<div class="proj-list">${items.map((project) => projectRow(project, lang)).join("")}</div>`
-      : `<p class="proj-empty">${strings.projEmpty}</p>`;
-    return;
-  }
+  const research = items.filter(p => p.category === "grant");
+  const industry = items.filter(p => p.category === "industry");
+  const researchMarkup = view === "list"
+    ? '<div class="proj-list">' + research.map(p => projectRow(p, lang)).join('') + '</div>'
+    : '<div class="proj-grid">' + research.map((p, i) => projectCard(p, i, lang, viewLabel)).join('') + '</div>';
+  root.innerHTML = (filter !== "industry" ? '<section class="project-category-section"><h2>' + (lang === "zh" ? "科研课题" : "Research Projects") + '</h2>' + researchMarkup + '</section>' : '') +
+    (filter !== "grant" ? '<section class="project-category-section"><h2>' + (lang === "zh" ? "校企合作" : "Industry Collaboration") + '</h2>' + industryTimeline(industry, lang) + '</section>' : '');
 
-  if (filter === "all") {
-    root.innerHTML = `<div class="proj-grid">${RESEARCH_CATEGORIES.map((cat, index) =>
-      categoryCard(cat, index, lang, viewLabel)
-    ).join("")}</div>`;
-    return;
-  }
-
-  root.innerHTML = items.length
-    ? `<div class="proj-grid">${items.map((project, index) => projectCard(project, index, lang, viewLabel)).join("")}</div>`
-    : `<p class="proj-empty">${strings.projEmpty}</p>`;
 }
 
 function renderProjectDetail() {
@@ -1085,6 +1092,7 @@ function renderPublications() {
         <span class="publication-copy">
           <strong>${escapePublicationText(copy.title || (pub.zh && pub.zh.title))}</strong>
           <span>${escapePublicationText(copy.body || meta)}</span>
+          ${copy.linkLabel ? `<small class="publication-link-label">${escapePublicationText(copy.linkLabel)} ↗</small>` : ""}
         </span>
         <span class="publication-type">${escapePublicationText(type)}</span>
         <span class="publication-arrow" aria-hidden="true">${link ? "↗" : "—"}</span>`;

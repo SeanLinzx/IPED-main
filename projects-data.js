@@ -2,6 +2,7 @@ const PROJECTS = [
   {
     id: "gesture",
     category: "industry",
+    partner: "oppo",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/gesture/cover.jpg",
@@ -24,6 +25,7 @@ const PROJECTS = [
   {
     id: "motion",
     category: "industry",
+    partner: "oppo",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/motion/cover.jpg",
@@ -46,6 +48,7 @@ const PROJECTS = [
   {
     id: "ai-insight",
     category: "industry",
+    partner: "oppo",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/ai-insight/cover.jpg",
@@ -72,6 +75,7 @@ const PROJECTS = [
   {
     id: "usability",
     category: "industry",
+    partner: "oppo",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/usability/cover.jpg",
@@ -94,6 +98,7 @@ const PROJECTS = [
   {
     id: "auto-ux",
     category: "industry",
+    partner: "oppo",
     year: "2025",
     yearStart: 2025,
     cover: "./assets/projects/auto-ux/cover.jpg",
@@ -116,6 +121,7 @@ const PROJECTS = [
   {
     id: "vivo-hf",
     category: "industry",
+    partner: "vivo",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/vivo-hf/cover.jpg",
@@ -142,6 +148,7 @@ const PROJECTS = [
   {
     id: "vatti-hw",
     category: "industry",
+    partner: "vatti",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/vatti-hw/cover.jpg",
@@ -169,6 +176,7 @@ const PROJECTS = [
   {
     id: "vatti-basket",
     category: "industry",
+    partner: "vatti",
     year: "2024–2025",
     yearStart: 2024,
     cover: "./assets/projects/vatti-basket/cover.jpg",
@@ -191,6 +199,7 @@ const PROJECTS = [
   {
     id: "vatti-oasis",
     category: "industry",
+    partner: "vatti",
     year: "2025",
     yearStart: 2025,
     cover: "./assets/projects/vatti-oasis/cover.jpg",
@@ -305,7 +314,7 @@ const PROJECTS = [
   },
   {
     id: "engine",
-    category: "studio",
+    category: "grant",
     year: "2023–2025",
     yearStart: 2023,
     cover: "./assets/projects/engine/cover.jpg",
@@ -327,7 +336,7 @@ const PROJECTS = [
   },
   {
     id: "smec",
-    category: "other",
+    category: "grant",
     year: "2023",
     yearStart: 2023,
     cover: "./assets/projects/smec/cover.jpg",
@@ -381,42 +390,8 @@ const HOME_THEMES = [
 ];
 
 const RESEARCH_CATEGORIES = [
-  {
-    id: "industry",
-    zh: "校企合作",
-    en: "Industry Collaboration",
-    descZh: "连接产业与学术，推动技术落地与创新应用。",
-    descEn: "Connecting industry and academia to land technology in real products.",
-    keys: ["INDUSTRY", "×", "ACADEMIA", "×", "REAL-WORLD IMPACT"],
-    art: "metal",
-  },
-  {
-    id: "grant",
-    zh: "科研课题",
-    en: "Research Projects",
-    descZh: "面向前沿问题，探索触觉与智能交互的新理论、新方法与新系统。",
-    descEn: "Exploring new theories, methods and systems for haptic and intelligent interaction.",
-    keys: ["IDEAS", "DRIVE", "CHANGE"],
-    art: "wave",
-  },
-  {
-    id: "studio",
-    zh: "教学与工作坊",
-    en: "Teaching & Workshops",
-    descZh: "通过课程、工作坊与实践项目，培养面向未来的跨学科人才。",
-    descEn: "Training interdisciplinary talent through courses, workshops and studio practice.",
-    keys: ["LEARN", "×", "MAKE", "×", "SHARE"],
-    art: "studio",
-  },
-  {
-    id: "other",
-    zh: "其他研究项目",
-    en: "Other Research Projects",
-    descZh: "面向更广泛的探索，记录实验性的想法与持续进行的研究实践。",
-    descEn: "A wider set of experiments and ongoing research practices.",
-    keys: ["SMALL", "IDEAS", "BIG", "POTENTIAL"],
-    art: "glass",
-  },
+  { id: "grant", zh: "科研课题", en: "Research Projects", descZh: "触觉交互、人因与用户体验研究。", descEn: "Research in haptic interaction, human factors and user experience.", art: "wave" },
+  { id: "industry", zh: "校企合作", en: "Industry Collaboration", descZh: "与产业伙伴共同开展设计与技术研究。", descEn: "Design and technology research with industry partners.", art: "metal" },
 ];
 
 const PUBLICATIONS = [
@@ -647,15 +622,15 @@ const PUBLICATIONS = [
     "type": "论文",
     "venue": "Applied Mathematical Modelling",
     "authors": "Li, Z., Cao, L., Huo, M., et al.",
-    "link": "",
+    "link": "https://doi.org/10.1016/j.apm.2023.04.033",
     "cover": "",
     "zh": {
       "title": "基于证据理论的双金属复合材料弯曲性能不确定性量化",
-      "body": "Li, Z., Cao, L., Huo, M., et al. (2023). Applied Mathematical Modelling, 121, 59–74. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Li, Z., Cao, L., Huo, M., et al. (2023). Applied Mathematical Modelling, 121, 59–74."
     },
     "en": {
       "title": "Evidence-based uncertainty quantification for bending properties of bimetal composites",
-      "body": "Li, Z., Cao, L., Huo, M., et al. (2023). Applied Mathematical Modelling, 121, 59–74. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Li, Z., Cao, L., Huo, M., et al. (2023). Applied Mathematical Modelling, 121, 59–74."
     }
   },
   {
@@ -668,11 +643,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "如何提升设计的社会话语权：初探将设计伦理与实践应用相结合的6C分析模型",
-      "body": "栾之珑. 收入《“向多样的世界提问”——2022国际艺术与设计博士生论坛论文集》, 中国青年出版社, 2023. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "栾之珑. 收入《“向多样的世界提问”——2022国际艺术与设计博士生论坛论文集》, 中国青年出版社, 2023."
     },
     "en": {
       "title": "How to enhance the social discourse power of design: A study on the 6C analysis model combining design ethics and practical actions",
-      "body": "栾之珑. 收入《“向多样的世界提问”——2022国际艺术与设计博士生论坛论文集》, 中国青年出版社, 2023. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "栾之珑. 收入《“向多样的世界提问”——2022国际艺术与设计博士生论坛论文集》, 中国青年出版社, 2023."
     }
   },
   {
@@ -732,15 +707,15 @@ const PUBLICATIONS = [
     "type": "论文",
     "venue": "Journal of Mechanical Design",
     "authors": "Cao, L., Liu, J., Zhang, J., et al.",
-    "link": "",
+    "link": "https://doi.org/10.1115/1.4055926",
     "cover": "",
     "zh": {
       "title": "基于平行多面体证据理论模型的工业机器人定位精度可靠性分析",
-      "body": "Cao, L., Liu, J., Zhang, J., et al. (2022). Journal of Mechanical Design, 145(2), 023303. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Zhang, J., et al. (2022). Journal of Mechanical Design, 145(2), 023303."
     },
     "en": {
-      "title": "Positioning accuracy reliability analysis of industrial robots based on parallelotope evidence theory model and space affine collocation",
-      "body": "Cao, L., Liu, J., Zhang, J., et al. (2022). Journal of Mechanical Design, 145(2), 023303. 来源：湖南大学设计艺术学院教师主页。"
+      "title": "Positioning Accuracy Reliability Analysis of Industrial Robots Considering Epistemic Uncertainty and Correlation",
+      "body": "Cao, L., Liu, J., Zhang, J., et al. (2022). Journal of Mechanical Design, 145(2), 023303."
     }
   },
   {
@@ -766,15 +741,15 @@ const PUBLICATIONS = [
     "type": "论文",
     "venue": "Structural and Multidisciplinary Optimization",
     "authors": "Cao, L., Liu, J., Hu, Y., et al.",
-    "link": "",
+    "link": "https://doi.org/10.1007/s00158-022-03316-8",
     "cover": "",
     "zh": {
       "title": "考虑建模不确定性的结构随机识别：稀疏网格与相似系统分析",
-      "body": "Cao, L., Liu, J., Hu, Y., et al. (2022). Structural & Multidisciplinary Optimization, 65, 219. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Hu, Y., et al. (2022). Structural & Multidisciplinary Optimization, 65, 219."
     },
     "en": {
       "title": "Structural stochastic identification considering modeling uncertainty through sparse grid and similar system analysis",
-      "body": "Cao, L., Liu, J., Hu, Y., et al. (2022). Structural & Multidisciplinary Optimization, 65, 219. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Hu, Y., et al. (2022). Structural & Multidisciplinary Optimization, 65, 219."
     }
   },
   {
@@ -804,11 +779,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "面向任意概率分布的最优稀疏多项式混沌展开及其全局灵敏度分析",
-      "body": "Cao, L., Liu, J., Chen, W., et al. (2022). CMAME, 399, 115368. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Chen, W., et al. (2022). CMAME, 399, 115368."
     },
     "en": {
       "title": "Optimal sparse polynomial chaotic expansion for arbitrary probability distribution and its application on global sensitivity analysis",
-      "body": "Cao, L., Liu, J., Chen, W., et al. (2022). CMAME, 399, 115368. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Chen, W., et al. (2022). CMAME, 399, 115368."
     }
   },
   {
@@ -838,11 +813,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "Hack3D：众包评估数字制造中的网络安全",
-      "body": "Linares, M. et al. (2021). Computer, 54(11), 58–67. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Linares, M. et al. (2021). Computer, 54(11), 58–67."
     },
     "en": {
       "title": "Hack3D: Crowdsourcing the assessment of cybersecurity in digital manufacturing",
-      "body": "Linares, M. et al. (2021). Computer, 54(11), 58–67. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Linares, M. et al. (2021). Computer, 54(11), 58–67."
     }
   },
   {
@@ -855,11 +830,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "不同应变率下胶接碳纤维层合板压缩性能研究",
-      "body": "Chen, F., Pinisetty, D., & Gupta, N. (2021). The Journal of Adhesion. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F., Pinisetty, D., & Gupta, N. (2021). The Journal of Adhesion."
     },
     "en": {
       "title": "Study of the compressive properties of adhesively bonded carbon fiber laminates at different strain rates",
-      "body": "Chen, F., Pinisetty, D., & Gupta, N. (2021). The Journal of Adhesion. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F., Pinisetty, D., & Gupta, N. (2021). The Journal of Adhesion."
     }
   },
   {
@@ -872,11 +847,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "用于结构不确定性量化的非概率多边形凸集模型",
-      "body": "Cao, L., Liu, J., Xie, L., et al. (2021). Applied Mathematical Modelling, 89, 504–518. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Xie, L., et al. (2021). Applied Mathematical Modelling, 89, 504–518."
     },
     "en": {
       "title": "Non-probabilistic polygonal convex set model for structural uncertainty quantification",
-      "body": "Cao, L., Liu, J., Xie, L., et al. (2021). Applied Mathematical Modelling, 89, 504–518. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Xie, L., et al. (2021). Applied Mathematical Modelling, 89, 504–518."
     }
   },
   {
@@ -885,15 +860,15 @@ const PUBLICATIONS = [
     "type": "论文",
     "venue": "Journal of Mechanical Design",
     "authors": "Cao, L., Liu, J., Jiang, C., et al.",
-    "link": "",
+    "link": "https://doi.org/10.1115/1.4044915",
     "cover": "",
     "zh": {
       "title": "基于降维分解与边际区间分析的结构不确定性量化",
-      "body": "Cao, L., Liu, J., Jiang, C., et al. (2020). Journal of Mechanical Design, 142(5), 051701. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Jiang, C., et al. (2020). Journal of Mechanical Design, 142(5), 051701."
     },
     "en": {
       "title": "Evidence-based structural uncertainty quantification by dimension reduction decomposition and marginal interval analysis",
-      "body": "Cao, L., Liu, J., Jiang, C., et al. (2020). Journal of Mechanical Design, 142(5), 051701. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Cao, L., Liu, J., Jiang, C., et al. (2020). Journal of Mechanical Design, 142(5), 051701."
     }
   },
   {
@@ -906,11 +881,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "增材制造零件中的嵌入式产品认证码：成像与图像处理以提升可扫描性",
-      "body": "Chen, F. et al. (2020). Additive Manufacturing, 35, 101319. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F. et al. (2020). Additive Manufacturing, 35, 101319."
     },
     "en": {
       "title": "Embedded product authentication codes in additive manufactured parts: Imaging and image processing for improved scan ability",
-      "body": "Chen, F. et al. (2020). Additive Manufacturing, 35, 101319. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F. et al. (2020). Additive Manufacturing, 35, 101319."
     }
   },
   {
@@ -923,11 +898,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "增材制造零件中嵌入码的混淆方法：面向产品认证",
-      "body": "Chen, F., Yu, J. H., & Gupta, N. (2019). Advanced Engineering Materials, 21(8), 1900146. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F., Yu, J. H., & Gupta, N. (2019). Advanced Engineering Materials, 21(8), 1900146."
     },
     "en": {
       "title": "Obfuscation of embedded codes in additive manufactured components for product authentication",
-      "body": "Chen, F., Yu, J. H., & Gupta, N. (2019). Advanced Engineering Materials, 21(8), 1900146. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F., Yu, J. H., & Gupta, N. (2019). Advanced Engineering Materials, 21(8), 1900146."
     }
   },
   {
@@ -957,11 +932,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "设计研究中的价值挖掘——虚拟现实文创产品的价值分析",
-      "body": "栾之珑, 鲁晓波. 齐鲁艺苑, 2019(4). 来源：湖南大学设计艺术学院教师主页。"
+      "body": "栾之珑, 鲁晓波. 齐鲁艺苑, 2019(4)."
     },
     "en": {
       "title": "The value generation in design studies: Value analysis of virtual reality cultural creative products",
-      "body": "栾之珑, 鲁晓波. 齐鲁艺苑, 2019(4). 来源：湖南大学设计艺术学院教师主页。"
+      "body": "栾之珑, 鲁晓波. 齐鲁艺苑, 2019(4)."
     }
   },
   {
@@ -974,11 +949,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "在增材制造零件中嵌入追踪码以进行产品认证",
-      "body": "Chen, F. et al. (2018). Advanced Engineering Materials, 21(4), 1800495. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F. et al. (2018). Advanced Engineering Materials, 21(4), 1800495."
     },
     "en": {
       "title": "Embedding tracking codes in additive manufactured parts for product authentication",
-      "body": "Chen, F. et al. (2018). Advanced Engineering Materials, 21(4), 1800495. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F. et al. (2018). Advanced Engineering Materials, 21(4), 1800495."
     }
   },
   {
@@ -991,11 +966,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "石墨烯增强铝基复合材料：制备方法与性能综述",
-      "body": "Chen, F. et al. (2018). JOM, 70(6), 837–845. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F. et al. (2018). JOM, 70(6), 837–845."
     },
     "en": {
       "title": "Graphene-reinforced aluminum matrix composites: A review of synthesis methods and properties",
-      "body": "Chen, F. et al. (2018). JOM, 70(6), 837–845. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F. et al. (2018). JOM, 70(6), 837–845."
     }
   },
   {
@@ -1008,11 +983,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "面向增材制造安全挑战的设计特征",
-      "body": "Gupta, N., Chen, F., & Shain, K. (2018). In Manufacturing Techniques for Materials. CRC Press. ISBN 9781315104133. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Gupta, N., Chen, F., & Shain, K. (2018). In Manufacturing Techniques for Materials. CRC Press. ISBN 9781315104133."
     },
     "en": {
       "title": "Design features to address security challenges in additive manufacturing",
-      "body": "Gupta, N., Chen, F., & Shain, K. (2018). In Manufacturing Techniques for Materials. CRC Press. ISBN 9781315104133. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Gupta, N., Chen, F., & Shain, K. (2018). In Manufacturing Techniques for Materials. CRC Press. ISBN 9781315104133."
     }
   },
   {
@@ -1025,11 +1000,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "ObfusCADe：混淆增材制造 CAD 模型以防伪",
-      "body": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M. (2017). DAC ’17. ACM. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M. (2017). DAC ’17. ACM."
     },
     "en": {
       "title": "ObfusCADe: Obfuscating additive manufacturing CAD models against counterfeiting",
-      "body": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M. (2017). DAC ’17. ACM. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Gupta, N., Chen, F., Tsoutsos, N. G., & Maniatakos, M. (2017). DAC ’17. ACM."
     }
   },
   {
@@ -1042,11 +1017,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "从设计生活方式到设计生活意义——浅析信息社会体验设计的发展方式与设计潜力",
-      "body": "栾之珑. 工业设计, 2017(1). 来源：湖南大学设计艺术学院教师主页。"
+      "body": "栾之珑. 工业设计, 2017(1)."
     },
     "en": {
       "title": "From designing lifestyles to designing life meanings: Experience design in the informational society",
-      "body": "栾之珑. 工业设计, 2017(1). 来源：湖南大学设计艺术学院教师主页。"
+      "body": "栾之珑. 工业设计, 2017(1)."
     }
   },
   {
@@ -1055,15 +1030,15 @@ const PUBLICATIONS = [
     "type": "论文",
     "venue": "装饰",
     "authors": "栾之珑, 师丹青",
-    "link": "https://www.izhsh.com.cn/doc/3/3558.html",
+    "link": "https://www.izhsh.com.cn/cover/353/3552.html",
     "cover": "",
     "zh": {
       "title": "多维度下展开的非线性叙事——新媒体时代的体验性叙事设计",
-      "body": "栾之珑, 师丹青. 装饰, 2017(4). 来源：湖南大学设计艺术学院教师主页 / 《装饰》2017年第4期目录。"
+      "body": "栾之珑, 师丹青. 装饰, 2017(4)."
     },
     "en": {
       "title": "Nonlinear narrative unfolding in multiple dimensions: Experiential narrative design in the new media era",
-      "body": "栾之珑, 师丹青. 装饰, 2017(4). 来源：湖南大学设计艺术学院教师主页 / 《装饰》2017年第4期目录。"
+      "body": "栾之珑, 师丹青. 装饰, 2017(4)."
     }
   },
   {
@@ -1076,11 +1051,11 @@ const PUBLICATIONS = [
     "cover": "",
     "zh": {
       "title": "嵌入 CAD 实体模型的增材制造安全特征",
-      "body": "Chen, F., Mac, G., & Gupta, N. (2017). Materials & Design, 128, 182–194. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F., Mac, G., & Gupta, N. (2017). Materials & Design, 128, 182–194."
     },
     "en": {
       "title": "Security features embedded in computer aided design (CAD) solid models for additive manufacturing",
-      "body": "Chen, F., Mac, G., & Gupta, N. (2017). Materials & Design, 128, 182–194. 来源：湖南大学设计艺术学院教师主页。"
+      "body": "Chen, F., Mac, G., & Gupta, N. (2017). Materials & Design, 128, 182–194."
     }
   },
   {
@@ -1121,15 +1096,19 @@ const PUBLICATIONS = [
     "id": "sheet-20260910-42",
     "year": "",
     "type": "教材",
-    "venue": "",
+    "venue": "人民美术出版社 · AI时代设计类规划教材",
     "authors": "",
-    "link": "",
+    "link": "https://paper.people.com.cn/rmrb/pad/content/202503/30/content_30064843.html",
     "cover": "",
     "zh": {
-      "title": "智能产品交互设计（人民美术出版社）"
+      "title": "智能产品交互设计",
+      "body": "人民美术出版社“AI时代设计类规划教材”。面向人工智能时代的设计教育，所属系列结合理论讲解、案例分析、实践操作与课后思考，连接设计、教育与计算机科学等跨学科知识。",
+      "linkLabel": "教材系列介绍"
     },
     "en": {
-      "title": "智能产品交互设计（人民美术出版社）"
+      "title": "Intelligent Product Interaction Design",
+      "body": "Published by People's Fine Arts Publishing House in its Design Textbooks for the AI Era series. The series brings together design, education and computer science through theory, case studies, hands-on practice and reflection.",
+      "linkLabel": "About the textbook series"
     }
   },
   {
@@ -1149,17 +1128,19 @@ const PUBLICATIONS = [
   },
   {
     "id": "sheet-20260910-44",
-    "year": "",
+    "year": "2024",
     "type": "论文",
-    "venue": "",
-    "authors": "",
-    "link": "https://www.researchgate.net/publication/381336141_High-Frequency_Gripping_Area_for_One-Handed_Smartphone_Rear_Interactions",
+    "venue": "Ergonomics in Design · AHFE Open Access",
+    "authors": "Zhang, X., Wang, W., Wang, X., Sun, G., & Zhong, Y.",
+    "link": "https://doi.org/10.54941/ahfe1004814",
     "cover": "",
     "zh": {
-      "title": "High-Frequency Gripping Area for One-Handed Smartphone Rear Interactions"
+      "title": "High-Frequency Gripping Area for One-Handed Smartphone Rear Interactions",
+      "body": "Zhang, X., Wang, W., Wang, X., Sun, G., & Zhong, Y. (2024). Ergonomics in Design, 129, 86–95. AHFE International."
     },
     "en": {
-      "title": "High-Frequency Gripping Area for One-Handed Smartphone Rear Interactions"
+      "title": "High-Frequency Gripping Area for One-Handed Smartphone Rear Interactions",
+      "body": "Zhang, X., Wang, W., Wang, X., Sun, G., & Zhong, Y. (2024). Ergonomics in Design, 129, 86–95. AHFE International."
     }
   }
 ];
