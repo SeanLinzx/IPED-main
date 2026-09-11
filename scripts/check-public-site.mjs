@@ -5,6 +5,8 @@ import assert from 'node:assert/strict';
 const html = fs.readFileSync('about.html', 'utf8');
 const join = fs.readFileSync('join.html', 'utf8');
 const script = fs.readFileSync('script.js', 'utf8');
+assert.ok(script.includes('navPublications: "Scholarship Works"'));
+assert.ok(!script.includes('Scholarship works'));
 const publications = vm.runInNewContext(fs.readFileSync('projects-data.js', 'utf8') + '\nPUBLICATIONS');
 assert.equal((html.match(/class="member-card"/g) || []).length, 49);
 assert.equal((html.match(/class="faculty-card"/g) || []).length, 4);
@@ -59,7 +61,7 @@ assert.ok(join.includes('class="join-compact"'));
 assert.equal((join.match(/class="join-resource-grid"/g) || []).length, 1);
 for (const file of ['index.html', 'about.html', 'projects.html', 'project.html', 'publications.html', 'join.html', 'demo-exhibit.html', 'demo-soft-panel.html', 'demo-touch-map.html']) {
   const page = fs.readFileSync(file, 'utf8');
-  assert.ok(page.includes('script.js?v=20260911-touchlab'), file + ': stale script version');
+  assert.ok(page.includes('script.js?v=20260911-nav-case'), file + ': stale script version');
   assert.ok(page.includes('assets/home/logo-touchlab.svg'), file + ': stale logo');
   assert.ok(page.includes('<script src="./access.js?v=20260911-gate"></script>'), file + ': missing access gate');
   assert.ok(page.indexOf('access.js') < page.indexOf('<body'), file + ': gate must load before content');

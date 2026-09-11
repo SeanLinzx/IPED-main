@@ -242,7 +242,7 @@ const dictionary = {
     navHome: "Home",
     navAbout: "About",
     navProjects: "Research Projects",
-    navPublications: "Scholarship works",
+    navPublications: "Scholarship Works",
     navJoin: "Join Us",
     languageAria: "Language switcher",
     heroEyebrow: "School of Design and Art, Hunan University",
