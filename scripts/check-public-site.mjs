@@ -58,7 +58,7 @@ for (const page of [html, join]) {
 const home = fs.readFileSync('index.html', 'utf8');
 assert.ok(!home.includes('home-hero-label'));
 assert.ok(home.includes('home-arrow-down'));
-assert.ok(home.includes('湖南大学可触界面实验室致力于探索'));
+assert.ok(home.includes('湖南大学XXX实验室致力于探索'));
 assert.equal(new Set(publications.map(p => p.id)).size, publications.length);
 const dois = publications.map(p => p.link.match(/^https:\/\/doi.org\/(.+)$/i)?.[1].toLowerCase()).filter(Boolean);
 assert.equal(new Set(dois).size, dois.length);
@@ -72,9 +72,9 @@ assert.ok(join.includes('class="join-compact"'));
 assert.equal((join.match(/class="join-resource-grid"/g) || []).length, 1);
 for (const file of ['index.html', 'about.html', 'projects.html', 'project.html', 'publications.html', 'join.html', 'demo-exhibit.html', 'demo-soft-panel.html', 'demo-touch-map.html']) {
   const page = fs.readFileSync(file, 'utf8');
-  assert.ok(page.includes('script.js?v=20260911-nav-case'), file + ': stale script version');
+  assert.ok(page.includes('script.js?v=20260911-lab-name'), file + ': stale script version');
   assert.ok(page.includes('assets/home/logo-touchlab.svg'), file + ': stale logo');
-  assert.ok(page.includes('<script src="./access.js?v=20260911-gate"></script>'), file + ': missing access gate');
+  assert.ok(page.includes('<script src="./access.js?v=20260914-logo"></script>'), file + ': missing access gate');
   assert.ok(page.indexOf('access.js') < page.indexOf('<body'), file + ': gate must load before content');
   assert.ok(!/account-widget|mountIpedAccount/.test(page));
   assert.ok(!/qr-wechat\.svg|qr-portfolio\.svg|qr-join\.svg/.test(page), file + ': QR block remains');

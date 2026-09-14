@@ -1,8 +1,8 @@
 const dictionary = {
   zh: {
     headerAria: "站点页眉",
-    brandAria: "返回可触界面实验室首页",
-    brandCn: "可触界面实验室",
+    brandAria: "返回XXX实验室首页",
+    brandCn: "XXX实验室",
     brandEn: "Touchable Interface Lab",
     navAria: "主导航",
     navHome: "首页",
@@ -12,17 +12,17 @@ const dictionary = {
     navJoin: "加入我们",
     languageAria: "语言切换",
     heroEyebrow: "湖南大学设计艺术学院",
-    heroTitle: "可触界面实验室",
+    heroTitle: "XXX实验室",
     heroSubtitle: "Touchable Interface Lab",
     heroIntro: "致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。",
     heroLine1: "Sensing Beyond",
     heroLine2: "Designing for All",
     heroExplore: "EXPLORE OUR RESEARCH",
     focusKicker: "OUR FOCUS",
-    focusTitleZh: "可触界面实验室",
+    focusTitleZh: "XXX实验室",
     focusTitleEn: "Touchable Interface Lab",
     focusIntro:
-      "湖南大学可触界面实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
+      "湖南大学XXX实验室致力于探索触觉、多感官与多模态人机交互，连接设计、技术与人，创造更具包容性与人文关怀的智能未来。",
     metricsLab: "TouchLab",
     metricsUni: "Hunan University",
     metricsQuote:
@@ -47,15 +47,15 @@ const dictionary = {
     aboutKicker: "About",
     aboutTitle: "关于实验室",
     aboutP1:
-      "可触界面实验室关注数字信息如何通过材料、形态、触觉反馈和空间行为被人感知与操作。我们将交互设计、工业设计、服务设计、智能硬件与计算媒介结合，探索下一代具身交互体验。",
+      "XXX实验室关注数字信息如何通过材料、形态、触觉反馈和空间行为被人感知与操作。我们将交互设计、工业设计、服务设计、智能硬件与计算媒介结合，探索下一代具身交互体验。",
     aboutP2:
       "实验室以“从屏幕到触感、从工具到场景、从原型到真实使用”为线索，服务于健康照护、文化体验、教育创新、公共空间与智能产品等方向。",
     aboutPageKicker: "Touchable Interface Lab",
-    aboutPageTitle: "可触界面实验室",
+    aboutPageTitle: "XXX实验室",
     aboutPageIntro: "致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究。",
     aboutMissionTitle: "使命与愿景",
     aboutMissionBody1:
-      "可触界面实验室（Touchable Interface Lab）致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究领域。我们秉持平等、包容、多元的核心价值，以人文关怀为底色，坚信技术发展的终极意义在于服务人的真实需求。",
+      "XXX实验室（Touchable Interface Lab）致力于探索触觉多感官与多模态人机交互、智能产品界面与用户体验设计的交叉研究领域。我们秉持平等、包容、多元的核心价值，以人文关怀为底色，坚信技术发展的终极意义在于服务人的真实需求。",
     aboutMissionBody2: "我们始终以人为中心为根本出发点，在推动技术创新的同时，不忘设计的人文本质——让每一次交互都更加自然、包容，让每一项技术都真正服务于人的福祉。",
     aboutTracksTitle: "研究框架",
     aboutTrack1Title: "学术视野",
@@ -214,7 +214,7 @@ const dictionary = {
     joinBody:
       "欢迎对交互设计、智能硬件、材料实验、用户研究、前端开发与设计理论感兴趣的同学联系。也欢迎企业、博物馆、医院、公共机构与我们开展联合课题和原型验证。",
     joinPanelTitle: "联系",
-    joinPanelBody: "湖南大学设计艺术学院 · 可触界面实验室",
+    joinPanelBody: "湖南大学设计艺术学院 · XXX实验室",
     joinNeedsTitle: "我们期待",
     joinNeed1Title: "会做原型的人",
     joinNeed1Body: "熟悉 Arduino、前端、建模、材料工艺或影像制作均可。",
@@ -225,7 +225,7 @@ const dictionary = {
     joinOpen1Body: "建议准备 2-3 个作品链接，说明你负责的部分、使用工具和最想继续深入的技术或设计问题。",
     joinOpen2Body: "建议准备一页研究兴趣说明，包含关注人群、方法经验、阅读过的相关论文或案例。",
     joinOpen3Body: "合作方可提供场景背景、用户群体、现有流程、约束条件和希望验证的问题。",
-    footerLab: "湖南大学设计艺术学院 可触界面实验室",
+    footerLab: "湖南大学设计艺术学院 XXX实验室",
     footerDesc: "Touchable Interface Lab, School of Design and Art, Hunan University",
     qrAria: "二维码",
     qrWechat: "微信公众号",
@@ -247,7 +247,7 @@ const dictionary = {
     languageAria: "Language switcher",
     heroEyebrow: "School of Design and Art, Hunan University",
     heroTitle: "Touchable Interface Lab",
-    heroSubtitle: "可触界面实验室",
+    heroSubtitle: "XXX实验室",
     heroIntro:
       "We explore haptic, multisensory and multimodal human–computer interaction, intelligent product interfaces, and user-experience design.",
     heroLine1: "Sensing Beyond",
@@ -255,7 +255,7 @@ const dictionary = {
     heroExplore: "EXPLORE OUR RESEARCH",
     focusKicker: "OUR FOCUS",
     focusTitleZh: "Touchable Interface Lab",
-    focusTitleEn: "可触界面实验室",
+    focusTitleEn: "XXX实验室",
     focusIntro:
       "Touchable Interface Lab at Hunan University explores haptic, multisensory and multimodal human–computer interaction, connecting design, technology and people to create a more inclusive and human-centered intelligent future.",
     metricsLab: "TouchLab",
@@ -469,7 +469,7 @@ const dictionary = {
     joinOpen3Body:
       "Partners can share scenario background, user groups, current workflows, constraints and questions to validate.",
     footerLab: "Touchable Interface Lab, School of Design and Art, HNU",
-    footerDesc: "湖南大学设计艺术学院 可触界面实验室",
+    footerDesc: "湖南大学设计艺术学院 XXX实验室",
     qrAria: "QR codes",
     qrWechat: "WeChat",
     qrPortfolio: "Portfolio",
@@ -1052,7 +1052,7 @@ function renderProjectDetail() {
     ${gallery ? `<div class="project-gallery">${gallery}</div>` : ""}
     ${backLink.replace('class="project-back"', 'class="project-back project-back-end"')}
   `;
-  document.title = `${text.title} | ${lang === "zh" ? "可触界面实验室" : "Touchable Interface Lab"}`;
+  document.title = `${text.title} | ${lang === "zh" ? "XXX实验室" : "Touchable Interface Lab"}`;
 }
 
 function escapePublicationText(value) {

@@ -31,7 +31,7 @@
     gate.id = 'touchlab-access';
     gate.setAttribute('aria-label', '网站访问 / Site access');
     gate.innerHTML = `<form>
-      <img src="./assets/home/logo-touchlab.svg" alt="TouchLab 可触界面实验室" width="250" height="64">
+      <img src="./assets/home/logo-touchlab.svg?v=20260914-original" alt="TouchLab 可触界面实验室" width="300" height="124">
       <p class="access-kicker">TOUCHLAB / INVITATION ONLY</p>
       <h1>欢迎访问实验室</h1>
       <label for="touchlab-key">访问密钥 / Access key</label>
